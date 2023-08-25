@@ -1,0 +1,64 @@
+package org.clibankinjava.errorsclasification;
+
+import java.util.List;
+
+public enum StructuralErrors implements CustomError {
+    NUMBER_OF_OPTIONS_OUT_OF_SYNC_MENU_CREATION("number_of_menu_options_out_of_sync", 1,
+            String.format("STRUCT_ERROR, SEV: %s - Number of options provided out of sync to when the menu was created!", Severities.ONE)),
+
+    NO_VALID_MESSAGE_HEADER("invalid_message_header", 1,
+            String.format("STRUCT_ERROR, SEV: %s - Message from input is not valid for header!", Severities.ONE)),
+
+    NO_VALID_SECONDARY_MESSAGE_HEADER("invalid_secondary_message_header", 2,
+            String.format("STRUCT_ERROR, SEV: %s - Secondary message for header is not valid!", Severities.TWO)),
+
+    LOADING_MESSAGE_INVALID("message_for_loading_invalid", 2,
+            String.format("STRUCT_ERROR, SEV: %s - Message for loading bar is not valid!", Severities.TWO)),
+
+    PROGRESS_DOTS_MESSAGE_INVALID("invalid_message_for_progress_dots", 3,
+            String.format("STRUCT_ERROR, SEV: %s - Message for loading bar with dots is not valid!", Severities.THREE)),
+
+    PROGRESS_SQUARE_MESSAGE_INVALID("invalid_message_for_progress_square", 3,
+    String.format("STRUCT_ERROR, SEV: %s - Message for loading effect with square not valid", Severities.THREE)),
+
+    MESSAGE_AT_THE_END_FOR_LOADING_INVALID("invalid_message_at_the_end_for_loading", 3,
+            String.format("STRUCT_ERROR, SEV: %s - Message at the end of loading effect not valid", Severities.THREE)),
+
+    PROGRESS_FORMS_MESSAGE_INVALID("invalid_message_for_progress_forms", 3,
+            String.format("STRUCT_ERROR, SEV: %s - Message for loading effect is not valid", Severities.THREE)),
+
+    MESSAGE_AT_THE_BOTTOM_OF_MENU_INVALID("message_at_the_bottom_of_menu_invalid", 3,
+            String.format("STRUCT_ERROR, SEV: %s - Message at the bottom of the menu that was given is not valid!", Severities.THREE)),
+    NO_MENU_OPTION_AVAILABLE("no_menu_options", 2,
+            String.format("STRUCT_ERROR, SEV: %s - No available entries in the menu", Severities.TWO));
+
+    private final String name;
+    private final String content;
+    private final int severity;
+
+    StructuralErrors(String name, int severity, String content) {
+        this.name = name;
+        this.content = content;
+        this.severity = severity;
+    }
+
+    @Override
+    public String getContent() {
+        return content;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public int getSeverity() {
+        return severity;
+    }
+
+    @Override
+    public List<CustomError> allErrorsWithinCategory() {
+        return null;
+    }
+}
