@@ -4,69 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/Cache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/CachedObjects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/CheckUserAndPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/LoginInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/Password.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/UserName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/headers/Header.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/headers/HeaderBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/headers/HeaderConstruct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/headers/IHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/headers/UseHeaderForMainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ILoading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/Loading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/LoadingFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ValidationKeys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/login/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/login/LoginScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/login/TakeInputForLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/IMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/MainMenuBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/MenuBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customizewithcolorsandstyle/ColorsAndStyle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customizewithcolorsandstyle/IColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/CustomPrinting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/PrintError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/PrintMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/PrintNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/CustomError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/ExecutionErrors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/FunctionalErrors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/InputErrors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/IntegrityErrors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/Severities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/Severity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/StructuralErrors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/threadstoberun/CreatingAndLoadingThePrerequisitesThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/threadstoberun/PrintingTheMenuThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/threadstoberun/ProgressBarThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/validation/SanityChecks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/workwithinput/CatchAndProcessingInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/workwithinput/MainProcessingInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/clibankinjava/AppTest.java" afterDir="false" />
+    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="FirstPushInitialProjectWithMenuHeader...the rest will follow">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/CachedObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/CachedObjects.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "valentinsoare"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="20121103-1ec2-4b7a-9398-b69fba31c73a" />
+        <option name="url" value="https://github.com/valentinsoare/BankAppInCLI.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2URgFCOvsPzxc1jfC2Wks0DDhKi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -78,6 +51,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/vsoare/Documents/learningJava",
     "node.js.detected.package.eslint": "true",
@@ -152,11 +126,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692907702976</updated>
-      <workItem from="1692907703995" duration="1746000" />
+      <workItem from="1692907703995" duration="25392000" />
     </task>
+    <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
+      <option name="closed" value="true" />
+      <created>1692983221245</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692983221245</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FirstPushInitialProjectWithMenuHeader...the rest will follow" />
+    <option name="LAST_COMMIT_MESSAGE" value="FirstPushInitialProjectWithMenuHeader...the rest will follow" />
   </component>
 </project>

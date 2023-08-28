@@ -4,7 +4,6 @@ import org.clibankinjava.components.headers.HeaderConstruct;
 import org.clibankinjava.components.headers.IHeader;
 import org.clibankinjava.components.menus.IMenu;
 import org.clibankinjava.components.menus.MainMenuBuilder;
-import org.clibankinjava.workwithinput.CatchAndProcessingInput;
 import org.clibankinjava.workwithinput.MainProcessingInput;
 
 import java.util.HashMap;

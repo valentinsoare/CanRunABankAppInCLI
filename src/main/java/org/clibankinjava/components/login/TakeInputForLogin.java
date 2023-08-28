@@ -66,7 +66,7 @@ public final class TakeInputForLogin {
         StringBuilder toRememberForm = new StringBuilder();
         boolean toConstructorBuilder = true;
 
-        System.out.print("\u001B[?25l"); //hide the cursor
+//        System.out.print("\u001B[?25l"); //hide the cursor
 
         if (consoleCatchInput == null) {
             PrintError.toConsole(ExecutionErrors.LOAD_CONSOLE_ISSUE, spaceFromLeft,
@@ -93,7 +93,7 @@ public final class TakeInputForLogin {
                     String.valueOf(consoleCatchInput.readPassword()));
         }
 
-        System.out.print("\u001B[?25h"); //show the cursor
+//        System.out.print("\u001B[?25h"); //show the cursor
 
         return isOk;
     }

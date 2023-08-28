@@ -9,7 +9,6 @@
   <version>0.1</version>
 
   <name>BankAppInCLI</name>
-  <!-- FIXME change it to the project's website -->
   <url>https://moviesondemand.io</url>
 
   <properties>
@@ -19,14 +18,6 @@
   </properties>
 
   <dependencies>
-    <!--Testing-->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-
     <!--Logging-->
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -71,6 +62,8 @@
       <artifactId>commons-lang3</artifactId>
       <version>3.12.0</version>
     </dependency>
+
+    <!--Testing-->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
