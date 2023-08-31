@@ -20,12 +20,12 @@ public class PrintError {
         if (goingBack) {
             messageToReturn.append("back");
 
-            Loading.progressDots("going back", 6, 100,
+            Loading.dots("going back", 6, 100,
                     true, "DONE", emptySpaceOnTheLeft);
         } else if (quiting) {
             messageToReturn.append("quiting");
 
-            Loading.progressDots("exiting", 6, 100,
+            Loading.dots("exiting", 6, 100,
                     true, "DONE", emptySpaceOnTheLeft);
         }
 

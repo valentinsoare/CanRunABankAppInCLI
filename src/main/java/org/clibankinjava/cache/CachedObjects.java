@@ -1,5 +1,6 @@
 package org.clibankinjava.cache;
 
+import lombok.Getter;
 import org.clibankinjava.components.headers.HeaderConstruct;
 import org.clibankinjava.components.headers.IHeader;
 import org.clibankinjava.components.menus.IMenu;
@@ -9,6 +10,7 @@ import org.clibankinjava.workwithinput.MainProcessingInput;
 import java.util.HashMap;
 import java.util.Map;
 
+@Getter
 public class CachedObjects {
     private static final Map<String, Object> cachedObjects;
 
@@ -20,10 +22,6 @@ public class CachedObjects {
 
     public static void addObjectInCache(String key, Object value) {
         cachedObjects.put(key, value);
-    }
-
-    public static Map<String, Object> getCachedObjects() {
-        return cachedObjects;
     }
 
     public static Map<String, Object> loadCachedObjects() throws InterruptedException {

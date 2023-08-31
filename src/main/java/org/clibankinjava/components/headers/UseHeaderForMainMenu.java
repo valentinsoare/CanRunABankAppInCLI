@@ -13,7 +13,6 @@ public final class UseHeaderForMainMenu implements Runnable {
 
     @Override
     public void run() {
-
         try {
             loadingApp.acquire();
 

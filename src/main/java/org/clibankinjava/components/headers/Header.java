@@ -1,8 +1,10 @@
 package org.clibankinjava.components.headers;
 
+import lombok.Getter;
 import org.clibankinjava.errorsclasification.StructuralErrors;
 import org.clibankinjava.validation.SanityChecks;
 
+@Getter
 public final class Header implements IHeader {
     private String headerMessage;
     private String subHeaderMessage;
@@ -40,14 +42,6 @@ public final class Header implements IHeader {
     @Override
     public String getSubHeaderMessage() {
         return subHeaderMessage;
-    }
-
-    public int getEmptySpacesFromLeftEdgeScreen() {
-        return emptySpacesFromLeftEdgeScreen;
-    }
-
-    public int getEmptySpacesFromTopEdgeScreen() {
-        return emptySpacesFromTopEdgeScreen;
     }
 
     public int getEmptySpaceBellow() {
@@ -127,7 +121,4 @@ public final class Header implements IHeader {
 
         return generatedHeader.toString();
     }
-
-
-
 }

@@ -82,7 +82,7 @@ public final class SanityChecks {
             processedValue = "back";
         } else if ("quit".equalsIgnoreCase(inputFromUser)) {
             System.out.printf("%n");
-            Loading.progressForms("quiting", 20, 100, false,
+            Loading.coolEffect("quiting", 20, 100, false,
                     "", spacesFromLeft);
             System.out.printf("%n\u001B[?25h"); //show the cursor
             System.exit(0);
@@ -114,7 +114,7 @@ public final class SanityChecks {
 
     public static String validateInputEntriesForMenu(String menuEntries, int numberOfEntriesInTheMenu, int emptySpaceFromLeft) throws InterruptedException {
         if (!validateAnyMessageForNullOrBlank(menuEntries, emptySpaceFromLeft)) {
-            Loading.progressDots("Exiting", 6, 100,
+            Loading.dots("Exiting", 6, 100,
                     false, "DONE", emptySpaceFromLeft);
             System.exit(0);
         }

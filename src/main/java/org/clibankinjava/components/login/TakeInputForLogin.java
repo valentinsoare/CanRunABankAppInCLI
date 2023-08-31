@@ -1,6 +1,5 @@
 package org.clibankinjava.components.login;
 
-
 import org.clibankinjava.components.credentials.Password;
 import org.clibankinjava.components.credentials.UserName;
 import org.clibankinjava.components.headers.Header;
@@ -24,8 +23,6 @@ public final class TakeInputForLogin {
         this.mainMessage = mainMessage;
         this.secondaryMessage = secondaryMessage;
 
-
-
         this.loginHeader = new HeaderConstruct().setupHeaderMessage(mainMessage, false)
                 .setupSubHeaderMessage(secondaryMessage, false)
                 .setupEmptySpacesFromLeftEdgeScreen(5)
@@ -33,7 +30,6 @@ public final class TakeInputForLogin {
                 .setupEmptySpacesBelowTheHeader(2)
                 .setupLengthOfBorders()
                 .build();
-
 
         this.username = new UserName();
         this.password = new Password();
@@ -66,8 +62,6 @@ public final class TakeInputForLogin {
         StringBuilder toRememberForm = new StringBuilder();
         boolean toConstructorBuilder = true;
 
-//        System.out.print("\u001B[?25l"); //hide the cursor
-
         if (consoleCatchInput == null) {
             PrintError.toConsole(ExecutionErrors.LOAD_CONSOLE_ISSUE, spaceFromLeft,
                     200, false, true);
@@ -92,8 +86,6 @@ public final class TakeInputForLogin {
             passwordFromInput = SanityChecks.checkIfQuitOrBack(spaceFromLeft,
                     String.valueOf(consoleCatchInput.readPassword()));
         }
-
-//        System.out.print("\u001B[?25h"); //show the cursor
 
         return isOk;
     }

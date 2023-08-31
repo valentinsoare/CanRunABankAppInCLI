@@ -11,10 +11,11 @@ import org.clibankinjava.workwithinput.MainProcessingInput;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;
 
-public class CreatingAndLoadingThePrerequisitesThread implements Callable<List<?>> {
+public class CreatingAndLoadingThePrerequisitesThread implements Callable<Map<String, Object>> {
     private final CountDownLatch latch;
 
     public CreatingAndLoadingThePrerequisitesThread(CountDownLatch latch) {
@@ -22,11 +23,11 @@ public class CreatingAndLoadingThePrerequisitesThread implements Callable<List<?
     }
 
     @Override
-    public List<?> call() throws Exception {
+    public Map<String, Object> call() throws Exception {
         Map<String, Object> objects = CachedObjects.loadCachedObjects();
 
         try {
-            return Arrays.asList(objects.entrySet());
+            return objects;
         } finally {
             latch.countDown();
         }
