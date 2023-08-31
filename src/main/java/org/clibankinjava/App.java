@@ -1,17 +1,13 @@
 package org.clibankinjava;
 
-import org.clibankinjava.cache.CachedObjects;
 import org.clibankinjava.components.loading.ILoading;
 import org.clibankinjava.components.loading.LoadingFactory;
-import org.clibankinjava.components.login.TakeInputForLogin;
 import org.clibankinjava.components.menus.Menu;
 import org.clibankinjava.threadstoberun.CreatingAndLoadingThePrerequisitesThread;
 import org.clibankinjava.threadstoberun.PrintingTheMenuThread;
 import org.clibankinjava.threadstoberun.ProgressBarThread;
 import org.clibankinjava.workwithinput.CatchAndProcessingInput;
 
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.*;
 
@@ -25,7 +21,7 @@ public class App {
 
         //------------
 
-        ILoading progressBar = LoadingFactory.getLoadEffect("progressbar", "load banking application",
+        ILoading progressBar = LoadingFactory.getLoadEffect("linesdirection", "load banking application",
                 5);
 
         Future<Map<String, Object>> mainComponentsCreation =
@@ -37,12 +33,12 @@ public class App {
         latch.await();
 
         exec.submit(new PrintingTheMenuThread( (Menu) mainComponentsCreation.get().get("menu")));
-
+//
         String inputCP = ((CatchAndProcessingInput) mainComponentsCreation.get().get("processinginput")).catchInputFromUser();
 
         //------------
 //
-//        exec.shutdown();
+        exec.shutdown();
 //        Login screen = new LoginScreen(5, 2, 2);
 //        screen.drawScreen('-', '|', 5, 30, 5);
 

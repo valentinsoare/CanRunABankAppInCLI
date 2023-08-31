@@ -1,5 +1,8 @@
 package org.clibankinjava.customizewithcolorsandstyle;
 
+import lombok.Getter;
+
+@Getter
 public class ColorsAndStyle implements IColor {
     private String customizedOutput;
 
@@ -44,12 +47,8 @@ public class ColorsAndStyle implements IColor {
         this.customizedOutput = createStyle(color, howToCustomize);
     }
 
-    public String getOutputStyle() {
-        return customizedOutput;
-    }
-
     @Override
     public String toString() {
-        return this.getOutputStyle();
+        return this.getCustomizedOutput();
     }
 }

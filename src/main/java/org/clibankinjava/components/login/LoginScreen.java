@@ -3,21 +3,12 @@ package org.clibankinjava.components.login;
 import org.clibankinjava.components.headers.HeaderConstruct;
 import org.clibankinjava.components.headers.IHeader;
 
-public final class LoginScreen implements Login {
-    private final int emptySpacesForContentFromLeftEdge;
-    private final int emptySpacesForContentFromTopEdge;
-    private final int emptySpacesForContentFromBellow;
-
-    public LoginScreen(int emptySpacesForContentFromLeftEdge, int emptySpacesForContentFromTopEdge,
-                       int emptySpacesForContentFromBellow) {
-        this.emptySpacesForContentFromLeftEdge = emptySpacesForContentFromLeftEdge;
-        this.emptySpacesForContentFromTopEdge = emptySpacesForContentFromTopEdge;
-        this.emptySpacesForContentFromBellow = emptySpacesForContentFromBellow;
-    }
+public record LoginScreen(int emptySpacesForContentFromLeftEdge, int emptySpacesForContentFromTopEdge,
+                          int emptySpacesForContentFromBellow) implements Login {
 
     @Override
     public void drawScreen(char separatingCharUpDownBorder, char separatingCharLeftRightBorder,
-                                        int leftFromBorder, int width, int length) throws InterruptedException {
+                           int leftFromBorder, int width, int length) throws InterruptedException {
 
         IHeader loginHeader = new HeaderConstruct().setupHeaderMessage("republica bank", true)
                 .setupSubHeaderMessage("one click stop", false)
@@ -33,18 +24,6 @@ public final class LoginScreen implements Login {
         System.out.printf("%s%s%n", " ".repeat(leftFromBorder), (String.format("%s", separatingCharUpDownBorder).repeat(width)));
 
 
-        System.out.printf("%s%s%n", " ".repeat(leftFromBorder),String.format("%s", separatingCharUpDownBorder).repeat(width));
-    }
-
-    public int getEmptySpacesForContentFromLeftEdge() {
-        return emptySpacesForContentFromLeftEdge;
-    }
-
-    public int getEmptySpacesForContentFromTopEdge() {
-        return emptySpacesForContentFromTopEdge;
-    }
-
-    public int getEmptySpacesForContentFromBellow() {
-        return emptySpacesForContentFromBellow;
+        System.out.printf("%s%s%n", " ".repeat(leftFromBorder), String.format("%s", separatingCharUpDownBorder).repeat(width));
     }
 }
