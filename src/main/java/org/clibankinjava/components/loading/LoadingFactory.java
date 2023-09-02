@@ -1,20 +1,16 @@
 package org.clibankinjava.components.loading;
 
 public class LoadingFactory {
-    public static ILoading getLoadEffect(String typeOfLoadEffect, String message, int spacesFromTheLeft) throws InterruptedException {
-        ILoading effect;
+    private LoadingFactory() {}
 
-        if ("progresslines".equalsIgnoreCase(typeOfLoadEffect)) {
-            effect = new ProgressBar(new Loading('|', message,
+    public static LoadingEffect getLoadEffect(String typeOfLoadEffect, String message, int spacesFromTheLeft) throws InterruptedException {
+        return switch (typeOfLoadEffect.toLowerCase()) {
+            case "progresslines" -> new ProgressBar(new Loading('|', message,
                     ' ', spacesFromTheLeft));
-        } else if ("linesdirection".equalsIgnoreCase(typeOfLoadEffect)) {
-            effect = new ProgressLinesDirection(new Loading('=', message,
+            case "linesdirection" -> new ProgressLinesDirection(new Loading('=', message,
                     ' ', spacesFromTheLeft));
-        } else {
-            effect = new ProgressBar(new Loading('#', message,
+            default -> new ProgressBar(new Loading('#', message,
                     ' ', spacesFromTheLeft));
-        }
-
-        return effect;
+        };
     }
 }

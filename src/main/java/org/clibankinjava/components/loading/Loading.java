@@ -10,13 +10,9 @@ import java.util.*;
 @Getter
 public final class Loading {
     private Character charToUse;
-
     private Character charNotPassed;
-
     private String messageToBeUsed;
-
     private int emptySpaceFromLeft;
-
 
     public Loading(Character charToUse, String messageToBeUsed, Character charNotPassed, int emptySpaceFromLeft) throws InterruptedException {
         this.emptySpaceFromLeft = SanityChecks.checkEmptySpaces(emptySpaceFromLeft, "left");
@@ -24,6 +20,16 @@ public final class Loading {
         this.charNotPassed = SanityChecks.validateCharToUse(charNotPassed, ' ');
         this.messageToBeUsed = SanityChecks.checkMessage(messageToBeUsed, false, false, emptySpaceFromLeft,
                 false, true, StructuralErrors.LOADING_MESSAGE_INVALID);
+    }
+
+    Loading(Loading loading) {
+        this.emptySpaceFromLeft = loading.getEmptySpaceFromLeft();
+        this.charToUse = loading.getCharToUse();
+        this.charNotPassed = loading.getCharNotPassed();
+        this.messageToBeUsed = new String(loading.getMessageToBeUsed());
+    }
+    public static Loading getNewInstanceOf(Loading loading) {
+       return new Loading(loading);
     }
 
     private void setCharToUse(Character charToUse, Character defaultToBeUsed) {
@@ -40,8 +46,8 @@ public final class Loading {
     }
 
     private static Map<ValidationKeys, String> validateParametersLoadingEffects(String messageToBeUsed, int numberOfReps, int timeToSleep, boolean ifDone,
-                                                                 String messageEnd, int emptySpaceFromLeft, CustomError messageError) throws InterruptedException {
-        EnumMap <ValidationKeys, String> mappingOfValuesAfterChecks = new EnumMap<>(ValidationKeys.class);
+                                                                                String messageEnd, int emptySpaceFromLeft, CustomError messageError) throws InterruptedException {
+        EnumMap<ValidationKeys, String> mappingOfValuesAfterChecks = new EnumMap<>(ValidationKeys.class);
 
         int emptySpaces = SanityChecks.checkEmptySpaces(emptySpaceFromLeft, "left");
 
@@ -80,34 +86,33 @@ public final class Loading {
         }
     }
 
-    public static void coolEffect(String messageToUse, int numberOfRepetitions, int timeBetweenChars,
-                                  boolean ifDone, String messageEnd, int emptySpaceFromLeft) throws InterruptedException {
-
+    public static void square(String messageToUse, int numberOfRepetitions, int timeBetweenChars,
+                              boolean ifDone, String messageEnd, int emptySpaceFromLeft) throws InterruptedException {
         Map<ValidationKeys, String> processedValues = validateParametersLoadingEffects(messageToUse, numberOfRepetitions, timeBetweenChars,
                 ifDone, messageEnd, emptySpaceFromLeft, StructuralErrors.PROGRESS_FORMS_MESSAGE_INVALID);
 
         List<String> customChars = new ArrayList<>(Arrays.asList("⢿", "⣻", "⣽", "⣾", "⣷", "⣯", "⣟", "⡿"));
 
-        int i = 0;
-        int customCharsSize = customChars.size();
+        int i = 0, customCharsSize = customChars.size();
         int numberOfReps = Integer.parseInt(processedValues.get(ValidationKeys.NUMBER_OF_REPS));
+        int sleepDuration = Integer.parseInt(processedValues.get(ValidationKeys.TIME_SLEEP));
+        int emptySpacesLeft = Integer.parseInt(processedValues.get(ValidationKeys.EMPTY_SPACES));
 
         for (; i < numberOfReps; i++) {
-            System.out.printf("%s[  %s %s  ]\r", " ".repeat(Integer.parseInt(processedValues.get(ValidationKeys.EMPTY_SPACES))),
+            System.out.printf("%s[  %s %s  ]\r", " ".repeat(emptySpacesLeft),
                     processedValues.get(ValidationKeys.MAIN_MESSAGE), customChars.get(i % customCharsSize));
-
-            Thread.sleep(Integer.parseInt(processedValues.get(ValidationKeys.TIME_SLEEP)));
+            Thread.sleep(sleepDuration);
         }
 
         if (ifDone) {
-            System.out.printf("%s[  %s %s  ] %s", " ".repeat(Integer.parseInt(processedValues.get(ValidationKeys.EMPTY_SPACES))),
-                    processedValues.get(ValidationKeys.MAIN_MESSAGE), customChars.get(i % customCharsSize), processedValues.get(ValidationKeys.END_MESSAGE));
+            System.out.printf("%s[  %s %s  ] %s", " ".repeat(emptySpacesLeft), processedValues.get(ValidationKeys.MAIN_MESSAGE),
+                    customChars.get(i % customCharsSize), processedValues.get(ValidationKeys.END_MESSAGE));
         } else {
             System.out.println();
         }
     }
 
-    public static void square(String messageToUse, int numberOfRepetitions, int timeBetweenChars, boolean ifDone, String messageEnd, int spacesLeft) throws InterruptedException {
+    public static void hourGlass(String messageToUse, int numberOfRepetitions, int timeBetweenChars, boolean ifDone, String messageEnd, int spacesLeft) throws InterruptedException {
 
         Map<ValidationKeys, String> processedValues = validateParametersLoadingEffects(messageToUse, numberOfRepetitions, timeBetweenChars,
                 ifDone, messageEnd, spacesLeft, StructuralErrors.PROGRESS_SQUARE_MESSAGE_INVALID);

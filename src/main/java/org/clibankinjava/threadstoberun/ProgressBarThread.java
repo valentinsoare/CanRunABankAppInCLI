@@ -1,19 +1,19 @@
 package org.clibankinjava.threadstoberun;
 
-import org.clibankinjava.components.loading.ILoading;
+import org.clibankinjava.components.loading.LoadingEffect;
 
 import java.util.concurrent.CountDownLatch;
 
 public final class ProgressBarThread implements Runnable {
     private final CountDownLatch latch;
-    private final ILoading progressBar;
+    private final LoadingEffect progressBar;
     private final int barSize;
     private final int emptySpaceFromLeft;
     private final int emptySpaceFromAbove;
     private final int emptySpaceFromBellow;
     private final int sleepBetweenChars;
 
-    public ProgressBarThread(CountDownLatch latch, ILoading progressBar, int barSize, int emptySpaceFromLeft,
+    public ProgressBarThread(CountDownLatch latch, LoadingEffect progressBar, int barSize, int emptySpaceFromLeft,
                              int emptySpaceFromAbove, int emptySpaceFromBellow, int sleepBetweenChars) {
         this.latch = latch;
         this.progressBar = progressBar;

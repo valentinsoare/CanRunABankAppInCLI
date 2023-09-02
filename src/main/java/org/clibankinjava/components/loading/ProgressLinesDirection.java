@@ -1,6 +1,16 @@
 package org.clibankinjava.components.loading;
 
-public record ProgressLinesDirection(Loading loading) implements ILoading {
+public class ProgressLinesDirection extends LoadingEffect {
+    private Loading loading;
+
+    public ProgressLinesDirection(Loading loading) {
+        this.loading = loading;
+    }
+
+    public static LoadingEffect getNewInstanceOfProgressLinesDirection(ProgressLinesDirection lines) {
+        return new ProgressLinesDirection(lines.loading);
+    }
+
     @Override
     public void loadProgressIndicator(int barSize, int emptySpaceFromTheLeft, int emptySpaceFromAbove,
                                       int emptySpaceFromBellow, int sleepBetweenChars) throws InterruptedException {
@@ -10,11 +20,11 @@ public record ProgressLinesDirection(Loading loading) implements ILoading {
         System.out.print("\033[H\033[2J");
         System.out.flush();
         System.out.print("\u001B[?25l"); // hide the cursor
-
-        System.out.printf("%s%s [+] %s [+]%s", "\n".repeat(emptySpaceFromAbove), " ".repeat(emptySpaceFromTheLeft * 2), loading.getMessageToBeUsed().trim(), "\n".repeat(emptySpaceFromBellow));
+        System.out.printf("%s%s [+] %s [+]%s", "\n".repeat(emptySpaceFromAbove), " ".repeat(emptySpaceFromTheLeft * 2),
+                loading.getMessageToBeUsed().trim(), "\n".repeat(emptySpaceFromBellow));
 
         String toBePrinted = "";
-        int status, move, numberOfPasses = 0, j = 0;
+        int status, move, numberOfPasses = 0, j = 1;
 
         for (; j <= barSize; j++) {
             status = (100 * (j - 1)) / (barSize - 1);
@@ -22,11 +32,11 @@ public record ProgressLinesDirection(Loading loading) implements ILoading {
 
             if (numberOfPasses == 0) {
                 toBePrinted = String.format("[%s%s] %s%%", effect.substring(0, move)
-                                .replace(loading.getCharNotPassed(), loading().getCharToUse()) + ">",
+                                .replace(loading.getCharNotPassed(), loading.getCharToUse()) + ">",
                         effect.substring(move, effect.length()), status / 2);
             } else {
                 toBePrinted = String.format("[%s%s] %s%%", effect.substring(move, effect.length()), "<" + effect.substring(0, move)
-                                .replace(loading.getCharNotPassed(), loading().getCharToUse()), status / 2 + 50);
+                                .replace(loading.getCharNotPassed(), loading.getCharToUse()), (status / 2 + 50));
                 if (status == 100) {
                     System.out.printf("%s%s COMPLETED!%n%n", " ".repeat(emptySpaceFromTheLeft), toBePrinted);
                     System.out.print("\u001B[?25h"); //show the cursor
@@ -41,7 +51,7 @@ public record ProgressLinesDirection(Loading loading) implements ILoading {
                 numberOfPasses++;
             }
 
-            Thread.sleep(100);
+            Thread.sleep(sleepBetweenChars);
         }
     }
 }
