@@ -1,4 +1,6 @@
 package org.clibankinjava.customizewithcolorsandstyle;
 
-public interface IColor {
+import org.clibankinjava.Component;
+
+public interface IColor extends Component {
 }

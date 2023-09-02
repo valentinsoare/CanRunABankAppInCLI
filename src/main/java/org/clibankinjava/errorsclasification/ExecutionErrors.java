@@ -1,10 +1,19 @@
 package org.clibankinjava.errorsclasification;
 
+import lombok.Getter;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
+@Getter
 public enum ExecutionErrors implements CustomError {
     LOAD_CONSOLE_ISSUE("load_console_issue", 1,
             String.format("EXEC_ERROR, SEV: %s - Cannot load the console!", Severities.ONE));
+
+    private final String name;
+    private final String content;
+    private final int severity;
 
     ExecutionErrors(String name, int severity, String content) {
         this.name = name;
@@ -12,27 +21,13 @@ public enum ExecutionErrors implements CustomError {
         this.content = content;
     }
 
-    private String name;
-    private String content;
-    private int severity;
-
     @Override
-    public String getContent() {
-        return content;
-    }
-
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public int getSeverity() {
-        return severity;
+    public int getNumberOfErrorsDefined() {
+        return allErrorsWithinCategory().size();
     }
 
     @Override
     public List<CustomError> allErrorsWithinCategory() {
-        return null;
+        return  new ArrayList<>(Arrays.asList(LOAD_CONSOLE_ISSUE));
     }
 }

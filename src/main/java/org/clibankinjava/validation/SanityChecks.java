@@ -82,7 +82,7 @@ public final class SanityChecks {
             processedValue = "back";
         } else if ("quit".equalsIgnoreCase(inputFromUser)) {
             System.out.printf("%n");
-            Loading.coolEffect("quiting", 20, 100, false,
+            Loading.square("quiting", 20, 100, false,
                     "", spacesFromLeft);
             System.out.printf("%n\u001B[?25h"); //show the cursor
             System.exit(0);

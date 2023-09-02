@@ -23,7 +23,6 @@ public record LoginScreen(int emptySpacesForContentFromLeftEdge, int emptySpaces
 
         System.out.printf("%s%s%n", " ".repeat(leftFromBorder), (String.format("%s", separatingCharUpDownBorder).repeat(width)));
 
-
         System.out.printf("%s%s%n", " ".repeat(leftFromBorder), String.format("%s", separatingCharUpDownBorder).repeat(width));
     }
 }

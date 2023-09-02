@@ -6,5 +6,6 @@ public interface CustomError {
     String getContent();
     String getName();
     int getSeverity();
+    int getNumberOfErrorsDefined();
     List<CustomError> allErrorsWithinCategory();
 }

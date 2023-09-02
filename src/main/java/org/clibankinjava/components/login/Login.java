@@ -1,6 +1,6 @@
 package org.clibankinjava.components.login;
 
-import org.clibankinjava.components.Component;
+import org.clibankinjava.Component;
 
 public interface Login extends Component {
     void drawScreen(char separatingCharUpDownBorder, char separatingCharLeftRightBorder,

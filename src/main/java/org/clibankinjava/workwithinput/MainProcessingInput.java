@@ -1,10 +1,12 @@
 package org.clibankinjava.workwithinput;
 
+import lombok.Getter;
 import org.clibankinjava.errorsclasification.InputErrors;
 import org.clibankinjava.validation.SanityChecks;
 
 import java.util.Scanner;
 
+@Getter
 public final class MainProcessingInput implements CatchAndProcessingInput {
     private final String typeOfInputToProcess;
     private final int emptySpaceLeft;
@@ -23,20 +25,8 @@ public final class MainProcessingInput implements CatchAndProcessingInput {
         this.scanner = new Scanner(System.in);
     }
 
-    public MainProcessingInput getNewInstance(MainProcessingInput processingInput) {
+    public static MainProcessingInput getNewInstance(MainProcessingInput processingInput) {
         return new MainProcessingInput(processingInput);
-    }
-
-    public String getTypeOfInputToProcess() {
-        return typeOfInputToProcess;
-    }
-
-    public int getEmptySpaceLeft() {
-        return emptySpaceLeft;
-    }
-
-    public Scanner getScanner() {
-        return scanner;
     }
 
     @Override

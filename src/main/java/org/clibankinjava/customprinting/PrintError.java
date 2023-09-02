@@ -5,7 +5,9 @@ import org.clibankinjava.components.loading.Loading;
 import org.clibankinjava.errorsclasification.CustomError;
 
 public class PrintError {
+
     private PrintError() {}
+
     public static String toConsole(CustomError error, int emptySpaceOnTheLeft,
                                    int timeToSleep, boolean goingBack, boolean quiting) throws InterruptedException {
         StringBuilder messageToReturn = new StringBuilder();

@@ -1,58 +1,32 @@
 package org.clibankinjava.components.login;
 
+import lombok.Getter;
+import org.clibankinjava.cache.LoadingCachedObjectsFactory;
 import org.clibankinjava.components.credentials.Password;
 import org.clibankinjava.components.credentials.UserName;
 import org.clibankinjava.components.headers.Header;
-import org.clibankinjava.components.headers.HeaderConstruct;
+import org.clibankinjava.components.headers.IHeader;
 import org.clibankinjava.customprinting.PrintError;
 import org.clibankinjava.errorsclasification.ExecutionErrors;
 import org.clibankinjava.validation.SanityChecks;
 
 import java.io.Console;
 
+@Getter
 public final class TakeInputForLogin {
-    private final String mainMessage;
-    private final String secondaryMessage;
-    private final Header loginHeader;
+    private final IHeader loginHeader;
 
     private UserName username;
     private Password password;
 
 
     public TakeInputForLogin(String mainMessage, String secondaryMessage) throws InterruptedException {
-        this.mainMessage = mainMessage;
-        this.secondaryMessage = secondaryMessage;
-
-        this.loginHeader = new HeaderConstruct().setupHeaderMessage(mainMessage, false)
-                .setupSubHeaderMessage(secondaryMessage, false)
-                .setupEmptySpacesFromLeftEdgeScreen(5)
-                .setupEmptySpacesFromTopEdgeScreen(2)
-                .setupEmptySpacesBelowTheHeader(2)
-                .setupLengthOfBorders()
-                .build();
+        this.loginHeader = Header.getNewInstance(LoadingCachedObjectsFactory.loadHeader());
+        loginHeader.setHeaderMessage(mainMessage, true);
+        loginHeader.setSubHeaderMessage(secondaryMessage, false);
 
         this.username = new UserName();
         this.password = new Password();
-    }
-
-    public UserName getUsername() {
-        return username;
-    }
-
-    public Password getPassword() {
-        return password;
-    }
-
-    public Header getLoginHeader() {
-        return loginHeader;
-    }
-
-    public String getMainMessage() {
-        return mainMessage;
-    }
-
-    public String getSecondaryMessage() {
-        return secondaryMessage;
     }
 
     public boolean askUserAndPassword(int spaceFromLeft, int spaceFromAbove, int spaceBellow) throws InterruptedException {

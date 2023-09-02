@@ -43,8 +43,16 @@ public class ColorsAndStyle implements IColor {
                           boolean blink, boolean reverse, boolean hidden) {
 
         boolean[] howToCustomize = {bold, underline, dim, blink, reverse, hidden};
-
         this.customizedOutput = createStyle(color, howToCustomize);
+    }
+
+
+    private ColorsAndStyle(ColorsAndStyle colorsAndStyle) {
+        //TODO implement copy constructor
+    }
+
+    public IColor getNewInstance(ColorsAndStyle colorsAndStyle) {
+        return new ColorsAndStyle(colorsAndStyle);
     }
 
     @Override

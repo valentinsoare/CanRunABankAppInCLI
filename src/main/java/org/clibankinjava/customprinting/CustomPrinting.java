@@ -1,6 +1,7 @@
 package org.clibankinjava.customprinting;
 
 public class CustomPrinting {
+
     private CustomPrinting() {}
 
     public static String format(String customFormat, String... args) {
