@@ -8,7 +8,8 @@ public class CustomPrinting {
         int index = 0;
 
         while (customFormat.contains("%s")) {
-            customFormat = customFormat.replaceFirst("%s", args[index++]);
+            customFormat = customFormat.replaceFirst("%s",
+                    args[index++]);
         }
 
         return customFormat;

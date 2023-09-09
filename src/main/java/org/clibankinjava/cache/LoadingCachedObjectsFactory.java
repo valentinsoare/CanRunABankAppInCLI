@@ -27,13 +27,11 @@ public final class LoadingCachedObjectsFactory {
     }
 
     public static IHeader loadHeader() {
-        return Header
-                .getNewInstance((IHeader) objects.get("header"));
+        return Header.getNewInstance((IHeader) objects.get("header"));
     }
 
     public static LoadingEffect loadEffectProgressLines() {
-        return ProgressBar
-                .getNewInstanceOfProgressBar((ProgressBar) objects.get("progresslines"));
+        return ProgressBar.getNewInstanceOfProgressBar((ProgressBar) objects.get("progresslines"));
     }
 
     public static LoadingEffect loadEffectLinesDirection() {
@@ -42,18 +40,18 @@ public final class LoadingCachedObjectsFactory {
     }
 
     public static LoadingEffect loadEffectProgressBar() {
-        return ProgressBar
-                .getNewInstanceOfProgressBar((ProgressBar) objects.get("progressbar"));
+        return ProgressBar.getNewInstanceOfProgressBar((ProgressBar) objects.get("progressbar"));
     }
 
     public static IMenu loadMenu() {
-        return Menu
-                .getNewInstance((IMenu) objects.get("menu"));
+        return Menu.getNewInstance((IMenu) objects.get("menu"));
     }
+
     public static CatchAndProcessingInput loadProcessingInput() {
         return MainProcessingInput
                 .getNewInstance((MainProcessingInput) objects.get("processinginput"));
     }
+
     public static Map<String, Component> returnedCachedObjectsAsADictionary() {
         return objects;
     }

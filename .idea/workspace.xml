@@ -5,40 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="A new Loading effect implemented.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/LoadingEffect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/CorporateClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/Datasource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/IndividualClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/LoginCredentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/NonGovernmentalOrganizationClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/PasswordDBStruct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/StateInstitutionClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/UsernameDBStruct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/LoadingCachedObjectsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/CachedObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/CachedObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/headers/IHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/headers/IHeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ILoading.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/Loading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/Loading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/LoadingCachedObjectsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/LoadingCachedObjectsFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/LoadingFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/LoadingFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressLinesDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressLinesDirection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressLinesWithFrontSlash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressLinesWithFrontSlash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/login/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/login/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/login/LoginScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/login/TakeInputForLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/login/TakeInputForLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/IMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/IMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/MenuBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/MenuBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customizewithcolorsandstyle/ColorsAndStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customizewithcolorsandstyle/ColorsAndStyle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customizewithcolorsandstyle/IColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customizewithcolorsandstyle/IColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/CustomPrinting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/CustomPrinting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/PrintError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/PrintError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/PrintMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/PrintMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/CustomError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/CustomError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/ExecutionErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/ExecutionErrors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/InputErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/InputErrors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/StructuralErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/StructuralErrors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/threadstoberun/CreatingAndLoadingThePrerequisitesThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/threadstoberun/CreatingAndLoadingThePrerequisitesThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/threadstoberun/PrintingTheMenuThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/threadstoberun/PrintingTheMenuThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/threadstoberun/ProgressBarThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/threadstoberun/ProgressBarThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/validation/SanityChecks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/validation/SanityChecks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/workwithinput/CatchAndProcessingInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/workwithinput/CatchAndProcessingInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/workwithinput/MainProcessingInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/workwithinput/MainProcessingInput.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
         <option value="Interface" />
       </list>
@@ -56,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="loginSignup" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,22 +72,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/vsoare/Documents/projectsLongTerm/BankAppInCLI&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/vsoare/Documents/projectsLongTerm/BankAppInCLI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org" />
@@ -158,6 +154,7 @@
         <item itemvalue="Application.App" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +171,11 @@
       <workItem from="1693394078861" duration="5229000" />
       <workItem from="1693440480631" duration="34829000" />
       <workItem from="1693545236947" duration="17698000" />
+      <workItem from="1693775537397" duration="25203000" />
+      <workItem from="1693984762756" duration="10254000" />
+      <workItem from="1694207285050" duration="772000" />
+      <workItem from="1694213611139" duration="10000" />
+      <workItem from="1694246187603" duration="3163000" />
     </task>
     <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
       <option name="closed" value="true" />

@@ -24,11 +24,11 @@ public class ProgressLinesDirection extends LoadingEffect {
                 loading.getMessageToBeUsed().trim(), "\n".repeat(emptySpaceFromBellow));
 
         String toBePrinted = "";
-        int status, move, numberOfPasses = 0, j = 1;
+        int status, move, numberOfPasses = 0, j = 1, end = 100;
 
         for (; j <= barSize; j++) {
             status = (100 * (j - 1)) / (barSize - 1);
-            move = (barSize * status) / 100;
+            move = (barSize * status) / end;
 
             if (numberOfPasses == 0) {
                 toBePrinted = String.format("[%s%s] %s%%", effect.substring(0, move)
@@ -37,7 +37,7 @@ public class ProgressLinesDirection extends LoadingEffect {
             } else {
                 toBePrinted = String.format("[%s%s] %s%%", effect.substring(move, effect.length()), "<" + effect.substring(0, move)
                                 .replace(loading.getCharNotPassed(), loading.getCharToUse()), (status / 2 + 50));
-                if (status == 100) {
+                if (status == end) {
                     System.out.printf("%s%s COMPLETED!%n%n", " ".repeat(emptySpaceFromTheLeft), toBePrinted);
                     System.out.print("\u001B[?25h"); //show the cursor
                     break;

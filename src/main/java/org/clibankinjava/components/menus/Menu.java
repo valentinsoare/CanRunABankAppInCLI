@@ -96,7 +96,8 @@ public final class Menu implements IMenu {
         String resultAfterChecking = SanityChecks.checkMessage(optionFromUser, false, false, emptySpaceLeft,
                 false, false, InputErrors.NULL_OR_BLANK_MENU_OPTION_GIVEN);
 
-        if (("none".equals(resultAfterChecking)) || (optionsForTheMenuAfterProcessing.contains(resultAfterChecking))) {
+        if (("none".equals(resultAfterChecking)) ||
+                (optionsForTheMenuAfterProcessing.contains(resultAfterChecking))) {
             return false;
         }
 
