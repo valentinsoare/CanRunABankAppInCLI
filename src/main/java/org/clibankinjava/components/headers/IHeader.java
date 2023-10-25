@@ -1,6 +1,6 @@
 package org.clibankinjava.components.headers;
 
-import org.clibankinjava.Component;
+import org.clibankinjava.components.Component;
 
 public interface IHeader extends Component {
 

@@ -174,12 +174,12 @@ public final class Menu implements IMenu {
     }
 
     @Override
-    public void setEmptySpacesFromTopEdgeScreen(int emptySpacesFromTopEdgeScreen) {
-        this.emptySpaceAbove = SanityChecks.checkEmptySpaces(emptySpacesFromTopEdgeScreen, "top");
+    public void setEmptySpacesBelow(int emptySpacesBelow) {
+        this.emptySpaceBellow = SanityChecks.checkEmptySpaces(emptySpacesBelow, "bellow");
     }
 
     @Override
-    public void setEmptySpacesBelow(int emptySpacesBelow) {
-        this.emptySpaceBellow = SanityChecks.checkEmptySpaces(emptySpacesBelow, "bellow");
+    public void setEmptySpacesFromTopEdgeScreen(int emptySpacesFromTopEdgeScreen) {
+        this.emptySpaceAbove = SanityChecks.checkEmptySpaces(emptySpacesFromTopEdgeScreen, "top");
     }
 }

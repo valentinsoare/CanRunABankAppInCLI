@@ -1,0 +1,9 @@
+
+=
+java:S2129" Remove this "String" constructor(ùšªĞ8¬Æ“ª1
+O
+java:S1659e"-Declare "customCharsSize" on a separate line.(ä¢à‡ıÿÿÿÿ8‘¬Æ“ª1
+S
+java:S1144%"1Remove this unused private "setCharToUse" method.(ùÑ¬¬üÿÿÿÿ8”¬Æ“ª1
+T
+java:S1144-"7Remove this unused private "setMessageToBeUsed" method.(á¬ë…8”¬Æ“ª1

@@ -1,6 +1,6 @@
 package org.clibankinjava.components.menus;
 
-import org.clibankinjava.Component;
+import org.clibankinjava.components.Component;
 import org.clibankinjava.components.headers.IHeader;
 
 import java.util.List;

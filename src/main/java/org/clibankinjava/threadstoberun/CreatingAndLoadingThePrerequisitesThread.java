@@ -1,9 +1,8 @@
 package org.clibankinjava.threadstoberun;
 
-import org.clibankinjava.Component;
+import org.clibankinjava.components.Component;
 import org.clibankinjava.cache.LoadingCachedObjectsFactory;
 
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;

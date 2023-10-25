@@ -10,6 +10,8 @@ public class LoadingFactory {
                     ' ', spacesFromTheLeft));
             case "linesdirection" -> new ProgressLinesDirection(new Loading('=', message,
                     ' ', spacesFromTheLeft));
+            case "lineswithpipe" -> new ProgressLinesWithPipe(new Loading('|', message,
+                    ' ', spacesFromTheLeft));
             default -> new ProgressBar(new Loading('#', message,
                     ' ', spacesFromTheLeft));
         };

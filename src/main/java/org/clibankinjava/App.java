@@ -1,5 +1,7 @@
 package org.clibankinjava;
 
+import org.apache.commons.lang3.SerializationUtils;
+import org.clibankinjava.components.Component;
 import org.clibankinjava.components.loading.LoadingEffect;
 import org.clibankinjava.components.loading.LoadingFactory;
 import org.clibankinjava.components.menus.IMenu;
@@ -12,13 +14,13 @@ import java.util.Map;
 import java.util.concurrent.*;
 
 public class App {
-    public static void main( String[] args ) throws InterruptedException, ExecutionException {
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
         CountDownLatch latch = new CountDownLatch(2);
 
-        ThreadPoolExecutor exec = new ThreadPoolExecutor(3, 5, 30,
+        ThreadPoolExecutor exec = new ThreadPoolExecutor(3, 6, 30,
                 TimeUnit.SECONDS, new ArrayBlockingQueue<>(10));
 
-        //------------
+//        //------------
         LoadingEffect progressBar = LoadingFactory.getLoadEffect("linesdirection", "load banking application",
                 5);
 
@@ -35,7 +37,6 @@ public class App {
         String inputCP = ((CatchAndProcessingInput) mainComponentsCreation.get().get("processinginput")).catchInputFromUser();
 
         exec.shutdown();
-
         //------------
 
 //        Login screen = new LoginScreen(5, 2, 2);
@@ -48,5 +49,11 @@ public class App {
 
 //        System.out.printf("\u001b[10B%s", "CCC");
         //--------------------------------
+
+//        LoadingEffect progressBar = LoadingFactory.getLoadEffect("linesdirection", "load banking application",
+//                10);
+//
+//        progressBar.loadProgressIndicator(40, 5, 2,
+//                2, 75);
     }
 }

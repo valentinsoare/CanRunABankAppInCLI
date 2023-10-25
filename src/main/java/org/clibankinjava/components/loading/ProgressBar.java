@@ -1,7 +1,7 @@
 package org.clibankinjava.components.loading;
 
-public class ProgressBar extends LoadingEffect {
-    private Loading loading;
+public final class ProgressBar extends LoadingEffect {
+    private final Loading loading;
 
     public ProgressBar(Loading loading) {
         this.loading = loading;

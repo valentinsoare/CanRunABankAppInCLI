@@ -1,6 +1,7 @@
 package org.clibankinjava.components.loading;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import org.clibankinjava.errorsclasification.CustomError;
 import org.clibankinjava.errorsclasification.StructuralErrors;
 import org.clibankinjava.validation.SanityChecks;
@@ -8,6 +9,7 @@ import org.clibankinjava.validation.SanityChecks;
 import java.util.*;
 
 @Getter
+@NoArgsConstructor
 public final class Loading {
     private Character charToUse;
     private Character charNotPassed;
@@ -74,9 +76,12 @@ public final class Loading {
 
         System.out.printf("%s%s", " ".repeat(Integer.parseInt(processedValues.get(ValidationKeys.EMPTY_SPACES))), processedValues.get(ValidationKeys.MAIN_MESSAGE));
 
-        for (int i = 0; i < Integer.parseInt(processedValues.get(ValidationKeys.NUMBER_OF_REPS)); i++) {
+        int numberOfReps = Integer.parseInt(processedValues.get(ValidationKeys.NUMBER_OF_REPS));
+        int timeToSleep = Integer.parseInt(processedValues.get(ValidationKeys.TIME_SLEEP));
+
+        for (int i = 0; i < numberOfReps; i++) {
             System.out.printf("%s", usingChar);
-            Thread.sleep(Integer.parseInt(processedValues.get(ValidationKeys.TIME_SLEEP)));
+            Thread.sleep(timeToSleep);
         }
 
         if (ifDone) {
@@ -120,15 +125,19 @@ public final class Loading {
         List<Character> squareChars = new ArrayList<>(Arrays.asList('/', '-', '\\', '|'));
 
         int i = 0;
+        int numberOfReps = Integer.parseInt(processedValues.get(ValidationKeys.NUMBER_OF_REPS));
+        int emptySpaces = Integer.parseInt(processedValues.get(ValidationKeys.EMPTY_SPACES));
+        int timeToSleep = Integer.parseInt(processedValues.get(ValidationKeys.TIME_SLEEP));
 
-        for (; i < Integer.parseInt(processedValues.get(ValidationKeys.NUMBER_OF_REPS)); i++) {
-            System.out.printf("%s%s < %s >\r", " ".repeat(Integer.parseInt(processedValues.get(ValidationKeys.EMPTY_SPACES))), processedValues.get(ValidationKeys.MAIN_MESSAGE),
+
+        for (; i < numberOfReps; i++) {
+            System.out.printf("%s%s < %s >\r", " ".repeat(emptySpaces), processedValues.get(ValidationKeys.MAIN_MESSAGE),
                     squareChars.get(i % squareChars.size()));
-            Thread.sleep(Integer.parseInt(processedValues.get(ValidationKeys.TIME_SLEEP)));
+            Thread.sleep(timeToSleep);
         }
 
         if (ifDone) {
-            System.out.printf("%s%s < %s > %s", " ".repeat(Integer.parseInt(processedValues.get(ValidationKeys.EMPTY_SPACES))),
+            System.out.printf("%s%s < %s > %s", " ".repeat(emptySpaces),
                     processedValues.get(ValidationKeys.MAIN_MESSAGE), squareChars.get(i % squareChars.size()), processedValues.get(ValidationKeys.END_MESSAGE));
         } else {
             System.out.println();

@@ -1,6 +1,6 @@
 package org.clibankinjava.components.loading;
 
-import org.clibankinjava.Component;
+import org.clibankinjava.components.Component;
 
 public abstract class LoadingEffect implements Component {
     public abstract void loadProgressIndicator(int barSize, int emptySpaceFromTheLeft, int emptySpaceFromAbove,

@@ -7,6 +7,7 @@ import java.util.concurrent.CountDownLatch;
 public final class ProgressBarThread implements Runnable {
     private final CountDownLatch latch;
     private final LoadingEffect progressBar;
+
     private final int barSize;
     private final int emptySpaceFromLeft;
     private final int emptySpaceFromAbove;

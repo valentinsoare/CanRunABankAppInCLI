@@ -3,7 +3,11 @@ package org.clibankinjava.components.menus;
 import org.clibankinjava.components.headers.IHeader;
 
 public final class MainMenuBuilder implements MenuBuilder {
-    private final IMenu mainMenu = new Menu();
+    private final Menu mainMenu;
+
+    public MainMenuBuilder() {
+        this.mainMenu = new Menu();
+    }
 
     @Override
     public MenuBuilder setupHeader(IHeader header) {
