@@ -14,7 +14,7 @@
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
             <property name="hibernate.connection.username" value="banking"/>
             <property name="hibernate.connection.password" value="Valisoare_191987+"/>
-            <property name="hibernate.connection.pool_size" value="5"/>
+            <property name="hibernate.connection.pool_size" value="3"/>
 
             <!--       Echo all executed SQLs-->
             <property name="hibernate.show_sql" value = "false" />

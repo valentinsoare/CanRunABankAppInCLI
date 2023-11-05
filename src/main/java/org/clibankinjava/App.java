@@ -1,42 +1,36 @@
 package org.clibankinjava;
 
-import org.apache.commons.lang3.SerializationUtils;
-import org.clibankinjava.components.Component;
-import org.clibankinjava.components.loading.LoadingEffect;
-import org.clibankinjava.components.loading.LoadingFactory;
-import org.clibankinjava.components.menus.IMenu;
-import org.clibankinjava.threadstoberun.CreatingAndLoadingThePrerequisitesThread;
-import org.clibankinjava.threadstoberun.PrintingTheMenuThread;
-import org.clibankinjava.threadstoberun.ProgressBarThread;
-import org.clibankinjava.workwithinput.CatchAndProcessingInput;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
+import org.clibankinjava.databaseutils.ToBankingWithSuccessDB;
+import org.clibankinjava.databaseutils.EntityManagerScope;
 
-import java.util.Map;
 import java.util.concurrent.*;
 
 public class App {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
-        CountDownLatch latch = new CountDownLatch(2);
-
-        ThreadPoolExecutor exec = new ThreadPoolExecutor(3, 6, 30,
-                TimeUnit.SECONDS, new ArrayBlockingQueue<>(10));
+//        CountDownLatch latch = new CountDownLatch(2);
+//
+//        ThreadPoolExecutor exec = new ThreadPoolExecutor(3, 6, 30,
+//                TimeUnit.SECONDS, new ArrayBlockingQueue<>(10));
 
 //        //------------
-        LoadingEffect progressBar = LoadingFactory.getLoadEffect("linesdirection", "load banking application",
-                5);
-
-        Future<Map<String, Component>> mainComponentsCreation =
-                exec.submit(new CreatingAndLoadingThePrerequisitesThread(latch));
-
-        exec.submit(new ProgressBarThread(latch, progressBar,40, 5,
-                2, 2, 35));
-
-        latch.await();
-
-        exec.submit(new PrintingTheMenuThread( (IMenu) mainComponentsCreation.get().get("menu")));
-
-        String inputCP = ((CatchAndProcessingInput) mainComponentsCreation.get().get("processinginput")).catchInputFromUser();
-
-        exec.shutdown();
+//        LoadingEffect progressBar = LoadingFactory.getLoadEffect("linesdirection", "load banking application",
+//                5);
+//
+//        Future<Map<String, Component>> mainComponentsCreation =
+//                exec.submit(new CreatingAndLoadingThePrerequisitesThread(latch));
+//
+//        exec.submit(new ProgressBarThread(latch, progressBar,40, 5,
+//                2, 2, 35));
+//
+//        latch.await();
+//
+//        exec.submit(new PrintingTheMenuThread( (IMenu) mainComponentsCreation.get().get("menu")));
+//
+//        String inputCP = ((CatchAndProcessingInput) mainComponentsCreation.get().get("processinginput")).catchInputFromUser();
+//
+//        exec.shutdown();
         //------------
 
 //        Login screen = new LoginScreen(5, 2, 2);
@@ -55,5 +49,23 @@ public class App {
 //
 //        progressBar.loadProgressIndicator(40, 5, 2,
 //                2, 75);
+
+        //------------------------------------------------------------------------
+
+        ToBankingWithSuccessDB toBankingDB = ToBankingWithSuccessDB.getInstance();
+
+        EntityManager em = toBankingDB.generateEntityManager(EntityManagerScope.USERS);
+        EntityTransaction transaction = null;
+
+        try (em) {
+            transaction = em.getTransaction();
+            transaction.begin();
+
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+        }
     }
 }

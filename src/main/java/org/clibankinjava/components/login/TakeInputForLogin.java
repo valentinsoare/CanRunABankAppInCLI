@@ -44,7 +44,7 @@ public final class TakeInputForLogin {
         String introMessage = String.format("%s", "please provide user and password or quit/back: ");
 
         while ("none".equals(username.getUsername()) ||
-                "none".equals(password.getHashPasswd())) {
+                "none".equals(password.getHashedPasswd())) {
             loginHeader.generateHeader(1,
                     0, '-', '|');
 

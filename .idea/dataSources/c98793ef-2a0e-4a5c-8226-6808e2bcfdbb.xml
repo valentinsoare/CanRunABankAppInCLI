@@ -932,8 +932,8 @@ bankingWithSuccess|schema||banking|localhost|grant option|G</Grants>
     </schema>
     <schema id="290" parent="1" name="bankingWithSuccess">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-10-16.04:09:22</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-10-15.22:09:22</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-10-25.13:47:43</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-10-25.07:47:43</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="291" parent="1" name="banking">
