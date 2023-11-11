@@ -90,6 +90,13 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.15.0</version>
+    </dependency>
+
+
     <!-- YAML and JSON-->
     <dependency>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
@@ -109,6 +116,12 @@
       <version>2.15.2</version>
     </dependency>
 
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.10.1</version>
+    </dependency>
+
     <!-- LOMBOK -->
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -123,7 +136,6 @@
       <artifactId>mysql-connector-j</artifactId>
       <version>8.1.0</version>
     </dependency>
-
   </dependencies>
 
   <build>

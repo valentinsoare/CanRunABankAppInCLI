@@ -3,10 +3,13 @@ package org.clibankinjava.components.businessparts.businessentities.typeofbankpe
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.time.LocalDate;
+import java.util.Set;
+import java.util.TreeSet;
 
 @Getter
 @Setter
@@ -64,21 +67,17 @@ public abstract class Employee implements Comparable<Employee>{
     @Embedded
     private EmployeeBusinessInformation employeeBusinessInformation;
 
-    @Transient
-    @LazyGroup("TIME_PASSING")
-    @Basic(fetch = FetchType.LAZY)
-    private Long howMuchTimeFromCreation;
-
-    @Transient
-    @LazyGroup("TIME_PASSING")
-    @Basic(fetch = FetchType.LAZY)
-    private Long howMuchTimeFromModification;
+    @OrderBy
+    @OneToMany(mappedBy = "clientCreatedBy", fetch = FetchType.LAZY)
+    private Set<Client> setOfClientsCreated;
 
     @Version
     @Column(name = "version", nullable = false, columnDefinition = "long default 0")
     private Long version;
 
-    protected Employee() {}
+    protected Employee() {
+        this.setOfClientsCreated = new TreeSet<>();
+    }
 
     @Override
     public boolean equals(Object o) {

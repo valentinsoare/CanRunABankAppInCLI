@@ -6,11 +6,13 @@ import org.clibankinjava.components.businessparts.businessentities.typeofbankper
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.duties.BankerPrimaryDuties;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.detailsaboutemployee.EmployeeStatus;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.detailsaboutemployee.JobDescription;
+import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofaccounts.salaryaccount.SalaryAccount;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.annotations.LazyGroup;
 import org.hibernate.type.SqlTypes;
 import org.jetbrains.annotations.NotNull;
 
+import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -31,7 +33,7 @@ public class PresentWorkDetails implements Comparable<PresentWorkDetails> {
     @Transient
     @LazyGroup("PRESENT_WORK_DETAILS")
     @Basic(fetch = FetchType.LAZY)
-    private Long howMuchTimeFromHiring;
+    private BigDecimal howManyHoursFromHiring;
 
     @LazyGroup("PRESENT_WORK_DETAILS")
     @Basic(fetch = FetchType.LAZY)
@@ -60,6 +62,9 @@ public class PresentWorkDetails implements Comparable<PresentWorkDetails> {
     @Column(name = "employee_id")
     private Long employeeId;
 
+    @OneToOne(mappedBy = "employee")
+    private SalaryAccount salaryAccount;
+
     public PresentWorkDetails() {
         this.primaryDuties = new HashSet<>();
     }
@@ -72,8 +77,8 @@ public class PresentWorkDetails implements Comparable<PresentWorkDetails> {
         this.currentAnnualSalary = currentAnnualSalary;
     }
 
-    public void setHowMuchTimeFromHiring(Long howMuchTimeFromHiring) {
-        this.howMuchTimeFromHiring = howMuchTimeFromHiring;
+    public void setHowMuchTimeFromHiring(BigDecimal howManyHoursFromHiring) {
+        this.howManyHoursFromHiring = howManyHoursFromHiring;
     }
 
     public void setEmployeeId(Long employeeId) {
@@ -102,7 +107,7 @@ public class PresentWorkDetails implements Comparable<PresentWorkDetails> {
     public String toString() {
         return String.format("PresentWorkDetails [employeeStatus: %s, currentAnnualSalary: %s, howMuchTimeFromHiring: %s, isTeamLeader: %s" +
                         ", leader: %s, employeeId: %s]",
-                employeeStatus, currentAnnualSalary, howMuchTimeFromHiring, isTeamLeader, leader, employeeId);
+                employeeStatus, currentAnnualSalary, howManyHoursFromHiring, isTeamLeader, leader, employeeId);
     }
 
     @Override

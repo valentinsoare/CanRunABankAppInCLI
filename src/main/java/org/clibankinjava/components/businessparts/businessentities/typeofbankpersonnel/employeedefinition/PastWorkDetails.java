@@ -23,7 +23,7 @@ public class PastWorkDetails implements Comparable<PastWorkDetails> {
     @Transient
     @LazyGroup("PAST_WORK_DETAILS")
     @Basic(fetch = FetchType.LAZY)
-    private double timeWorkedInMonths;
+    private long timeWorkedInMonths;
 
     @LazyGroup("PAST_WORK_DETAILS")
     @Column(name = "last_official_education")
@@ -40,7 +40,7 @@ public class PastWorkDetails implements Comparable<PastWorkDetails> {
         this.previousAnnuallyIncome = previousAnnuallyIncome;
     }
 
-    public void setTimeWorkedInMonths(double timeWorkedInMonths) {
+    public void setTimeWorkedInMonths(long timeWorkedInMonths) {
         this.timeWorkedInMonths = timeWorkedInMonths;
     }
 

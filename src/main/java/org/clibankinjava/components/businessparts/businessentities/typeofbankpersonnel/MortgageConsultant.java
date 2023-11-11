@@ -3,11 +3,10 @@ package org.clibankinjava.components.businessparts.businessentities.typeofbankpe
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.detailsaboutemployee.responsabilitiesofemployee.RelationshipManagerResponsibilities;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.employeedefinition.Employee;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.detailsaboutemployee.responsabilitiesofemployee.MortgageConsultantResponsibilities;
-import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofcredits.Mortgage;
-import org.clibankinjava.components.businessparts.businessentities.typeofclients.Client;
+import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofcredits.mortgage.Mortgage;
+import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
 import org.clibankinjava.components.credentials.credentialentities.User;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;

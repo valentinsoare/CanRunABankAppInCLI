@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.employeedefinition.Employee;
+import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.accountwithdetails.Account;
 import org.clibankinjava.components.credentials.LoginCredentials;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
@@ -99,11 +100,15 @@ public class User implements LoginCredentials, Comparable<User> {
     @OneToOne(mappedBy = "employeeBusinessInformation.user")
     private Employee employee;
 
-    @OneToMany(mappedBy = "employeeBusinessInformation.createdBy")
+    @OneToMany(mappedBy = "employeeBusinessInformation.createdBy", fetch = FetchType.LAZY)
     private Set<Employee> employeeAccountsCreated;
 
-    @OneToMany(mappedBy = "employeeBusinessInformation.lastModifiedBy")
+    @OneToMany(mappedBy = "employeeBusinessInformation.lastModifiedBy", fetch = FetchType.LAZY)
     private Set<Employee> employeeAccountsLastModifyBy;
+
+    @LazyGroup("ACCOUNTS_PER_USER")
+    @OneToMany(mappedBy = "ownerInformation.user", fetch = FetchType.LAZY)
+    private Set<Account> listOfAccounts;
 
 
     @LazyGroup("DATE_AND_TIME")

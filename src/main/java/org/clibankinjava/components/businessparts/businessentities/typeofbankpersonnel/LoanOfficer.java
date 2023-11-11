@@ -5,8 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.employeedefinition.Employee;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.detailsaboutemployee.responsabilitiesofemployee.LoanOfficerResponsibilities;
-import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.Credit;
-import org.clibankinjava.components.businessparts.businessentities.typeofclients.Client;
+import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.creditwithdetails.Credit;
+import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
 import org.clibankinjava.components.credentials.credentialentities.User;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
@@ -34,12 +34,12 @@ public class LoanOfficer extends Employee {
     @OrderBy
     @LazyGroup("CREDIT")
     @OneToMany(mappedBy = "loanOfficer", fetch = FetchType.LAZY)
-    private Set<Credit> listOfCredits;
+    private Set<Credit> setOfCredits;
 
     @OrderBy
     @LazyGroup("CLIENT")
     @OneToMany(mappedBy = "loanOfficer", fetch = FetchType.LAZY)
-    private Set<Client> listOfClients;
+    private Set<Client> setOfClients;
 
 
     @Embedded
@@ -55,8 +55,8 @@ public class LoanOfficer extends Employee {
 
         this.usersCreated = new TreeSet<>();
         this.usersLastModifiedBy = new TreeSet<>();
-        this.listOfCredits = new TreeSet<>();
-        this.listOfClients = new TreeSet<>();
+        this.setOfCredits = new TreeSet<>();
+        this.setOfClients = new TreeSet<>();
     }
 
     @Override

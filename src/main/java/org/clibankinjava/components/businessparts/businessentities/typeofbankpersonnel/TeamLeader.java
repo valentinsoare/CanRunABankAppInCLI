@@ -20,7 +20,7 @@ public class TeamLeader {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @OneToMany(mappedBy = "presentWorkDetails.leader", cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "presentWorkDetails.leader", fetch = FetchType.LAZY)
     private Set<Employee> underlings;
 
     @LazyGroup("LEAD_TEAM")

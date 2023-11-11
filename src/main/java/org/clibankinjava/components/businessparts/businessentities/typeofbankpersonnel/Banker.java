@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.employeedefinition.Employee;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.detailsaboutemployee.responsabilitiesofemployee.BankerResponsibilities;
-import org.clibankinjava.components.businessparts.businessentities.typeofclients.Client;
+import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
 import org.clibankinjava.components.credentials.credentialentities.User;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;

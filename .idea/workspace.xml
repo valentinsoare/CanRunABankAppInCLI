@@ -4,118 +4,93 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Dependencies for preparing to work with Hibernate and JPA frameworks.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/AssetManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/BankTeller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/Banker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/CreditAnalyst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/FinancialAdvisor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/FinancialAnalyst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/InternalAuditor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/InvestmentBanker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/InvestmentBankingAnalyst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/InvestmentRepresentative.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/LoanOfficer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/LoanProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/MortgageConsultant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/RelationshipManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/TeamLeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/Underwriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/EmployeeStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/JobDescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/SeniorityLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/TypeOfTeam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/AssetManagerResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/BankTellerResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/BankerResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/CreditAnalystResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/EmployeeGenericResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/FinancialAdvisorResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/FinancialAnalystResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/InternalAuditorResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/InvestmentBankerResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/InvestmentBankingAnalystResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/InvestmentRepresentativeResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/LoanOfficerResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/LoanProcessorResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/MortgageConsultantResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/RelationshipManagerResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/UnderwriterResponsibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/AssetManagerPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/BankTellerPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/BankerPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/CreditAnalystPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/FinancialAdvisorPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/FinancialAnalystPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/InternalAuditorPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/InvestmentBankerPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/InvestmentBankingAnalystPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/InvestmentRepresentativePrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/LoanOfficerPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/LoanProcessorPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/MortgageConsultantPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/RelationshipManagerPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/duties/UnderwriterPrimaryDuties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/EmployeeBusinessInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/PastWorkDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/PresentWorkDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/TimeAndDateInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/Credit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/Deposit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/FundedCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/LongTermCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/MidTermCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/Mortgage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/ShortTermCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/CurrentAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/DemandDeposit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/FixedDeposit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/RecurringDeposit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/SalaryAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/SavingsGoldAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/TimeDeposit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/TypeOfLoginEntities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/credentialentities/TypeOfUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseutils/DatabaseUtilInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseutils/EntityManagerScope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseutils/QueriesForDbInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseutils/ToBankingWithSuccessDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c98793ef-2a0e-4a5c-8226-6808e2bcfdbb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c98793ef-2a0e-4a5c-8226-6808e2bcfdbb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c98793ef-2a0e-4a5c-8226-6808e2bcfdbb/storage_v2/_src_/schema/bankingWithSuccess.V_iYpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c98793ef-2a0e-4a5c-8226-6808e2bcfdbb/storage_v2/_src_/schema/bankingWithSuccess.V_iYpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d57a6a6f-dc4b-4b46-956d-a0b8e0515f90.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d57a6a6f-dc4b-4b46-956d-a0b8e0515f90.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d57a6a6f-dc4b-4b46-956d-a0b8e0515f90/storage_v2/_src_/schema/bankingWithSuccess.V_iYpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d57a6a6f-dc4b-4b46-956d-a0b8e0515f90/storage_v2/_src_/schema/bankingWithSuccess.V_iYpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/55816e2fd2bec0e004db379a45d1db33fedd1097" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58062843b4d0b10ca2f6087a7ba0bfe615366289" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58062843b4d0b10ca2f6087a7ba0bfe615366289" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/614b77f4d20eb4df8f143ad44f3fd9672ad14d4a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/614b77f4d20eb4df8f143ad44f3fd9672ad14d4a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c34892f364e2e25560709dd1d7772e64914e95f9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d68b65d529a388948be429fa6063da8b8828ab38" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d68b65d529a388948be429fa6063da8b8828ab38" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/5/55816e2fd2bec0e004db379a45d1db33fedd1097" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/3/c34892f364e2e25560709dd1d7772e64914e95f9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/accountwithdetails/CurrencyOnAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/accountwithdetails/EconomicCharacteristics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/accountwithdetails/OwnerInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/accountwithdetails/TimeInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/creditwithdetails/DayOfTheWeek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/creditwithdetails/DueDateToPayingMonthly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/creditwithdetails/TypeOfCredit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/transactionwithdetails/BankTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/additionalproductsforaccounts/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/additionalproductsforaccounts/CardProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/additionalproductsforaccounts/Check.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/additionalproductsforaccounts/CreditCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/additionalproductsforaccounts/DebitCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/certificateofdepositaccount/CertificateOfDepositAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/certificateofdepositaccount/CharacteristicsForCertificateOfDeposit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/checkingaccount/CharacteristicsForCheckingAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/checkingaccount/CheckingAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/moneymarketaccount/CharacteristicsForMoneyMarketAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/salaryaccount/CharacteristicsOfSalaryAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/salaryaccount/SalaryAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/savingsaccount/CharacteristicsOfSavingsAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/savingsaccount/SavingsAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/longtermcredit/LongTermCredit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/longtermcredit/WhyLongTermCredit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/midtermcredit/MidTermCredit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/midtermcredit/WhyMidTermCredit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/shorttermcredit/ShortTermCredit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/shorttermcredit/WhyShortTermCredit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/TypeOfClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-j-8.1.0-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-j-8.1.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-j-8.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/protobuf-java-3.21.9-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/protobuf-java-3.21.9-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/protobuf-java-3.21.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofaccounts/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofaccounts/checking/CheckingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/CheckingAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofaccounts/deposit/CertificateOfDepositAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/CertificateOfDepositAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofaccounts/moneymarket/MoneyMarketAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/MoneyMarketAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofaccounts/saving/SavingsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/SavingsAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeoflocations/BankUnitDivision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeoflocations/BankUnitDivision.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/LoginInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/LoginInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/credentialentities/Password.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/credentialentities/Password.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/AssetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/AssetManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/Banker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/Banker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/CreditAnalyst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/CreditAnalyst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/FinancialAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/FinancialAdvisor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/InvestmentBanker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/InvestmentBanker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/InvestmentRepresentative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/InvestmentRepresentative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/LoanOfficer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/LoanOfficer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/LoanProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/LoanProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/MortgageConsultant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/MortgageConsultant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/RelationshipManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/RelationshipManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/TeamLeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/TeamLeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/Underwriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/Underwriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/PastWorkDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/PastWorkDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/PresentWorkDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/PresentWorkDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/TimeAndDateInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/TimeAndDateInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/accountwithdetails/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/Credit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/creditwithdetails/Credit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/depositwithdetails/Deposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/CertificateOfDepositAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/CheckingAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/MoneyMarketAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/moneymarketaccount/MoneyMarketAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/FundedCredit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/LongTermCredit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/MidTermCredit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/Mortgage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/mortgage/Mortgage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/ShortTermCredit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/CurrentAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/DemandDeposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/DemandDeposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/FixedDeposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/FixedDeposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/RecurringDeposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/RecurringDeposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/SalaryAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/SavingsAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/SavingsGoldAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/TimeDeposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/TimeDeposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/CorporateClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/EnterpriseClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/IndividualClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/IndividualClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/NonGovernmentalOrganizationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/NonGovernmentalOrganizationClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/SmallCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/SmallCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/StateInstitutionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/StateInstitutionClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeoflocations/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typofbankparts/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeoflocations/BankUnitDivision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typofbankparts/ATM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeoflocations/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typofbankparts/Branch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeoflocations/Headquarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typofbankparts/Headquarter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/credentialentities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/credentialentities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/login/TakeInputForLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/login/TakeInputForLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseutils/BankingWithSuccess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseutils/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseutils/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/CustomPrinting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/CustomPrinting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,15 +102,16 @@
       <list>
         <option value="package-info" />
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="AnnotationType" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="workingWithDB" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -160,6 +136,15 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -169,37 +154,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;workingWithDB&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/vsoare/Documents/learningJava&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.422292&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "workingWithDB",
+    "last_opened_file_path": "/home/vsoare/Documents/learningJava",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.422292",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofcredits.longtermcredit" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org" />
     </key>
@@ -299,7 +287,7 @@
       <workItem from="1697407739363" duration="52807000" />
       <workItem from="1698169236522" duration="92953000" />
       <workItem from="1698842809421" duration="1292000" />
-      <workItem from="1698846847461" duration="91795000" />
+      <workItem from="1698846847461" duration="219567000" />
     </task>
     <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
       <option name="closed" value="true" />
@@ -349,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698206740794</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Creating the mapping for banking users/employees from DB to code. Next will be designing the products and the mapping DB &lt;-&gt; code.">
+      <option name="closed" value="true" />
+      <created>1699215771757</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699215771757</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +362,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="workingWithDB" />
+                        <option value="origin/workingWithDB" />
                       </list>
                     </value>
                   </entry>
@@ -384,7 +380,9 @@
     <MESSAGE value="A new Loading effect implemented." />
     <MESSAGE value="New classes for DB operations." />
     <MESSAGE value="Dependencies for preparing to work with Hibernate and JPA frameworks." />
-    <option name="LAST_COMMIT_MESSAGE" value="Dependencies for preparing to work with Hibernate and JPA frameworks." />
+    <MESSAGE value="Creating the mapping for banking users/employees from DB to code. Next will be designing the products and the mapping DB &lt;-&gt; code." />
+    <MESSAGE value="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

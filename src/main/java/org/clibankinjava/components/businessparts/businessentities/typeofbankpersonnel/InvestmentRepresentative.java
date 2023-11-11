@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.employeedefinition.Employee;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.detailsaboutemployee.responsabilitiesofemployee.InvestmentRepresentativeResponsibilities;
-import org.clibankinjava.components.businessparts.businessentities.typeofclients.Client;
+import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
 import org.clibankinjava.components.credentials.credentialentities.User;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;

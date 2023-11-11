@@ -2,9 +2,14 @@ package org.clibankinjava;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
+import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofaccounts.additionalproductsforaccounts.Check;
+import org.clibankinjava.customprinting.CustomPrinting;
 import org.clibankinjava.databaseutils.ToBankingWithSuccessDB;
 import org.clibankinjava.databaseutils.EntityManagerScope;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.concurrent.*;
 
 public class App {
@@ -52,20 +57,37 @@ public class App {
 
         //------------------------------------------------------------------------
 
-        ToBankingWithSuccessDB toBankingDB = ToBankingWithSuccessDB.getInstance();
+//        ToBankingWithSuccessDB toBankingDB = ToBankingWithSuccessDB.getInstance();
+//
+//        EntityManager em = toBankingDB.generateEntityManager(EntityManagerScope.USERS);
+//        EntityTransaction transaction = null;
+//
+//        try (em) {
+//            transaction = em.getTransaction();
+//            transaction.begin();
+//
+//            transaction.commit();
+//        } catch (Exception e) {
+//            if (transaction != null) {
+//                transaction.rollback();
+//            }
+//        }
 
-        EntityManager em = toBankingDB.generateEntityManager(EntityManagerScope.USERS);
-        EntityTransaction transaction = null;
+        //----------------------------------------------------------------------------
 
-        try (em) {
-            transaction = em.getTransaction();
-            transaction.begin();
+        Check check = new Check();
 
-            transaction.commit();
-        } catch (Exception e) {
-            if (transaction != null) {
-                transaction.rollback();
-            }
-        }
+        check.setId(44L);
+        check.setName("Valentin Soare");
+        check.setAddress("Lucretiu Patrascanu, Nr. 9, Bl. Y2, Ap. 21");
+        check.setDate(LocalDate.of(2008, Month.AUGUST, 11));
+        check.setAmountToPay(new BigDecimal("1000000"));
+        check.setPayToTheOrderOf("Tudorina Soare");
+        check.setObjectForPayment("Debts");
+        check.setAccountNumber("18711119520010");
+        check.setCheckNumber("1919879923");
+        check.setAccount(null);
+
+        CustomPrinting.drawABankCheck(check);
     }
 }

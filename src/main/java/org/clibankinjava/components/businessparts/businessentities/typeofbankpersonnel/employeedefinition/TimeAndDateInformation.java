@@ -1,43 +1,51 @@
 package org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.employeedefinition;
 
-import jakarta.persistence.Basic;
-import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.FetchType;
+import jakarta.persistence.*;
 import lombok.Getter;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 @Getter
 @Embeddable
 public class TimeAndDateInformation implements Comparable<TimeAndDateInformation> {
-    @LazyGroup("TIME_AND_DATE")
+    @LazyGroup("FIRST_WAVE_TIME_AND_DATE")
     @Column(name = "hiredate")
     @Basic(fetch = FetchType.LAZY)
     private LocalDate hireDate;
 
-    @LazyGroup("TIME_AND_DATE")
+    @LazyGroup("FIRST_WAVE_TIME_AND_DATE")
     @Column(name = "creationdate")
     @Basic(fetch = FetchType.LAZY)
     private LocalDate creationDate;
 
-    @LazyGroup("TIME_AND_DATE")
+    @LazyGroup("FIRST_WAVE_TIME_AND_DATE")
     @Column(name = "lastmodificationdate")
     @Basic(fetch = FetchType.LAZY)
     private LocalDate lastModificationDate;
 
-    @LazyGroup("TIME_AND_DATE")
+    @LazyGroup("FIRST_WAVE_TIME_AND_DATE")
     @Column(name = "creationtime")
     @Basic(fetch = FetchType.LAZY)
     private LocalTime creationTime;
 
-    @LazyGroup("TIMIE_AND_DATE")
+    @LazyGroup("SECOND_WAVE_TIMIE_AND_DATE")
     @Column(name = "lastmodificationtime")
     @Basic(fetch = FetchType.LAZY)
     private LocalTime lastModificationTime;
+
+    @Transient
+    @LazyGroup("SECOND_WAVE_TIME_AND_DATE")
+    @Basic(fetch = FetchType.LAZY)
+    private BigDecimal numberOfDaysFromHiring;
+
+    @Transient
+    @LazyGroup("SECOND_WAVE_TIME_AND_DATE")
+    @Basic(fetch = FetchType.LAZY)
+    private BigDecimal numberOfDaysFromLastModification;
 
     public TimeAndDateInformation() {}
 
