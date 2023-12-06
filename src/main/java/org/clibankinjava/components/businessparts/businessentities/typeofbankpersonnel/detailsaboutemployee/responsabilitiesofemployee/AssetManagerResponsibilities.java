@@ -3,6 +3,7 @@ package org.clibankinjava.components.businessparts.businessentities.typeofbankpe
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructures.operationswithcustomdatastructures.OperationsOnMaps;
 import org.hibernate.annotations.LazyGroup;
 
 import java.util.LinkedHashMap;
