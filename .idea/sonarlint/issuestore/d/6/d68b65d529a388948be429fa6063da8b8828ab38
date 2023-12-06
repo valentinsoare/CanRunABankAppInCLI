@@ -1,7 +1,22 @@
 
-]	java:S125"<This block of commented-out lines of code should be removed.(˜­×Õúÿÿÿÿ8¨íğÉ¶1
-]	java:S125"<This block of commented-out lines of code should be removed.(ËêÄøÿÿÿÿ8¨íğÉ¶1
-X	java:S125$"<This block of commented-out lines of code should be removed.(±ğ¹ß8¨íğÉ¶1
-]	java:S125("<This block of commented-out lines of code should be removed.(…Ù©úÿÿÿÿ8¨íğÉ¶1
-X	java:S125,"<This block of commented-out lines of code should be removed.(éš¿©8©íğÉ¶1
-]	java:S1250"<This block of commented-out lines of code should be removed.(˜ÕÖúÿÿÿÿ8©íğÉ¶1
+™
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(àÜÕúÿÿÿÿÿ8¯¶¢·Ã1
+£
+java:S1130"€Remove the declaration of thrown exception 'java.util.concurrent.ExecutionException', as it cannot be thrown from method's body.(àÜÕúÿÿÿÿÿ8¯¶¢·Ã1
+]	java:S125"<This block of commented-out lines of code should be removed.(˜­×Õúÿÿÿÿ8°¶¢·Ã1
+]	java:S125"<This block of commented-out lines of code should be removed.(ËêÄøÿÿÿÿ8°¶¢·Ã1
+X	java:S125*"<This block of commented-out lines of code should be removed.(±ğ¹ß8°¶¢·Ã1
+]	java:S125."<This block of commented-out lines of code should be removed.(…Ù©úÿÿÿÿ8°¶¢·Ã1
+X	java:S1252"<This block of commented-out lines of code should be removed.(éš¿©8°¶¢·Ã1
+]	java:S1256"<This block of commented-out lines of code should be removed.(˜ÕÖúÿÿÿÿ8°¶¢·Ã1
+]	java:S125="<This block of commented-out lines of code should be removed.(Úåœøÿÿÿÿ8°¶¢·Ã1
+`
+java:S1128">Remove this unused import 'jakarta.persistence.EntityManager'.(·ïŸéúÿÿÿÿ8²¶¢·Ã1
+d
+java:S1128"BRemove this unused import 'jakarta.persistence.EntityTransaction'.(¡«Ä×üÿÿÿÿ8²¶¢·Ã1
+p
+java:S1128"SRemove this unused import 'org.clibankinjava.databaseutils.ToBankingWithSuccessDB'.(Çªº–8²¶¢·Ã1
+l
+java:S1128"ORemove this unused import 'org.clibankinjava.databaseutils.EntityManagerScope'.(å¢ë—8²¶¢·Ã1
+J
+java:S1128".Remove this unused import 'java.util.TreeSet'.(½îB8²¶¢·Ã1

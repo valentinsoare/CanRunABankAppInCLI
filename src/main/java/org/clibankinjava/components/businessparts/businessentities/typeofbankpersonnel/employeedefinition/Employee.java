@@ -24,6 +24,11 @@ public abstract class Employee implements Comparable<Employee>{
 
     @LazyGroup("USER_INFO")
     @Basic(fetch = FetchType.LAZY)
+    @Column(name = "employee_registration_number")
+    private String employeeRegistrationNumber;
+
+    @LazyGroup("USER_INFO")
+    @Basic(fetch = FetchType.LAZY)
     @Column(name = "first_name")
     private String firstName;
 
@@ -105,8 +110,8 @@ public abstract class Employee implements Comparable<Employee>{
 
     @Override
     public String toString() {
-        return String.format("firstName: %s, lastName: %s, dateOfBirth: %s, numericPersonalIdentificationNumber: %s, phoneNumber: %s, email: %s",
-                firstName, lastName, dateOfBirth, numericPersonalIdentificationNumber, phoneNumber, email);
+        return String.format("registrationNumber: %s, firstName: %s, lastName: %s, dateOfBirth: %s, numericPersonalIdentificationNumber: %s, phoneNumber: %s, email: %s",
+                employeeRegistrationNumber, firstName, lastName, dateOfBirth, numericPersonalIdentificationNumber, phoneNumber, email);
     }
 
     @Override

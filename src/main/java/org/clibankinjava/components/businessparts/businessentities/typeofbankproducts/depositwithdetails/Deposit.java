@@ -10,7 +10,7 @@ import org.hibernate.annotations.LazyGroup;
 @Setter
 @Entity(name = "Deposit")
 @Table(name = "deposit", schema = "deposit")
-@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public abstract class Deposit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

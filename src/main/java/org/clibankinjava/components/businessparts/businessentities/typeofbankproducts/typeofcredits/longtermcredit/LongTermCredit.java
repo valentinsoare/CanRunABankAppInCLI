@@ -10,6 +10,7 @@ import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
+import java.math.BigDecimal;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -21,41 +22,53 @@ import static java.util.Map.entry;
 @DiscriminatorValue("1")
 @Entity(name = "LongTermCredit")
 public class LongTermCredit extends Credit {
-    @LazyGroup("FIRST_WAVE__DETAILS")
+    @LazyGroup("FIRST_WAVE_DETAILS")
     @Column(name = "minimumNumber_of_months_for_credit_term_is_necessary")
     @Basic(fetch = FetchType.LAZY)
     private int minimumNumberOfMonthsForCreditTermIsNecessary;
 
-    @LazyGroup("FIRST_WAVE__DETAILS")
+    @LazyGroup("FIRST_WAVE_DETAILS")
     @Column(name = "number_of_months_with_no_reimbursement_necessary")
     @Basic(fetch = FetchType.LAZY)
     private int numberOfMonthsWithNoReimbursementNecessary;
 
-    @LazyGroup("FIRST_WAVE__DETAILS")
+    @LazyGroup("FIRST_WAVE_DETAILS")
     @Column(name = "is_co_signer_needed")
     @Basic(fetch = FetchType.LAZY)
     private boolean isCoSignerNeeded;
 
-    @LazyGroup("SECOND_WAVE__DETAILS")
+    @LazyGroup("FIRST_WAVE_DETAILS")
     @ManyToOne(fetch = FetchType.LAZY,  cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name = "client_id")
     private Client coSigner;
 
-    @LazyGroup("SECOND_WAVE__DETAILS")
+
+    @LazyGroup("SECOND_WAVE_DETAILS")
     @Enumerated(EnumType.STRING)
     @Basic(fetch = FetchType.LAZY)
     @Column(name = "why_long_term_credit")
     private WhyLongTermCredit whyLongTermCredit;
 
-    @LazyGroup("SECOND_WAVE__DETAILS")
+    @LazyGroup("SECOND_WAVE_DETAILS")
     @Basic(fetch = FetchType.LAZY)
     @Column(name = "credit_value_is_insured")
     private boolean creditValueIsInsured;
 
-    @LazyGroup("SECOND_WAVE__DETAILS")
+    @LazyGroup("SECOND_WAVE_DETAILS")
     @Basic(fetch = FetchType.LAZY)
     @Column(name = "possible_to_refinancing")
     private boolean possibleToRefinancing;
+
+
+    @LazyGroup("THIRD_WAVE_DETAILS")
+    @Column(name = "maximum_amount_of_money_that_can_be_taken")
+    @Basic(fetch = FetchType.LAZY)
+    private BigDecimal maximumAmountOfMoneyThatCanBeTaken;
+
+    @LazyGroup("THIRD_WAVE_DETAILS")
+    @Column(name = "minimum_payment_for_current_month")
+    @Basic(fetch = FetchType.LAZY)
+    private BigDecimal minimumPaymentForCurrentMonth;
 
     public LongTermCredit() {
         super();
@@ -123,9 +136,11 @@ public class LongTermCredit extends Credit {
                 entry("minimumNumberOfMonthsForCreditTermIsNecessary", String.valueOf(minimumNumberOfMonthsForCreditTermIsNecessary)),
                 entry("numberOfMonthsWithNoReimbursementNecessary", String.valueOf(numberOfMonthsWithNoReimbursementNecessary)),
                 entry("isCoSignerNeeded", String.valueOf(isCoSignerNeeded)),
-                entry("coSigner", String.format("%s; %s; %s;", coSigner.getFirstName(), coSigner.getLastName(), coSigner.getEmail())),
+                entry("coSigner", String.format("%s", coSigner.getClientRegistrationNumber())),
                 entry("whyLongTermCredit", whyLongTermCredit.toString()),
-                entry("creditValueIsInsured", String.valueOf(creditValueIsInsured))
+                entry("creditValueIsInsured", String.valueOf(creditValueIsInsured)),
+                entry("maximumAmountOfMoneyThatCanBeTaken", maximumAmountOfMoneyThatCanBeTaken.toString()),
+                entry("minimumPaymentForCurrentMonth", minimumPaymentForCurrentMonth.toString())
         ));
 
         return CustomPrinting.of(output, String.format("LongTermCredit [%s", super.toString()));

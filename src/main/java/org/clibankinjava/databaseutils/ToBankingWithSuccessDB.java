@@ -3,13 +3,11 @@ package org.clibankinjava.databaseutils;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-import lombok.Getter;
 
 import java.util.EnumMap;
 import java.util.Map;
 import java.util.Optional;
 
-@Getter
 public class ToBankingWithSuccessDB implements Database {
     private EntityManager entityManger;
     private ToBankingWithSuccessDB() {}
@@ -69,3 +67,4 @@ public class ToBankingWithSuccessDB implements Database {
         return null;
     }
 }
+

@@ -120,8 +120,7 @@ public class MidTermCredit extends Credit {
     @Override
     public String toString() {
         Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
-                entry("coSigner", String.format("%s; %s; %s", coSigner.getFirstName(),
-                        coSigner.getLastName(), coSigner.getEmail())),
+                entry("coSigner", String.format("%s", coSigner.getClientRegistrationNumber())),
                 entry("creditIsEnsured", String.valueOf(creditIsEnsured)),
                 entry("minimumNumberMonthsForTermOfCredit", String.valueOf(minimumNumberMonthsForTermOfCredit)),
                 entry("maximumNumberOfMonthsForTermOfCredit", String.valueOf(maximumNumberOfMonthsForTermOfCredit)),

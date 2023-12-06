@@ -5,92 +5,342 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/accountwithdetails/CurrencyOnAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/accountwithdetails/EconomicCharacteristics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/accountwithdetails/OwnerInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/accountwithdetails/TimeInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/creditwithdetails/DayOfTheWeek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/creditwithdetails/DueDateToPayingMonthly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/creditwithdetails/TypeOfCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/transactionwithdetails/BankTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/additionalproductsforaccounts/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/additionalproductsforaccounts/CardProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/additionalproductsforaccounts/Check.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/additionalproductsforaccounts/CreditCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/additionalproductsforaccounts/DebitCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/certificateofdepositaccount/CertificateOfDepositAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/certificateofdepositaccount/CharacteristicsForCertificateOfDeposit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/checkingaccount/CharacteristicsForCheckingAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/checkingaccount/CheckingAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/moneymarketaccount/CharacteristicsForMoneyMarketAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/salaryaccount/CharacteristicsOfSalaryAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/salaryaccount/SalaryAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/savingsaccount/CharacteristicsOfSavingsAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/savingsaccount/SavingsAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/longtermcredit/LongTermCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/longtermcredit/WhyLongTermCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/midtermcredit/MidTermCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/midtermcredit/WhyMidTermCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/shorttermcredit/ShortTermCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/shorttermcredit/WhyShortTermCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/TypeOfClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/023ef8774d737e80fced292bad59ba878f055c9d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03f225a2261966a1ea6ab276466f7bfbb44467b5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/072f5c582d12f4c1a90ead53b737414fd0c86797" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/0976ff3f1ca24422b28776cdef5642b70def6f60" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a4d4201d9c2613637726d2488faaa5a4b668809" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0becc7ed5085616922d694c07386223ebd10de70" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d4af5849d2888b766d85fa37df68748e4609a85" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0fa0cdbffc49753914af4011f2a74f8df71bd441" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/1735ded3da2b9b54a5be6ef58b501f1e1959e841" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/1996ee8ab1c35d637556e6f93d5f45e2d7b1c2e6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a357c989ad6e8a6f469fb4f193f48635b57336f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a52e43fbaeae64b7803488ae36f9144831ad32b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1b214fc75a1f57b67bab397d2d117ab2412df697" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1e42320d6ae33ea4169bfae108f4fb44138f5a03" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1e656da07811fb28908d77cbc011ce27ce82b4ee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eaea88fada4409ff69a9621cfd29a2ae6918ddc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/211722f14c37ede61b7be8ab22d0af8c52b0da3e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/2/226577e1ffd2b2cf9137dd90b802c6064b5e9894" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/24494f8d854c0105963337a3cc61fc72b31b83e2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/288c7289a49661c196ead67a82f9d0e2c6ca4ccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2cabb939da04d3de3a200bf2b575690e1a16316d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d1fffb4064a56c3bc5af31def00f79803d6b1a6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d7bed7995e7773d3e7076ef58442869594050c2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2eb951ab341b5633c5bc2bd86106a602dfad6c02" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2fe4fcc43f26a1649dad4b7124b2f008d5fa65f1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/32662d1c1db556eeebf1a496e0f45814708d44ff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3aa5c4bb3ab0a0b1d156ec96d9c18b85855e4164" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3ced62ab14ab2eda758d82fef8bc83e00b503e88" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3f345b27a2afa09aa2dd0d332abec0ad6e86415b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/403d4e4c3de83744431a4a6197565ef7c5f50fbe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/40f10a885d4b056dc933ce6ddf5f47fc3c10442e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/41678bdb6742b3aa13f6688d32baf02e03f831dc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/42ba3ec2dd81937fd0120b59822248150acfa3f2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43815aeb3e8afc2523f91af6da3b741b0588c907" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43e0da48375a12e36147b65e84bc3493d11a9204" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43e74a0cf81894c2df27240c7713cefbec553790" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442cf6360c3a35c14783d56c6696e2c5d8378a78" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/45df06b67da226f7c3d3b64b716de8af61b854b5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/496a238a6afa168dbaf6efd37bb459331589579c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b662ed97a77cb6f9c8e29179834064813de13c0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c746cee0a61344408642c3bf039ee92e8778035" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/55b2be58234565f40bf9d9ad6d49025f32cf817d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57937c5fb9671f0dc6bd19cf6e74c1a2b01314cf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c96de037e43e4167d2b036c01c55dd787b6c45d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/60212dbbe82984e15a3aaae93c546fada72ced87" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/608697e16dc48705c0d0ea1549753bd39464b96e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/611a4b7605c14829f82fe3a80d1c5436ab59dc74" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/649d9c2010ff66a3a40f966298e563b3f8259147" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/66749b652d0dc5a297972947ce75240c5188a8c0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68a99187b31e9e40267e3104aa4a217b75501c5e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e5f01e1017b5ba464dd58e1a8cec632b80ce7b1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f9cdb74cbf9975a639e955cea609c71f7b89145" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/712358887e00cea5cdabc27a33f9e9dbb467ba55" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/7439942a44c7e3ee9618da89e369448784ef041f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76b0e087f3d3b2340514dcdf66df2254bf0c3346" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/772b8f559ee411aa23c1d4f786b98ef5d25d932d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/773f88fa558b343b7e9ea2f2f694ca9d88fb8238" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7b6c87d688a6a4c99b4d9ce96de2eb88ebb32048" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/803154f21469dd7a1286dafe6b14a892d2b94a57" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/8113eb27955750d539961093e0d996c2eca66c89" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/816f82f0db367f5d7d6d8eb592a335e6faf17894" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/825241414f6739cbed6b47b25c87acfb9028bce0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/844df254a232eab9bf9f30db2ac88104b014abfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/84cc3a9f99efff5b1ce6fb11d9bcc3121246db0d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85e52c5318b57aeb26a9c0c722668dda7fee572c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/863e0292fd7e9b3e74dafd6cc01f73ba76346482" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/86a8088745202f450bbe73843e42d9e409637f19" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/86b9bb323eb30d9fc95401e66ed3ed5bae953973" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e05bb02031edc5d37046aed37dcecb79a4308d8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/9070e1bcc66d98783fc9b75e7bfea766007f60b7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/909762385fc6eb20f922a91c6865741308b57f2c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/92c6c56342f0616f05a1cddb3a1fcff80669b41d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/956b57b3e4359cdc65055604d6c2d78b7073aa17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/968d39466c7ae36d0bd3a267b01413e5eafae45b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c55263cd37b51be4d2c8e084bb09fc02ac56021" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9d4d12772d74200956aebb5dd496ec4cb378249c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f1c5bddf540aadf792a590d91c7f400dbad4dfc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a057f6eca14cb0a4f23859248fb6d2628b1f57df" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a14a004712940f5469bdea725cc3d430b4dc45cd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a33ad699400016b4d71e20c48513bc1b3e02d3bb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a47a12f31e30cb9f598325d7f2729928066788ea" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4e71b0cab1f8247a27c57cebd99ed839e9ae3cd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a99df33048b57a9158a2aaa11de57819fb5f308c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae687f904b982e8a6af8dfafa569106c1ce37c30" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae9ddf453f55affea2d6b9e3973cac1eb2efb4e1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/aeec3ed847a9b9b42c1b8ff1dbd2857c74206d65" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/0/b09ad37167544e8c2157d7e4bea3425605f33135" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6f3e0a5ad9fc2414c3d41f72683516e3e8efabf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b70fc829adcb5b894d2dca25fb52cc77d855d918" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b7c66ca12a2a42e2da1f8d7b2cf926fafce2ed93" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b8778a3b708a9c93a681c0592a5aa4b114385b8b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b87d145a48b1b12ca4474b08bb2783ae0f7f3430" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/bad9aa9185b29e649728e6793bb89a1689b13609" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bbf202272a96de5cd6b6828ffdc55fb3ce45289c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bde345d8fecdb652968fdb9f06bfd74721b7cf21" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bed9481978fa05105154738500fc01bdfb04b4de" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0d85cb2cb6c5655169f0a87e8c0773e284a933b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c170ac043c15ccf8d22946db20a81a99cf998898" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1b00a8f17acbe33ef79a9854a070ed1fff3db85" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c25e40cb01022fcb820c84bc6194a3d97c9b3b7a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c28ee4642a8fd364a625c9e9316c368bd27951ca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8b32b3890ddbc88a9eb3a746c68711678e174ad" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8cbb1907af5857970d82b70cf91b84f22de9aa3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d030c8abdd80cd48a27a7d69fb5685a93a136eb8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0e5c7df785b4d54876f0c45dbdeb494303b3e3e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d15f38200848cff5bd9d9fa2271477ea2f3c9123" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d1b6f6188309648bbc021d05eba152034ba4f61f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4f41a288af94f94cc78701ab95777703cb94f8b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d531fe6e2022d7d5edb98f6d3c56f2312969f4ae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d56c14d231f131416c11e27757171cabd8f68e8f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9a04aba5eeb75855763a6e8d789986e85f6f6e8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da1eb6f42f98ceb26cc5f194bc2977f56fd81f87" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df8c213116241c86a28fbdcc825c672355341091" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e06979fd37d3957f426cd530ffee11df8ff96bbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e524570b6f0ecb2e893c4b895607423265f12025" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e714cb2724d60c166b89d1efef5091f8c4d31cda" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e7b9d9238f07f711ca197cae064b42a1ab33074a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee5e2694366b4418f2f8193feebbb5e377af8a91" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0e0f9cec86fe4b939ae22be5264c758801eb28f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f217b2cc254748a9fab8128209465925ea7336fc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f44a24c642038da56e2f5c0fe975eb04e56c0ede" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f69e1d4fdea609571a09bc86f4cf9f06948ddddc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7fc1b936c7677cdc0b76b9676bc507318014f86" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fbc0704e1fade6bf51feecad4122b243d57baacb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/d/fd909da1d0f983616bffb0154ea29c635becebe0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ffc0915ef29ad28765e3a946bea2935b58c9d732" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/2/023ef8774d737e80fced292bad59ba878f055c9d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/3/03f225a2261966a1ea6ab276466f7bfbb44467b5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/7/072f5c582d12f4c1a90ead53b737414fd0c86797" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/9/0976ff3f1ca24422b28776cdef5642b70def6f60" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/a/0a4d4201d9c2613637726d2488faaa5a4b668809" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/b/0becc7ed5085616922d694c07386223ebd10de70" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/d/0d4af5849d2888b766d85fa37df68748e4609a85" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/f/0fa0cdbffc49753914af4011f2a74f8df71bd441" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/7/1735ded3da2b9b54a5be6ef58b501f1e1959e841" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/9/1996ee8ab1c35d637556e6f93d5f45e2d7b1c2e6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/a/1a357c989ad6e8a6f469fb4f193f48635b57336f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/a/1a52e43fbaeae64b7803488ae36f9144831ad32b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/b/1b214fc75a1f57b67bab397d2d117ab2412df697" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/e/1e42320d6ae33ea4169bfae108f4fb44138f5a03" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/e/1e656da07811fb28908d77cbc011ce27ce82b4ee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/e/1eaea88fada4409ff69a9621cfd29a2ae6918ddc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/1/211722f14c37ede61b7be8ab22d0af8c52b0da3e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/2/226577e1ffd2b2cf9137dd90b802c6064b5e9894" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/4/24494f8d854c0105963337a3cc61fc72b31b83e2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/8/288c7289a49661c196ead67a82f9d0e2c6ca4ccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/c/2cabb939da04d3de3a200bf2b575690e1a16316d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/d/2d1fffb4064a56c3bc5af31def00f79803d6b1a6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/d/2d7bed7995e7773d3e7076ef58442869594050c2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2eb951ab341b5633c5bc2bd86106a602dfad6c02" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/f/2fe4fcc43f26a1649dad4b7124b2f008d5fa65f1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/2/32662d1c1db556eeebf1a496e0f45814708d44ff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/a/3aa5c4bb3ab0a0b1d156ec96d9c18b85855e4164" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/c/3ced62ab14ab2eda758d82fef8bc83e00b503e88" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/f/3f345b27a2afa09aa2dd0d332abec0ad6e86415b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/0/403d4e4c3de83744431a4a6197565ef7c5f50fbe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/0/40f10a885d4b056dc933ce6ddf5f47fc3c10442e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/1/41678bdb6742b3aa13f6688d32baf02e03f831dc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/2/42ba3ec2dd81937fd0120b59822248150acfa3f2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/3/43815aeb3e8afc2523f91af6da3b741b0588c907" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/3/43e0da48375a12e36147b65e84bc3493d11a9204" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/3/43e74a0cf81894c2df27240c7713cefbec553790" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442cf6360c3a35c14783d56c6696e2c5d8378a78" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/5/45df06b67da226f7c3d3b64b716de8af61b854b5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/9/496a238a6afa168dbaf6efd37bb459331589579c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/b/4b662ed97a77cb6f9c8e29179834064813de13c0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/c/4c746cee0a61344408642c3bf039ee92e8778035" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/5/55b2be58234565f40bf9d9ad6d49025f32cf817d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/7/57937c5fb9671f0dc6bd19cf6e74c1a2b01314cf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/c/5c96de037e43e4167d2b036c01c55dd787b6c45d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/0/60212dbbe82984e15a3aaae93c546fada72ced87" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/0/608697e16dc48705c0d0ea1549753bd39464b96e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/1/611a4b7605c14829f82fe3a80d1c5436ab59dc74" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/4/649d9c2010ff66a3a40f966298e563b3f8259147" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/6/66749b652d0dc5a297972947ce75240c5188a8c0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/8/68a99187b31e9e40267e3104aa4a217b75501c5e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/e/6e5f01e1017b5ba464dd58e1a8cec632b80ce7b1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/f/6f9cdb74cbf9975a639e955cea609c71f7b89145" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/1/712358887e00cea5cdabc27a33f9e9dbb467ba55" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/4/7439942a44c7e3ee9618da89e369448784ef041f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/6/76b0e087f3d3b2340514dcdf66df2254bf0c3346" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/7/772b8f559ee411aa23c1d4f786b98ef5d25d932d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/7/773f88fa558b343b7e9ea2f2f694ca9d88fb8238" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/b/7b6c87d688a6a4c99b4d9ce96de2eb88ebb32048" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/0/803154f21469dd7a1286dafe6b14a892d2b94a57" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/1/8113eb27955750d539961093e0d996c2eca66c89" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/1/816f82f0db367f5d7d6d8eb592a335e6faf17894" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/2/825241414f6739cbed6b47b25c87acfb9028bce0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/4/844df254a232eab9bf9f30db2ac88104b014abfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/4/84cc3a9f99efff5b1ce6fb11d9bcc3121246db0d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/5/85e52c5318b57aeb26a9c0c722668dda7fee572c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/6/863e0292fd7e9b3e74dafd6cc01f73ba76346482" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/6/86a8088745202f450bbe73843e42d9e409637f19" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/6/86b9bb323eb30d9fc95401e66ed3ed5bae953973" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/e/8e05bb02031edc5d37046aed37dcecb79a4308d8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/0/9070e1bcc66d98783fc9b75e7bfea766007f60b7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/0/909762385fc6eb20f922a91c6865741308b57f2c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/2/92c6c56342f0616f05a1cddb3a1fcff80669b41d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/5/956b57b3e4359cdc65055604d6c2d78b7073aa17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/6/968d39466c7ae36d0bd3a267b01413e5eafae45b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/c/9c55263cd37b51be4d2c8e084bb09fc02ac56021" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/d/9d4d12772d74200956aebb5dd496ec4cb378249c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/f/9f1c5bddf540aadf792a590d91c7f400dbad4dfc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/0/a057f6eca14cb0a4f23859248fb6d2628b1f57df" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/1/a14a004712940f5469bdea725cc3d430b4dc45cd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/3/a33ad699400016b4d71e20c48513bc1b3e02d3bb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/4/a47a12f31e30cb9f598325d7f2729928066788ea" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/4/a4e71b0cab1f8247a27c57cebd99ed839e9ae3cd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/9/a99df33048b57a9158a2aaa11de57819fb5f308c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/e/ae687f904b982e8a6af8dfafa569106c1ce37c30" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/e/ae9ddf453f55affea2d6b9e3973cac1eb2efb4e1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/e/aeec3ed847a9b9b42c1b8ff1dbd2857c74206d65" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/0/b09ad37167544e8c2157d7e4bea3425605f33135" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/6/b6f3e0a5ad9fc2414c3d41f72683516e3e8efabf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/7/b70fc829adcb5b894d2dca25fb52cc77d855d918" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/7/b7c66ca12a2a42e2da1f8d7b2cf926fafce2ed93" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/8/b8778a3b708a9c93a681c0592a5aa4b114385b8b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/8/b87d145a48b1b12ca4474b08bb2783ae0f7f3430" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/a/bad9aa9185b29e649728e6793bb89a1689b13609" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/b/bbf202272a96de5cd6b6828ffdc55fb3ce45289c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/d/bde345d8fecdb652968fdb9f06bfd74721b7cf21" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/e/bed9481978fa05105154738500fc01bdfb04b4de" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/0/c0d85cb2cb6c5655169f0a87e8c0773e284a933b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/1/c170ac043c15ccf8d22946db20a81a99cf998898" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/1/c1b00a8f17acbe33ef79a9854a070ed1fff3db85" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/2/c25e40cb01022fcb820c84bc6194a3d97c9b3b7a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/2/c28ee4642a8fd364a625c9e9316c368bd27951ca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/8/c8b32b3890ddbc88a9eb3a746c68711678e174ad" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/8/c8cbb1907af5857970d82b70cf91b84f22de9aa3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/0/d030c8abdd80cd48a27a7d69fb5685a93a136eb8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/0/d0e5c7df785b4d54876f0c45dbdeb494303b3e3e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/1/d15f38200848cff5bd9d9fa2271477ea2f3c9123" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/1/d1b6f6188309648bbc021d05eba152034ba4f61f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/4/d4f41a288af94f94cc78701ab95777703cb94f8b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/5/d531fe6e2022d7d5edb98f6d3c56f2312969f4ae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/5/d56c14d231f131416c11e27757171cabd8f68e8f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/9/d9a04aba5eeb75855763a6e8d789986e85f6f6e8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/a/da1eb6f42f98ceb26cc5f194bc2977f56fd81f87" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/f/df8c213116241c86a28fbdcc825c672355341091" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/0/e06979fd37d3957f426cd530ffee11df8ff96bbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/5/e524570b6f0ecb2e893c4b895607423265f12025" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/7/e714cb2724d60c166b89d1efef5091f8c4d31cda" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/7/e7b9d9238f07f711ca197cae064b42a1ab33074a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/e/ee5e2694366b4418f2f8193feebbb5e377af8a91" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/0/f0e0f9cec86fe4b939ae22be5264c758801eb28f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/2/f217b2cc254748a9fab8128209465925ea7336fc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/4/f44a24c642038da56e2f5c0fe975eb04e56c0ede" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/6/f69e1d4fdea609571a09bc86f4cf9f06948ddddc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/7/f7fc1b936c7677cdc0b76b9676bc507318014f86" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/b/fbc0704e1fade6bf51feecad4122b243d57baacb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/d/fd909da1d0f983616bffb0154ea29c635becebe0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/f/ffc0915ef29ad28765e3a946bea2935b58c9d732" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/ActivityType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/AddressForCommercialClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/AddressForIndividualClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/EconomicDetailsForCompany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/EconomicDetailsForIndividualClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/IdentificationForACompany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/PersonalIdentificationForAnIndividualClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/RelationshipWithEmployeesDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/StatisticDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/TypeOfCompany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructures/anothertypeofarraylist/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructures/anothertypeofarraylist/EnhancedArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructures/anothertypeofarraylist/SortedEnhancedArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructures/newkindoflinkedlist/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructures/newkindoflinkedlist/OptimizedDoubleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructures/newkindoflinkedlist/OptimizedSortedDoubleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructures/newkindoflinkedlist/TypeOfIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d57a6a6f-dc4b-4b46-956d-a0b8e0515f90.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d57a6a6f-dc4b-4b46-956d-a0b8e0515f90.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/13dcd0003cb08832d1ff49acfbacb258fedf764c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/2162e93e004d79cd3137114bc6be54740871d5e1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/25f547f597260b9b46298e65b264046747b6677b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/25f547f597260b9b46298e65b264046747b6677b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/53e6eff57dfb55519648476856f0a54ce364b679" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/53e6eff57dfb55519648476856f0a54ce364b679" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/614b77f4d20eb4df8f143ad44f3fd9672ad14d4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/6312f433682e337974260ff2ce38de3915545875" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7c763a4c54dc3ae244bd2e71c1710d0b152014c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88e7f38f9ee866ba3d25624f9d0def80e22ac2f6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88e7f38f9ee866ba3d25624f9d0def80e22ac2f6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/9647efd7fa935576b50bdc08611c378fd5dc82cf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f8848a13c95fccfc0a105a654c0ec38094a0e1e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f8848a13c95fccfc0a105a654c0ec38094a0e1e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a16e7db38c2efbdf785aceb872c7967113156aeb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a878f01ac6632659481a19ea66f8b9fe3b97e323" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a878f01ac6632659481a19ea66f8b9fe3b97e323" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c44194970409a50e6dbd15b3c1b552275bb180c0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c44194970409a50e6dbd15b3c1b552275bb180c0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c934f4d24d00c7649992bb5912463b886f4e1464" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c934f4d24d00c7649992bb5912463b886f4e1464" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d68b65d529a388948be429fa6063da8b8828ab38" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d68b65d529a388948be429fa6063da8b8828ab38" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd34e5373913fac0ceebcab0225a85a85406cefd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd34e5373913fac0ceebcab0225a85a85406cefd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/3/13dcd0003cb08832d1ff49acfbacb258fedf764c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/1/2162e93e004d79cd3137114bc6be54740871d5e1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/1/614b77f4d20eb4df8f143ad44f3fd9672ad14d4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/3/6312f433682e337974260ff2ce38de3915545875" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/c/7c763a4c54dc3ae244bd2e71c1710d0b152014c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/6/9647efd7fa935576b50bdc08611c378fd5dc82cf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/1/a16e7db38c2efbdf785aceb872c7967113156aeb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-j-8.1.0-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-j-8.1.0-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-j-8.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/protobuf-java-3.21.9-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/protobuf-java-3.21.9-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/protobuf-java-3.21.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/AssetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/AssetManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/Banker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/Banker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/CreditAnalyst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/CreditAnalyst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/FinancialAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/FinancialAdvisor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/InvestmentBanker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/InvestmentBanker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/InvestmentRepresentative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/InvestmentRepresentative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/LoanOfficer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/LoanOfficer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/LoanProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/LoanProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/MortgageConsultant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/MortgageConsultant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/RelationshipManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/RelationshipManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/TeamLeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/TeamLeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/Underwriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/Underwriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/CachedObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/CachedObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/LoadingCachedObjectsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/LoadingCachedObjectsFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/PastWorkDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/PastWorkDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/PresentWorkDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/PresentWorkDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/TimeAndDateInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/employeedefinition/TimeAndDateInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/accountwithdetails/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/Credit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/creditwithdetails/Credit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/depositwithdetails/Deposit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/CertificateOfDepositAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/CheckingAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/MoneyMarketAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofaccounts/moneymarketaccount/MoneyMarketAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/FundedCredit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/LongTermCredit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/MidTermCredit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/Mortgage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/mortgage/Mortgage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/ShortTermCredit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/CurrentAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/DemandDeposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/DemandDeposit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/FixedDeposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/FixedDeposit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/RecurringDeposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/RecurringDeposit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/SalaryAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/SavingsAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/SavingsGoldAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/TimeDeposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofdeposits/TimeDeposit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/CorporateClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/EnterpriseClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/creditwithdetails/Credit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/creditwithdetails/Credit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/depositwithdetails/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/depositwithdetails/Deposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/longtermcredit/LongTermCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/longtermcredit/LongTermCredit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/midtermcredit/MidTermCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/midtermcredit/MidTermCredit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/mortgage/Mortgage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/mortgage/Mortgage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/shorttermcredit/ShortTermCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/shorttermcredit/ShortTermCredit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/shorttermcredit/WhyShortTermCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/typeofcredits/shorttermcredit/WhyShortTermCredit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/EnterpriseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/EnterpriseClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/IndividualClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/IndividualClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/NonGovernmentalOrganizationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/NonGovernmentalOrganizationClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/SmallCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/SmallCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/StateInstitutionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/StateInstitutionClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeoflocations/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typofbankparts/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeoflocations/BankUnitDivision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typofbankparts/ATM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeoflocations/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typofbankparts/Branch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeoflocations/Headquarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typofbankparts/Headquarter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/credentialentities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/credentialentities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/NonGovernmentalOrganizationClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/SmallCompany.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/StateInstitutionClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/clientindetails/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/Loading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/Loading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/LoadingEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/LoadingEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/LoadingFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/LoadingFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressLinesDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressLinesDirection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressLinesWithPipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressLinesWithPipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ValidationKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ValidationKeys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/IMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/MainMenuBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/ImplementMenuBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/MenuBuilder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/CustomPrinting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/CustomPrinting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/PrintError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/PrintError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/PrintMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/PrintMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseutils/ToBankingWithSuccessDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseutils/ToBankingWithSuccessDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/ExecutionErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/ExecutionErrors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/FunctionalErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/FunctionalErrors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/InputErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/InputErrors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/IntegrityErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/IntegrityErrors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/StructuralErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/errorsclasification/StructuralErrors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/rememberoutputfromscreen/RegisterOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/rememberoutputfromscreen/RegisterOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/threadstoberun/PrintingTheMenuThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/threadstoberun/PrintingTheMenuThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,9 +352,9 @@
       <list>
         <option value="package-info" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -130,8 +380,17 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/corretto-17.0.7/lib/src.zip!/java.base/java/util/Iterator.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-17.0.7/lib/src.zip!/java.base/java/util/TreeSet.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -154,36 +413,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "workingWithDB",
-    "last_opened_file_path": "/home/vsoare/Documents/learningJava",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.422292",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;workingWithDB&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/vsoare/Documents/projectsLongTerm/BankAppInCLI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.422292&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofcredits.longtermcredit" />
@@ -194,14 +453,30 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.clibankinjava" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.clibankinjava.customdatastructures.anothertypeofarraylist" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.org.clibankinjava.customdatastructures.anothertypeofarraylist.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.clibankinjava.App" />
       <module name="BankAppInCLI" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.clibankinjava.components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.clibankinjava.customdatastructures.anothertypeofarraylist.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.clibankinjava.customdatastructures.anothertypeofarraylist.App" />
+      <module name="BankAppInCLI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.clibankinjava.customdatastructures.anothertypeofarraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -242,6 +517,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.clibankinjava.customdatastructures.anothertypeofarraylist.App" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.App" />
       </list>
@@ -287,7 +563,17 @@
       <workItem from="1697407739363" duration="52807000" />
       <workItem from="1698169236522" duration="92953000" />
       <workItem from="1698842809421" duration="1292000" />
-      <workItem from="1698846847461" duration="219567000" />
+      <workItem from="1698846847461" duration="283868000" />
+      <workItem from="1700668971351" duration="65566000" />
+      <workItem from="1701650258777" duration="67000" />
+      <workItem from="1701650815509" duration="1105000" />
+      <workItem from="1701718622260" duration="204000" />
+      <workItem from="1701718832033" duration="53000" />
+      <workItem from="1701718891933" duration="161000" />
+      <workItem from="1701720178003" duration="944000" />
+      <workItem from="1701721134938" duration="19097000" />
+      <workItem from="1701822299971" duration="279000" />
+      <workItem from="1701822587579" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
       <option name="closed" value="true" />
@@ -345,7 +631,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699215771757</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote.">
+      <option name="closed" value="true" />
+      <created>1699664611870</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699664611870</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote.">
+      <option name="closed" value="true" />
+      <created>1699664630167</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699664630167</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +664,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/workingWithDB" />
+                        <option value="workingWithDB" />
                       </list>
                     </value>
                   </entry>

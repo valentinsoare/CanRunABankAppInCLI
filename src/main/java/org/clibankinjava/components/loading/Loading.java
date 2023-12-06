@@ -1,7 +1,6 @@
 package org.clibankinjava.components.loading;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import org.clibankinjava.errorsclasification.CustomError;
 import org.clibankinjava.errorsclasification.StructuralErrors;
 import org.clibankinjava.validation.SanityChecks;
@@ -9,12 +8,14 @@ import org.clibankinjava.validation.SanityChecks;
 import java.util.*;
 
 @Getter
-@NoArgsConstructor
 public final class Loading {
+
     private Character charToUse;
     private Character charNotPassed;
     private String messageToBeUsed;
     private int emptySpaceFromLeft;
+
+    public Loading() {}
 
     public Loading(Character charToUse, String messageToBeUsed, Character charNotPassed, int emptySpaceFromLeft) throws InterruptedException {
         this.emptySpaceFromLeft = SanityChecks.checkEmptySpaces(emptySpaceFromLeft, "left");
@@ -76,8 +77,8 @@ public final class Loading {
 
         System.out.printf("%s%s", " ".repeat(Integer.parseInt(processedValues.get(ValidationKeys.EMPTY_SPACES))), processedValues.get(ValidationKeys.MAIN_MESSAGE));
 
-        int numberOfReps = Integer.parseInt(processedValues.get(ValidationKeys.NUMBER_OF_REPS));
-        int timeToSleep = Integer.parseInt(processedValues.get(ValidationKeys.TIME_SLEEP));
+        int numberOfReps = Integer.parseInt(processedValues.get(ValidationKeys.NUMBER_OF_REPS)),
+            timeToSleep = Integer.parseInt(processedValues.get(ValidationKeys.TIME_SLEEP));
 
         for (int i = 0; i < numberOfReps; i++) {
             System.out.printf("%s", usingChar);
@@ -98,10 +99,11 @@ public final class Loading {
 
         List<String> customChars = new ArrayList<>(Arrays.asList("⢿", "⣻", "⣽", "⣾", "⣷", "⣯", "⣟", "⡿"));
 
-        int i = 0, customCharsSize = customChars.size();
-        int numberOfReps = Integer.parseInt(processedValues.get(ValidationKeys.NUMBER_OF_REPS));
-        int sleepDuration = Integer.parseInt(processedValues.get(ValidationKeys.TIME_SLEEP));
-        int emptySpacesLeft = Integer.parseInt(processedValues.get(ValidationKeys.EMPTY_SPACES));
+        int i = 0,
+            customCharsSize = customChars.size(),
+            numberOfReps = Integer.parseInt(processedValues.get(ValidationKeys.NUMBER_OF_REPS)),
+            sleepDuration = Integer.parseInt(processedValues.get(ValidationKeys.TIME_SLEEP)),
+            emptySpacesLeft = Integer.parseInt(processedValues.get(ValidationKeys.EMPTY_SPACES));
 
         for (; i < numberOfReps; i++) {
             System.out.printf("%s[  %s %s  ]\r", " ".repeat(emptySpacesLeft),
@@ -117,18 +119,18 @@ public final class Loading {
         }
     }
 
-    public static void hourGlass(String messageToUse, int numberOfRepetitions, int timeBetweenChars, boolean ifDone, String messageEnd, int spacesLeft) throws InterruptedException {
+    public static void hourGlass(String messageToUse, int numberOfRepetitions, int timeBetweenChars,
+                                 boolean ifDone, String messageEnd, int spacesLeft) throws InterruptedException {
 
-        Map<ValidationKeys, String> processedValues = validateParametersLoadingEffects(messageToUse, numberOfRepetitions, timeBetweenChars,
-                ifDone, messageEnd, spacesLeft, StructuralErrors.PROGRESS_SQUARE_MESSAGE_INVALID);
+        Map<ValidationKeys, String> processedValues = validateParametersLoadingEffects(messageToUse, numberOfRepetitions,
+                timeBetweenChars, ifDone, messageEnd, spacesLeft, StructuralErrors.PROGRESS_SQUARE_MESSAGE_INVALID);
 
         List<Character> squareChars = new ArrayList<>(Arrays.asList('/', '-', '\\', '|'));
 
-        int i = 0;
-        int numberOfReps = Integer.parseInt(processedValues.get(ValidationKeys.NUMBER_OF_REPS));
-        int emptySpaces = Integer.parseInt(processedValues.get(ValidationKeys.EMPTY_SPACES));
-        int timeToSleep = Integer.parseInt(processedValues.get(ValidationKeys.TIME_SLEEP));
-
+        int i = 0,
+            numberOfReps = Integer.parseInt(processedValues.get(ValidationKeys.NUMBER_OF_REPS)),
+            emptySpaces = Integer.parseInt(processedValues.get(ValidationKeys.EMPTY_SPACES)),
+            timeToSleep = Integer.parseInt(processedValues.get(ValidationKeys.TIME_SLEEP));
 
         for (; i < numberOfReps; i++) {
             System.out.printf("%s%s < %s >\r", " ".repeat(emptySpaces), processedValues.get(ValidationKeys.MAIN_MESSAGE),

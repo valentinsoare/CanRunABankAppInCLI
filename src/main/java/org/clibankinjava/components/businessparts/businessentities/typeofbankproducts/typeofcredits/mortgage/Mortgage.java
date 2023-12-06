@@ -141,7 +141,7 @@ public class Mortgage extends Credit {
                 entry("possibleToRefinancing", String.valueOf(possibleToRefinancing)),
                 entry("numberOfMonthsWithNoReimbursementNecessary", String.valueOf(numberOfMonthsWithNoReimbursementNecessary)),
                 entry("isCoSignerNeeded", String.valueOf(isCoSignerNeeded)),
-                entry("coSigner", String.format("%s; %s; %s", coSigner.getFirstName(), coSigner.getLastName(), coSigner.getEmail())),
+                entry("coSigner", String.format("%s", coSigner.getClientRegistrationNumber())),
                 entry("minimumNumberOfTermInMonths", String.valueOf(minimumNumberOfTermInMonths)),
                 entry("maximumNumberOfTermInMonths", String.valueOf(maximumNumberOfTermInMonths)),
                 entry("maximumAmountOfMoneyThatCanBeTaken", maximumAmountOfMoneyThatCanBeTaken.toString()),

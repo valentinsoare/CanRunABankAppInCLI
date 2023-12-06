@@ -10,6 +10,7 @@ import org.clibankinjava.databaseutils.EntityManagerScope;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.TreeSet;
 import java.util.concurrent.*;
 
 public class App {
@@ -79,7 +80,7 @@ public class App {
 
         check.setId(44L);
         check.setName("Valentin Soare");
-        check.setAddress("Lucretiu Patrascanu, Nr. 9, Bl. Y2, Ap. 21");
+        check.setAddress("Str. Lucretiu Patrascanu, Nr. 9, Bl. Y2, Ap. 21");
         check.setDate(LocalDate.of(2008, Month.AUGUST, 11));
         check.setAmountToPay(new BigDecimal("1000000"));
         check.setPayToTheOrderOf("Tudorina Soare");
@@ -88,6 +89,6 @@ public class App {
         check.setCheckNumber("1919879923");
         check.setAccount(null);
 
-        CustomPrinting.drawABankCheck(check);
+        CustomPrinting.drawABlankCheck(check);
     }
 }

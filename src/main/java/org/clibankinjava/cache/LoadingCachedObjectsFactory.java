@@ -6,7 +6,6 @@ import org.clibankinjava.components.headers.IHeader;
 import org.clibankinjava.components.loading.LoadingEffect;
 import org.clibankinjava.components.loading.ProgressBar;
 import org.clibankinjava.components.loading.ProgressLinesDirection;
-import org.clibankinjava.components.menus.IMenu;
 import org.clibankinjava.components.menus.Menu;
 import org.clibankinjava.workwithinput.CatchAndProcessingInput;
 import org.clibankinjava.workwithinput.MenuProcessingInput;
@@ -14,9 +13,7 @@ import org.clibankinjava.workwithinput.MenuProcessingInput;
 import java.util.Map;
 
 public final class LoadingCachedObjectsFactory {
-
     private LoadingCachedObjectsFactory() {}
-
     private static final Map<String, Component> objects;
 
     static {
@@ -44,8 +41,8 @@ public final class LoadingCachedObjectsFactory {
         return ProgressBar.getNewInstanceOfProgressBar((ProgressBar) objects.get("progressbar"));
     }
 
-    public static IMenu loadMenu() {
-        return Menu.getNewInstance((IMenu) objects.get("menu"));
+    public static Menu loadMenu() {
+        return Menu.getNewInstance((Menu) objects.get("menu"));
     }
 
     public static CatchAndProcessingInput loadProcessingInput() {

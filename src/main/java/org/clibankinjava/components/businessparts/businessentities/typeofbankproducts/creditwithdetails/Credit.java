@@ -32,6 +32,11 @@ public abstract class Credit implements Comparable<Credit> {
     @Column(name = "id", nullable = false)
     private Long id;
 
+    @LazyGroup("ECONOMIC_PHASE")
+    @Basic(fetch = FetchType.LAZY)
+    @Column(name = "credit_registration_number")
+    private String creditRegistrationNumber;
+
     @LazyGroup("CLIENT")
     @ManyToOne(fetch = FetchType.LAZY,  cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name = "client_id")
@@ -134,6 +139,32 @@ public abstract class Credit implements Comparable<Credit> {
     @Basic(fetch = FetchType.LAZY)
     @Column(name = "assessment_fee_one_shot")
     private BigDecimal assessmentFeeOneShot;
+
+
+    @LazyGroup("PENALTIES")
+    @Basic(fetch = FetchType.LAZY)
+    @Column(name = "penalties_per_credit_monthly")
+    private BigDecimal penaltiesPerCreditMonthly;
+
+    @LazyGroup("PENALTIES")
+    @Basic(fetch = FetchType.LAZY)
+    @Column(name = "is_with_penalties")
+    private boolean isWithPenalties;
+
+    @LazyGroup("PENALTIES")
+    @Basic(fetch = FetchType.LAZY)
+    @Column(name = "percent_for_calculating_penalties_compound_from_monthly_payment")
+    private BigDecimal percentForCalculatingPenaltiesCompoundFromMonthlyPayment;
+
+    @LazyGroup("PENALTIES")
+    @Basic(fetch = FetchType.LAZY)
+    @Column(name = "paid_for_the_current_month")
+    private boolean paidForTheCurrentMonth;
+
+    @LazyGroup("PENALTIES")
+    @Basic(fetch = FetchType.LAZY)
+    @Column(name = "how_many_months_were_paid_in_advanced")
+    private long howManyMonthsWerePaidInAdvanced;
 
 
     @LazyGroup("TIME")
@@ -241,8 +272,7 @@ public abstract class Credit implements Comparable<Credit> {
     @Override
     public String toString() {
         Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
-                entry("client", String.format("%s %s %s",
-                        client.getFirstName(), client.getLastName(), client.getEmail())),
+                entry("client", String.format("%s", client.getClientRegistrationNumber())),
                 entry("typeOfCredit", typeOfCredit.toString()),
                 entry("valueOfTheCreditWithoutTheInterestAtTheEndOfIt", valueOfTheCreditWithoutTheInterestAtTheEndOfIt.toString()),
                 entry("valueOfTheCreditAtTheEndOfItWithInterest", valueOfTheCreditAtTheEndOfItWithInterest.toString()),
@@ -261,6 +291,11 @@ public abstract class Credit implements Comparable<Credit> {
                 entry("processingDocumentsForCreditFeeOneShot", processingDocumentsForCreditFeeOneShot.toString()),
                 entry("assessmentFeeApplied", String.valueOf(assessmentFeeApplied)),
                 entry("assessmentFeeOneShot", assessmentFeeOneShot.toString()),
+                entry("penaltiesPerCreditMonthly", penaltiesPerCreditMonthly.toString()),
+                entry("isWithPenalties", String.valueOf(isWithPenalties)),
+                entry("percentForCalculatingPenaltiesCompoundFromMonthlyPayment", percentForCalculatingPenaltiesCompoundFromMonthlyPayment.toString()),
+                entry("paidForTheCurrentMonth", String.valueOf(paidForTheCurrentMonth)),
+                entry("howManyMonthsWerePaidInAdvanced", String.valueOf(howManyMonthsWerePaidInAdvanced)),
                 entry("whenCreditWasTaken", whenCreditWasTaken.toString()),
                 entry("whenIsDueDateForPayingMonthly", whenIsDueDateForPayingMonthly.toString()),
                 entry("numberOfDaysFromWhenTheCreditWasTaken", numberOfDaysFromWhenTheCreditWasTaken.toString()),
