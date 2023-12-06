@@ -2,8 +2,8 @@ package org.clibankinjava.components.login;
 
 import lombok.Getter;
 import org.clibankinjava.cache.LoadingCachedObjectsFactory;
-import org.clibankinjava.components.credentials.Password;
-import org.clibankinjava.components.credentials.UserName;
+import org.clibankinjava.components.credentials.credentialentities.Password;
+import org.clibankinjava.components.credentials.credentialentities.User;
 import org.clibankinjava.components.headers.Header;
 import org.clibankinjava.components.headers.IHeader;
 import org.clibankinjava.customprinting.PrintError;
@@ -16,16 +16,15 @@ import java.io.Console;
 public final class TakeInputForLogin {
     private final IHeader loginHeader;
 
-    private UserName username;
+    private User username;
     private Password password;
-
 
     public TakeInputForLogin(String mainMessage, String secondaryMessage) throws InterruptedException {
         this.loginHeader = Header.getNewInstance(LoadingCachedObjectsFactory.loadHeader());
         loginHeader.setHeaderMessage(mainMessage, true);
         loginHeader.setSubHeaderMessage(secondaryMessage, false);
 
-        this.username = new UserName();
+        this.username = new User();
         this.password = new Password();
     }
 
@@ -45,7 +44,7 @@ public final class TakeInputForLogin {
         String introMessage = String.format("%s", "please provide user and password or quit/back: ");
 
         while ("none".equals(username.getUsername()) ||
-                "none".equals(password.getPassword())) {
+                "none".equals(password.getHashedPasswd())) {
             loginHeader.generateHeader(1,
                     0, '-', '|');
 

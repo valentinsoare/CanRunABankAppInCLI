@@ -1,0 +1,16 @@
+package org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.duties;
+
+public enum FinancialAnalystPrimaryDuties {
+    GATHERING_DATA_AND_INFORMATION,
+    ORGANIZE_INFORMATION,
+    ANALYZE_FINANCIAL_RESULTS,
+    MAKE_FORECASTS_AND_PROJECTIONS,
+    DEVELOP_RECOMMENDATIONS,
+    BUILD_EXCEL_MODELS,
+    MAKE_PRESENTATIONS,
+    GENERATE_REPORTS,
+    DEVELOP_FINANCIAL_MODELS,
+    IDENTIFY_TRENDS,
+    RECONCILE_TRANSACTIONS,
+    PROVIDE_RECOMMENDATIONS
+}

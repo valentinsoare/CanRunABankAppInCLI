@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="banking.sqlite">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.49">
+    <root id="1"/>
+    <routine id="2" parent="1" name="median">
+      <FunctionType>aggregate</FunctionType>
+    </routine>
+    <routine id="3" parent="1" name="stdev">
+      <FunctionType>aggregate</FunctionType>
+    </routine>
+    <routine id="4" parent="1" name="rightstr"/>
+    <routine id="5" parent="1" name="leftstr"/>
+    <routine id="6" parent="1" name="mode">
+      <FunctionType>aggregate</FunctionType>
+    </routine>
+    <routine id="7" parent="1" name="replicate"/>
+    <routine id="8" parent="1" name="padl"/>
+    <routine id="9" parent="1" name="square"/>
+    <routine id="10" parent="1" name="strfilter"/>
+    <routine id="11" parent="1" name="difference"/>
+    <routine id="12" parent="1" name="lower_quartile">
+      <FunctionType>aggregate</FunctionType>
+    </routine>
+    <routine id="13" parent="1" name="padr"/>
+    <routine id="14" parent="1" name="rtreedepth"/>
+    <routine id="15" parent="1" name="atn2"/>
+    <routine id="16" parent="1" name="match"/>
+    <routine id="17" parent="1" name="coth"/>
+    <routine id="18" parent="1" name="fts5_source_id">
+      <Deterministic>1</Deterministic>
+    </routine>
+    <routine id="19" parent="1" name="offsets"/>
+    <routine id="20" parent="1" name="matchinfo"/>
+    <routine id="21" parent="1" name="variance">
+      <FunctionType>aggregate</FunctionType>
+    </routine>
+    <routine id="22" parent="1" name="optimize"/>
+    <routine id="23" parent="1" name="padc"/>
+    <routine id="24" parent="1" name="proper"/>
+    <routine id="25" parent="1" name="reverse"/>
+    <routine id="26" parent="1" name="rtreenode"/>
+    <routine id="27" parent="1" name="charindex"/>
+    <routine id="28" parent="1" name="cot"/>
+    <routine id="29" parent="1" name="fts3_tokenizer"/>
+    <routine id="30" parent="1" name="fts5"/>
+    <schema id="31" parent="1" name="main">
+      <Current>1</Current>
+      <IntrospectionTimestamp>2023-09-05.03:57:46.677</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-09-05.00:57:46</LocalIntrospectionTimestamp>
+    </schema>
+    <argument id="32" parent="2">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="33" parent="2">
+      <Position>1</Position>
+    </argument>
+    <argument id="34" parent="3">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="35" parent="3">
+      <Position>1</Position>
+    </argument>
+    <argument id="36" parent="4">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="37" parent="4">
+      <Position>1</Position>
+    </argument>
+    <argument id="38" parent="4">
+      <Position>2</Position>
+    </argument>
+    <argument id="39" parent="5">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="40" parent="5">
+      <Position>1</Position>
+    </argument>
+    <argument id="41" parent="5">
+      <Position>2</Position>
+    </argument>
+    <argument id="42" parent="6">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="43" parent="6">
+      <Position>1</Position>
+    </argument>
+    <argument id="44" parent="7">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="45" parent="7">
+      <Position>1</Position>
+    </argument>
+    <argument id="46" parent="7">
+      <Position>2</Position>
+    </argument>
+    <argument id="47" parent="8">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="48" parent="8">
+      <Position>1</Position>
+    </argument>
+    <argument id="49" parent="8">
+      <Position>2</Position>
+    </argument>
+    <argument id="50" parent="9">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="51" parent="9">
+      <Position>1</Position>
+    </argument>
+    <argument id="52" parent="10">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="53" parent="10">
+      <Position>1</Position>
+    </argument>
+    <argument id="54" parent="10">
+      <Position>2</Position>
+    </argument>
+    <argument id="55" parent="11">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="56" parent="11">
+      <Position>1</Position>
+    </argument>
+    <argument id="57" parent="11">
+      <Position>2</Position>
+    </argument>
+    <argument id="58" parent="12">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="59" parent="12">
+      <Position>1</Position>
+    </argument>
+    <argument id="60" parent="13">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="61" parent="13">
+      <Position>1</Position>
+    </argument>
+    <argument id="62" parent="13">
+      <Position>2</Position>
+    </argument>
+    <argument id="63" parent="14">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="64" parent="14">
+      <Position>1</Position>
+    </argument>
+    <argument id="65" parent="15">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="66" parent="15">
+      <Position>1</Position>
+    </argument>
+    <argument id="67" parent="15">
+      <Position>2</Position>
+    </argument>
+    <argument id="68" parent="16">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="69" parent="16">
+      <Position>1</Position>
+    </argument>
+    <argument id="70" parent="16">
+      <Position>2</Position>
+    </argument>
+    <argument id="71" parent="17">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="72" parent="17">
+      <Position>1</Position>
+    </argument>
+    <argument id="73" parent="18">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="74" parent="19">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="75" parent="19">
+      <Position>1</Position>
+    </argument>
+    <argument id="76" parent="20">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="77" parent="20">
+      <Position>1</Position>
+    </argument>
+    <argument id="78" parent="21">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="79" parent="21">
+      <Position>1</Position>
+    </argument>
+    <argument id="80" parent="22">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="81" parent="22">
+      <Position>1</Position>
+    </argument>
+    <argument id="82" parent="23">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="83" parent="23">
+      <Position>1</Position>
+    </argument>
+    <argument id="84" parent="23">
+      <Position>2</Position>
+    </argument>
+    <argument id="85" parent="24">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="86" parent="24">
+      <Position>1</Position>
+    </argument>
+    <argument id="87" parent="25">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="88" parent="25">
+      <Position>1</Position>
+    </argument>
+    <argument id="89" parent="26">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="90" parent="26">
+      <Position>1</Position>
+    </argument>
+    <argument id="91" parent="26">
+      <Position>2</Position>
+    </argument>
+    <argument id="92" parent="27">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="93" parent="27">
+      <Position>1</Position>
+    </argument>
+    <argument id="94" parent="27">
+      <Position>2</Position>
+    </argument>
+    <argument id="95" parent="28">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="96" parent="28">
+      <Position>1</Position>
+    </argument>
+    <argument id="97" parent="29">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="98" parent="29">
+      <Position>1</Position>
+    </argument>
+    <argument id="99" parent="30">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="100" parent="30">
+      <Position>1</Position>
+    </argument>
+    <table id="101" parent="31" name="IndividualClient"/>
+    <table id="102" parent="31" name="passwords"/>
+    <table id="103" parent="31" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <table id="104" parent="31" name="sqlite_sequence">
+      <System>1</System>
+    </table>
+    <table id="105" parent="31" name="usernames"/>
+    <column id="106" parent="101" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>INTEGER|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="107" parent="101" name="userName">
+      <DasType>TEXT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="108" parent="101" name="email">
+      <DasType>TEXT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="109" parent="101" name="personalIdentificationNumber">
+      <DasType>INTEGER|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="110" parent="101" name="seriesAndNumberOfTheIdCard">
+      <DasType>INTEGER|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="111" parent="101" name="lastGraduatedSchool">
+      <DasType>TEXT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="112" parent="101" name="currentEmployer">
+      <DasType>TEXT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="113" parent="101" name="revenuePerMonth">
+      <DasType>REAL|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <column id="114" parent="101" name="numberOfCreditContractsWithUs">
+      <DasType>INTEGER|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+    </column>
+    <column id="115" parent="101" name="numberOfDepositContractsWithUs">
+      <DasType>INTEGER|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+    </column>
+    <column id="116" parent="101" name="numberOFCreditCardsWithUs">
+      <DasType>INTEGER|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+    </column>
+    <column id="117" parent="101" name="lastRevenueFromQueryToFiscalAdmin">
+      <DasType>INTEGER|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>12</Position>
+    </column>
+    <index id="118" parent="101" name="sqlite_autoindex_IndividualClient_1">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <index id="119" parent="101" name="sqlite_autoindex_IndividualClient_2">
+      <ColNames>userName</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <index id="120" parent="101" name="sqlite_autoindex_IndividualClient_3">
+      <ColNames>personalIdentificationNumber</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <index id="121" parent="101" name="sqlite_autoindex_IndividualClient_4">
+      <ColNames>seriesAndNumberOfTheIdCard</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="122" parent="101">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_IndividualClient_1</UnderlyingIndexName>
+    </key>
+    <key id="123" parent="101">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_IndividualClient_1</UnderlyingIndexName>
+    </key>
+    <key id="124" parent="101">
+      <ColNames>userName</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_IndividualClient_2</UnderlyingIndexName>
+    </key>
+    <key id="125" parent="101">
+      <ColNames>personalIdentificationNumber</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_IndividualClient_3</UnderlyingIndexName>
+    </key>
+    <key id="126" parent="101">
+      <ColNames>seriesAndNumberOfTheIdCard</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_IndividualClient_4</UnderlyingIndexName>
+    </key>
+    <column id="127" parent="102" name="_id">
+      <DasType>INTEGER|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="128" parent="102" name="username">
+      <DasType>TEXT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="129" parent="102" name="password">
+      <DasType>TEXT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="130" parent="102" name="expirein">
+      <DasType>INTEGER|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="131" parent="102" name="sqlite_autoindex_passwords_1">
+      <ColNames>_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <index id="132" parent="102" name="sqlite_autoindex_passwords_2">
+      <ColNames>username</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="133" parent="102">
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_passwords_2</UnderlyingIndexName>
+    </key>
+    <key id="134" parent="102">
+      <ColNames>_id</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_passwords_1</UnderlyingIndexName>
+    </key>
+    <key id="135" parent="102">
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_passwords_2</UnderlyingIndexName>
+    </key>
+    <column id="136" parent="103" name="type">
+      <DasType>TEXT|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="137" parent="103" name="name">
+      <DasType>TEXT|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="138" parent="103" name="tbl_name">
+      <DasType>TEXT|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="139" parent="103" name="rootpage">
+      <DasType>INT|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="140" parent="103" name="sql">
+      <DasType>TEXT|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="141" parent="104" name="name">
+      <Position>1</Position>
+    </column>
+    <column id="142" parent="104" name="seq">
+      <Position>2</Position>
+    </column>
+    <column id="143" parent="105" name="_id">
+      <DasType>INTEGER|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="144" parent="105" name="username">
+      <DasType>TEXT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="145" parent="105" name="firstname">
+      <DasType>TEXT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="146" parent="105" name="lastname">
+      <DasType>TEXT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="147" parent="105" name="email">
+      <DasType>TEXT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="148" parent="105" name="role">
+      <DasType>TEXT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="149" parent="105" name="typeofclient">
+      <DasType>TEXT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <index id="150" parent="105" name="sqlite_autoindex_usernames_1">
+      <ColNames>_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <index id="151" parent="105" name="sqlite_autoindex_usernames_2">
+      <ColNames>username</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <index id="152" parent="105" name="sqlite_autoindex_usernames_3">
+      <ColNames>email</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="153" parent="105">
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_usernames_2</UnderlyingIndexName>
+    </key>
+    <key id="154" parent="105">
+      <ColNames>_id</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_usernames_1</UnderlyingIndexName>
+    </key>
+    <key id="155" parent="105">
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_usernames_2</UnderlyingIndexName>
+    </key>
+    <key id="156" parent="105">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_usernames_3</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

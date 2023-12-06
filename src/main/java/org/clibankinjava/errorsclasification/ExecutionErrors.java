@@ -30,4 +30,9 @@ public enum ExecutionErrors implements CustomError {
     public List<CustomError> allErrorsWithinCategory() {
         return  new ArrayList<>(Arrays.asList(LOAD_CONSOLE_ISSUE));
     }
+
+    @Override
+    public String toString() {
+        return this.content;
+    }
 }

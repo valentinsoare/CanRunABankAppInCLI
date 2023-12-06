@@ -4,28 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="A new Loading effect implemented.">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/CorporateClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/Datasource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/IndividualClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/LoginCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/NonGovernmentalOrganizationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/PasswordDBStruct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/StateInstitutionClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/databaseoperations/UsernameDBStruct.java" afterDir="false" />
+    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructures/operationswithcustomdatastructures/OperationsOnMaps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7e12ce9-c734-4127-819b-4f0aacf2eeae.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7e12ce9-c734-4127-819b-4f0aacf2eeae.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/072f5c582d12f4c1a90ead53b737414fd0c86797" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/072f5c582d12f4c1a90ead53b737414fd0c86797" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/55b2be58234565f40bf9d9ad6d49025f32cf817d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/55b2be58234565f40bf9d9ad6d49025f32cf817d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/9070e1bcc66d98783fc9b75e7bfea766007f60b7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/9070e1bcc66d98783fc9b75e7bfea766007f60b7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a878f01ac6632659481a19ea66f8b9fe3b97e323" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a878f01ac6632659481a19ea66f8b9fe3b97e323" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6f3e0a5ad9fc2414c3d41f72683516e3e8efabf" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6f3e0a5ad9fc2414c3d41f72683516e3e8efabf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b70fc829adcb5b894d2dca25fb52cc77d855d918" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b70fc829adcb5b894d2dca25fb52cc77d855d918" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/LoadingCachedObjectsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/cache/LoadingCachedObjectsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/LoadingFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/LoadingFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressLinesDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/loading/ProgressLinesDirection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/menus/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/CustomPrinting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customprinting/CustomPrinting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/AssetManagerResponsibilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/detailsaboutemployee/responsabilitiesofemployee/AssetManagerResponsibilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructures/anothertypeofarraylist/App.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,15 +29,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="workingWithDB" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,54 +58,103 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/corretto-17.0.7/lib/src.zip!/java.base/java/util/Iterator.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-17.0.7/lib/src.zip!/java.base/java/util/TreeSet.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2URgFCOvsPzxc1jfC2Wks0DDhKi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/vsoare/Documents/projectsLongTerm/BankAppInCLI",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;workingWithDB&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/vsoare/Documents/projectsLongTerm/BankAppInCLI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.422292&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofcredits.longtermcredit" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.clibankinjava" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.clibankinjava.customdatastructures.anothertypeofarraylist" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.org.clibankinjava.customdatastructures.anothertypeofarraylist.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.clibankinjava.App" />
       <module name="BankAppInCLI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.clibankinjava.*" />
+          <option name="PATTERN" value="org.clibankinjava.components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.clibankinjava.customdatastructures.anothertypeofarraylist.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.clibankinjava.customdatastructures.anothertypeofarraylist.App" />
+      <module name="BankAppInCLI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.clibankinjava.customdatastructures.anothertypeofarraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,8 +195,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="Application.org.clibankinjava.customdatastructures.anothertypeofarraylist.App" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.App" />
       </list>
@@ -175,7 +218,40 @@
       <workItem from="1693984762756" duration="10254000" />
       <workItem from="1694207285050" duration="772000" />
       <workItem from="1694213611139" duration="10000" />
-      <workItem from="1694246187603" duration="3163000" />
+      <workItem from="1694246187603" duration="6998000" />
+      <workItem from="1694385568076" duration="32000" />
+      <workItem from="1694385607669" duration="434000" />
+      <workItem from="1694386049327" duration="6124000" />
+      <workItem from="1694483874426" duration="339000" />
+      <workItem from="1694484218435" duration="81000" />
+      <workItem from="1694484601633" duration="2221000" />
+      <workItem from="1694489171192" duration="411000" />
+      <workItem from="1694489741759" duration="71000" />
+      <workItem from="1694489825029" duration="17033000" />
+      <workItem from="1694846548901" duration="79000" />
+      <workItem from="1694846633805" duration="29000" />
+      <workItem from="1694846668236" duration="476000" />
+      <workItem from="1694847234776" duration="149000" />
+      <workItem from="1694847421116" duration="4042000" />
+      <workItem from="1694885212175" duration="322000" />
+      <workItem from="1694914511567" duration="22958000" />
+      <workItem from="1695016353259" duration="16000" />
+      <workItem from="1697059313981" duration="6269000" />
+      <workItem from="1697109083045" duration="19407000" />
+      <workItem from="1697407739363" duration="52807000" />
+      <workItem from="1698169236522" duration="92953000" />
+      <workItem from="1698842809421" duration="1292000" />
+      <workItem from="1698846847461" duration="283868000" />
+      <workItem from="1700668971351" duration="65566000" />
+      <workItem from="1701650258777" duration="67000" />
+      <workItem from="1701650815509" duration="1105000" />
+      <workItem from="1701718622260" duration="204000" />
+      <workItem from="1701718832033" duration="53000" />
+      <workItem from="1701718891933" duration="161000" />
+      <workItem from="1701720178003" duration="944000" />
+      <workItem from="1701721134938" duration="19097000" />
+      <workItem from="1701822299971" duration="279000" />
+      <workItem from="1701822587579" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
       <option name="closed" value="true" />
@@ -201,7 +277,55 @@
       <option name="project" value="LOCAL" />
       <updated>1693457710636</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New classes for DB operations.">
+      <option name="closed" value="true" />
+      <created>1694264143248</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694264143249</updated>
+    </task>
+    <task id="LOCAL-00005" summary="New classes for DB operations.">
+      <option name="closed" value="true" />
+      <created>1698206691779</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698206691779</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Dependencies for preparing to work with Hibernate and JPA frameworks.">
+      <option name="closed" value="true" />
+      <created>1698206740794</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698206740794</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Creating the mapping for banking users/employees from DB to code. Next will be designing the products and the mapping DB &lt;-&gt; code.">
+      <option name="closed" value="true" />
+      <created>1699215771757</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699215771757</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote.">
+      <option name="closed" value="true" />
+      <created>1699664611870</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699664611870</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote.">
+      <option name="closed" value="true" />
+      <created>1699664630167</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699664630167</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +342,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="loginSignup" />
+                        <option value="workingWithDB" />
                       </list>
                     </value>
                   </entry>
@@ -234,6 +358,14 @@
     <MESSAGE value="FirstPushInitialProjectWithMenuHeader...the rest will follow" />
     <MESSAGE value="Working with love on loginsignup and loading sections. Starting to use lombok library." />
     <MESSAGE value="A new Loading effect implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="A new Loading effect implemented." />
+    <MESSAGE value="New classes for DB operations." />
+    <MESSAGE value="Dependencies for preparing to work with Hibernate and JPA frameworks." />
+    <MESSAGE value="Creating the mapping for banking users/employees from DB to code. Next will be designing the products and the mapping DB &lt;-&gt; code." />
+    <MESSAGE value="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

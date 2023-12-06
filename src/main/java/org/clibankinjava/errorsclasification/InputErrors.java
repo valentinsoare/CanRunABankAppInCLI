@@ -34,11 +34,6 @@ public enum InputErrors implements CustomError {
     }
 
     @Override
-    public String toString() {
-        return this.getContent();
-    }
-
-    @Override
     public List<CustomError> allErrorsWithinCategory() {
         return new ArrayList<>(Arrays.asList(NULL_OR_EMPTY_TEXT, INCORRECT_NUMERICAL_VALUE, NULL_OR_BLANK_USERNAME,
                 NULL_OR_BLANK_MENU_OPTION_GIVEN, INDEX_FOR_MENU_OPTION_NOT_VALID));
@@ -47,5 +42,10 @@ public enum InputErrors implements CustomError {
     @Override
     public int getNumberOfErrorsDefined() {
         return allErrorsWithinCategory().size();
+    }
+
+    @Override
+    public String toString() {
+        return this.content;
     }
 }

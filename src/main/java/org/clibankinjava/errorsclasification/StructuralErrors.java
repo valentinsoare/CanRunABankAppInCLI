@@ -60,4 +60,9 @@ public enum StructuralErrors implements CustomError {
                 PROGRESS_SQUARE_MESSAGE_INVALID, MESSAGE_AT_THE_END_FOR_LOADING_INVALID, PROGRESS_FORMS_MESSAGE_INVALID,
                 MESSAGE_AT_THE_BOTTOM_OF_MENU_INVALID, NO_MENU_OPTION_AVAILABLE));
     }
+
+    @Override
+    public String toString() {
+        return this.content;
+    }
 }

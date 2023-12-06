@@ -1,0 +1,16 @@
+Index: src/main/java/org/clibankinjava/customdatastructures/anothertypeofarraylist/EnhancedArrayList.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.clibankinjava.customdatastructures.anothertypeofarraylist;\n\nimport lombok.Getter;\nimport org.jetbrains.annotations.NotNull;\n\nimport java.util.ArrayList;\nimport java.util.Collection;\nimport java.util.List;\n\n@Getter\npublic class EnhancedArrayList<E> extends ArrayList<E> {\n    private static int DEFAULT_CAPACITY;\n    private boolean isEntirelyListRotated;\n\n    static {\n        DEFAULT_CAPACITY = 4;\n    }\n\n    public EnhancedArrayList(int initialCapacity) {\n        super(initialCapacity);\n    }\n\n    public EnhancedArrayList() {\n        this(DEFAULT_CAPACITY);\n    }\n\n    public EnhancedArrayList(@NotNull Collection<? extends E> c) {\n        super(c);\n    }\n\n    public void rotate(int digitsToRotateToLeft) {\n        EnhancedArrayList<E> tempStruct = new EnhancedArrayList<>();\n\n\n\n    }\n}\n\n
+===================================================================
+diff --git a/src/main/java/org/clibankinjava/customdatastructures/anothertypeofarraylist/EnhancedArrayList.java b/src/main/java/org/clibankinjava/customdatastructures/anothertypeofarraylist/EnhancedArrayList.java
+--- a/src/main/java/org/clibankinjava/customdatastructures/anothertypeofarraylist/EnhancedArrayList.java	
++++ b/src/main/java/org/clibankinjava/customdatastructures/anothertypeofarraylist/EnhancedArrayList.java	
+@@ -5,7 +5,6 @@
+ 
+ import java.util.ArrayList;
+ import java.util.Collection;
+-import java.util.List;
+ 
+ @Getter
+ public class EnhancedArrayList<E> extends ArrayList<E> {

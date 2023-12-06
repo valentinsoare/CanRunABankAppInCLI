@@ -1,13 +1,12 @@
 package org.clibankinjava.threadstoberun;
 
-import org.clibankinjava.components.menus.IMenu;
 import org.clibankinjava.customprinting.PrintMenu;
 import org.clibankinjava.components.menus.Menu;
 
 public class PrintingTheMenuThread implements Runnable {
-    private final IMenu menu;
+    private final Menu menu;
 
-    public PrintingTheMenuThread(IMenu menu) {
+    public PrintingTheMenuThread(Menu menu) {
         this.menu = menu;
     }
 

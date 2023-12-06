@@ -1,7 +1,8 @@
 package org.clibankinjava.components.loading;
 
-public class ProgressLinesDirection extends LoadingEffect {
-    private Loading loading;
+public final class ProgressLinesDirection extends LoadingEffect {
+
+    private final Loading loading;
 
     public ProgressLinesDirection(Loading loading) {
         this.loading = loading;
@@ -14,16 +15,17 @@ public class ProgressLinesDirection extends LoadingEffect {
     @Override
     public void loadProgressIndicator(int barSize, int emptySpaceFromTheLeft, int emptySpaceFromAbove,
                                       int emptySpaceFromBellow, int sleepBetweenChars) throws InterruptedException {
-        StringBuilder effect = new StringBuilder();
-        effect.append(String.valueOf(loading.getCharNotPassed()).repeat(Math.max(0, barSize)));
+
+        StringBuilder effect = new StringBuilder()
+                .append(String.valueOf(loading.getCharNotPassed()).repeat(Math.max(0, barSize)));
 
         System.out.print("\033[H\033[2J");
         System.out.flush();
-        System.out.print("\u001B[?25l"); // hide the cursor
+        System.out.print("\u001B[?25l");
         System.out.printf("%s%s [+] %s [+]%s", "\n".repeat(emptySpaceFromAbove), " ".repeat(emptySpaceFromTheLeft * 2),
                 loading.getMessageToBeUsed().trim(), "\n".repeat(emptySpaceFromBellow));
 
-        String toBePrinted = "";
+        String toBePrinted;
         int status, move, numberOfPasses = 0, j = 1, end = 100;
 
         for (; j <= barSize; j++) {
@@ -39,7 +41,7 @@ public class ProgressLinesDirection extends LoadingEffect {
                                 .replace(loading.getCharNotPassed(), loading.getCharToUse()), (status / 2 + 50));
                 if (status == end) {
                     System.out.printf("%s%s COMPLETED!%n%n", " ".repeat(emptySpaceFromTheLeft), toBePrinted);
-                    System.out.print("\u001B[?25h"); //show the cursor
+                    System.out.print("\u001B[?25h");
                     break;
                 }
             }

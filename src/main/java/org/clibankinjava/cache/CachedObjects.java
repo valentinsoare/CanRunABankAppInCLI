@@ -1,14 +1,14 @@
 package org.clibankinjava.cache;
 
 import lombok.Getter;
-import org.clibankinjava.Component;
+import org.clibankinjava.components.Component;
 import org.clibankinjava.components.headers.HeaderConstruct;
 import org.clibankinjava.components.headers.IHeader;
 import org.clibankinjava.components.loading.LoadingEffect;
 import org.clibankinjava.components.loading.LoadingFactory;
-import org.clibankinjava.components.menus.IMenu;
-import org.clibankinjava.components.menus.MainMenuBuilder;
-import org.clibankinjava.workwithinput.MainProcessingInput;
+import org.clibankinjava.components.menus.ImplementMenuBuilder;
+import org.clibankinjava.components.menus.Menu;
+import org.clibankinjava.workwithinput.MenuProcessingInput;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,7 +35,7 @@ public class CachedObjects {
                 .build();
         cachedObjects.put("header", header);
 
-        IMenu menu = new MainMenuBuilder().setupHeader(header)
+        Menu menu = new ImplementMenuBuilder().setupHeader(header)
                 .setupNumberOfEntries(6)
                 .setupEntries("add customer, change name, check balance, modify balance, bank summary, quit")
                 .setMessageAtTheBottom("please choose an option: ")
@@ -45,7 +45,7 @@ public class CachedObjects {
                 .build();
         cachedObjects.put("menu", menu);
 
-        cachedObjects.put("processinginput", new MainProcessingInput("main menu option", 5));
+        cachedObjects.put("processinginput", new MenuProcessingInput("main menu option", 5));
 
         String messageForLoading = "load banking application";
         int spaceForLeft = 5;

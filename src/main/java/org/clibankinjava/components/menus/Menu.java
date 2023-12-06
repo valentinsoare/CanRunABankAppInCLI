@@ -1,6 +1,8 @@
 package org.clibankinjava.components.menus;
 
+import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
+import org.clibankinjava.components.Component;
 import org.clibankinjava.components.headers.Header;
 import org.clibankinjava.components.headers.IHeader;
 import org.clibankinjava.customprinting.PrintError;
@@ -13,7 +15,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public final class Menu implements IMenu {
+@Getter
+public final class Menu implements Component {
     private IHeader headerForMenu;
     private int numberOfEntriesInTheMenu;
     private List<String> optionsForTheMenuAfterProcessing;
@@ -34,7 +37,7 @@ public final class Menu implements IMenu {
         this.messageAtTheBottomOfTheMenu = "";
     }
 
-    private Menu(IMenu menu) {
+    private Menu(Menu menu) {
         this.headerForMenu = Header.getNewInstance(menu.getHeaderForMenu());
         this.numberOfEntriesInTheMenu = menu.getNumberOfEntriesInTheMenu();
         this.optionsForTheMenuAfterProcessing = new ArrayList<>(menu.getOptionsForTheMenuAfterProcessing());
@@ -44,11 +47,10 @@ public final class Menu implements IMenu {
         this.messageAtTheBottomOfTheMenu = menu.getMessageAtTheBottomOfTheMenu();
     }
 
-    public static IMenu getNewInstance(IMenu menu) {
+    public static Menu getNewInstance(Menu menu) {
         return new Menu(menu);
     }
 
-    @Override
     public void creatingMenuEntries(String menuEntries) throws InterruptedException {
         class ProcessingEntries {
             private ProcessingEntries() {}
@@ -69,12 +71,10 @@ public final class Menu implements IMenu {
         ));
     }
 
-    @Override
     public List<String> getOptionsForTheMenuAfterProcessing() {
         return optionsForTheMenuAfterProcessing;
     }
 
-    @Override
     public boolean clearOptionsForMenu() {
         if (!optionsForTheMenuAfterProcessing.isEmpty()) {
             optionsForTheMenuAfterProcessing.clear();
@@ -85,7 +85,6 @@ public final class Menu implements IMenu {
         return false;
     }
 
-    @Override
     public boolean addMenuOptionAtAnIndex(int index, String optionFromUser) throws InterruptedException {
         if (index < 0 || index > optionsForTheMenuAfterProcessing.size()) {
             PrintError.toConsole(InputErrors.INDEX_FOR_MENU_OPTION_NOT_VALID, emptySpaceLeft, 1000,
@@ -122,64 +121,36 @@ public final class Menu implements IMenu {
         return true;
     }
 
-    @Override
     public void setHeaderForMenu(IHeader header) {
         this.headerForMenu = header;
     }
 
-    @Override
     public void setNumberOfEntriesInTheMenu(int numberOfEntries) {
         this.numberOfEntriesInTheMenu = numberOfEntries;
     }
 
-    @Override
     public void setMessageAtTheBottomOfTheMenu(String messageAtTheBottom) throws InterruptedException {
         this.messageAtTheBottomOfTheMenu = SanityChecks.checkMessage(messageAtTheBottom, false, true,
                 emptySpaceLeft, false, true, StructuralErrors.MESSAGE_AT_THE_BOTTOM_OF_MENU_INVALID);
     }
 
-    @Override
-    public IHeader getHeaderForMenu() {
-        return headerForMenu;
-    }
-
-    @Override
-    public int getNumberOfEntriesInTheMenu() {
-        return numberOfEntriesInTheMenu;
-    }
-
-    @Override
-    public String getMessageAtTheBottomOfTheMenu() {
-        return messageAtTheBottomOfTheMenu;
-    }
-
-    @Override
     public int getEmptySpacesFromLeftEdgeScreen() {
         return emptySpaceLeft;
     }
 
-    @Override
     public int getEmptySpacesFromTopEdgeScreen() {
         return emptySpaceAbove;
     }
 
-    @Override
-    public int getEmptySpaceBellow() {
-        return emptySpaceBellow;
-    }
-
-    @Override
     public void setEmptySpacesFromLeftEdgeScreen(int emptySpacesFromLeftEdgeScreen) {
         this.emptySpaceLeft = SanityChecks.checkEmptySpaces(emptySpacesFromLeftEdgeScreen, "left");
     }
 
-    @Override
-    public void setEmptySpacesFromTopEdgeScreen(int emptySpacesFromTopEdgeScreen) {
-        this.emptySpaceAbove = SanityChecks.checkEmptySpaces(emptySpacesFromTopEdgeScreen, "top");
-    }
-
-    @Override
     public void setEmptySpacesBelow(int emptySpacesBelow) {
         this.emptySpaceBellow = SanityChecks.checkEmptySpaces(emptySpacesBelow, "bellow");
+    }
+
+    public void setEmptySpacesFromTopEdgeScreen(int emptySpacesFromTopEdgeScreen) {
+        this.emptySpaceAbove = SanityChecks.checkEmptySpaces(emptySpacesFromTopEdgeScreen, "top");
     }
 }

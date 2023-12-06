@@ -1,8 +1,8 @@
 package org.clibankinjava.workwithinput;
 
-import org.clibankinjava.Component;
+import org.clibankinjava.components.Component;
 
 public interface CatchAndProcessingInput extends Component {
-    public String catchInputFromUser();
-    public String processingInput(String inputFromUser);
+    String catchInputFromUser();
+    String processingInput(String inputFromUser);
 }
