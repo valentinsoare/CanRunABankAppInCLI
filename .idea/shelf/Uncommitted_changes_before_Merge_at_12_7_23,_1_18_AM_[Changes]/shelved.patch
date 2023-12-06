@@ -1,0 +1,34 @@
+Index: .idea/sonarlint/issuestore/index.pb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/sonarlint/issuestore/index.pb b/.idea/sonarlint/issuestore/index.pb
+--- a/.idea/sonarlint/issuestore/index.pb	(revision 18c46792eabed60b6ca435fd7c19c2021d9ecac3)
++++ b/.idea/sonarlint/issuestore/index.pb	(date 1701904712053)
+@@ -1,0 +1,7 @@
++
++S
++#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
++]
++-.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
++r
++Bsrc/main/java/org/clibankinjava/customprinting/CustomPrinting.java,a/8/a878f01ac6632659481a19ea66f8b9fe3b97e323
+\ No newline at end of file
+Index: .idea/sonarlint/securityhotspotstore/index.pb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/sonarlint/securityhotspotstore/index.pb b/.idea/sonarlint/securityhotspotstore/index.pb
+--- a/.idea/sonarlint/securityhotspotstore/index.pb	(revision 18c46792eabed60b6ca435fd7c19c2021d9ecac3)
++++ b/.idea/sonarlint/securityhotspotstore/index.pb	(date 1701904712053)
+@@ -1,0 +1,7 @@
++
++S
++#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
++]
++-.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
++r
++Bsrc/main/java/org/clibankinjava/customprinting/CustomPrinting.java,a/8/a878f01ac6632659481a19ea66f8b9fe3b97e323
+\ No newline at end of file
