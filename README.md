@@ -1,2 +1,2 @@
 # BankAppInCLI
-Bvanking Application With All Its Trimmings In Pure Java!
+Banking application Wwth all its trimmings In Java using OOP principles, JPA/Hibernate, concurrency, custom data structures, SOLID Design Principles along with Gang of Four Design Patterns.
