@@ -8,15 +8,14 @@ import org.clibankinjava.components.businessparts.businessentities.typeofbankpro
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofaccounts.additionalproductsforaccounts.CreditCard;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofaccounts.additionalproductsforaccounts.DebitCard;
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.TypeOfClient;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
+import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -172,36 +171,25 @@ public class EconomicCharacteristics implements Comparable<EconomicCharacteristi
 
     @Override
     public String toString() {
-        Map<String, String> toPrintValues = new LinkedHashMap<>(Map.ofEntries(
-            entry("iban", iban),
-                entry("bic", bic),
-                entry("currency", currency.toString()),
-                entry("balance", balance.toString()),
-                entry("lastDebitedTransaction", lastDebitedTransaction),
-                entry("lastCreditedTransaction", lastCreditedTransaction),
-                entry("requiredMinimumBalance", String.valueOf(requiredMinimumBalance)),
-                entry("minimumBalance", minimumBalance.toString()),
-                entry("typeOfClient", typeOfClient.toString()),
-                entry("internetBankService", String.valueOf(internetBankService)),
-                entry("mobileCheckDeposit", String.valueOf(mobileCheckDeposit)),
-                entry("onlineBillPay", String.valueOf(onlineBillPay)),
-                entry("emailAndTextAlerts", String.valueOf(emailAndTextAlerts)),
-                entry("debitCardAvailable", String.valueOf(debitCardAvailable)),
-                entry("possibleToOverdraft", String.valueOf(possibleToOverdraft))
-        ));
+//        Map<String, String> toPrintValues = new LinkedHashMap<>(Map.ofEntries(
+//            entry("iban", iban),
+//                entry("bic", bic),
+//                entry("currency", currency.toString()),
+//                entry("balance", balance.toString()),
+//                entry("lastDebitedTransaction", lastDebitedTransaction),
+//                entry("lastCreditedTransaction", lastCreditedTransaction),
+//                entry("requiredMinimumBalance", String.valueOf(requiredMinimumBalance)),
+//                entry("minimumBalance", minimumBalance.toString()),
+//                entry("typeOfClient", typeOfClient.toString()),
+//                entry("internetBankService", String.valueOf(internetBankService)),
+//                entry("mobileCheckDeposit", String.valueOf(mobileCheckDeposit)),
+//                entry("onlineBillPay", String.valueOf(onlineBillPay)),
+//                entry("emailAndTextAlerts", String.valueOf(emailAndTextAlerts)),
+//                entry("debitCardAvailable", String.valueOf(debitCardAvailable)),
+//                entry("possibleToOverdraft", String.valueOf(possibleToOverdraft))
+//        ));
 
-        StringBuilder printingValues = new StringBuilder("EconomicCharacteristics [");
-
-        int i = 0;
-        for (Map.Entry<String, String> element : toPrintValues.entrySet()) {
-            printingValues.append(String.format("%s: %s", element.getKey(), element.getValue()));
-
-            if (i++ < toPrintValues.size() - 1) {
-                printingValues.append(", ");
-            }
-        }
-
-        printingValues.append("]");
-        return printingValues.toString();
+        Map<String, ?> toPrintValues = OperationsOnMap.putObjectAttributes(this);
+        return CustomPrinting.of(toPrintValues, "EconomicCharacteristics [");
     }
 }

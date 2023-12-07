@@ -3,15 +3,13 @@ package org.clibankinjava.components.businessparts.businessentities.typeofclient
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.time.LocalDate;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -122,19 +120,20 @@ public class PersonalIdentificationForAnIndividualClient implements Comparable<P
 
     @Override
     public String toString() {
-        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
-                entry("firstName", firstName),
-                entry("lastName", lastName),
-                entry("dateOfBirth", dateOfBirth.toString()),
-                entry("personalIdentificationNumber", personalIdentificationNumber),
-                entry("expirationDateForIdCard", expirationDateForIdCard.toString()),
-                entry("mobilePhoneNumber", mobilePhoneNumber),
-                entry("email", email),
-                entry("nameOfTheFather", nameOfTheFather),
-                entry("nameOfTheMother", nameOfTheMother),
-                entry("lastCompletedEducation", lastCompletedEducation)
-        ));
+//        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
+//                entry("firstName", firstName),
+//                entry("lastName", lastName),
+//                entry("dateOfBirth", dateOfBirth.toString()),
+//                entry("personalIdentificationNumber", personalIdentificationNumber),
+//                entry("expirationDateForIdCard", expirationDateForIdCard.toString()),
+//                entry("mobilePhoneNumber", mobilePhoneNumber),
+//                entry("email", email),
+//                entry("nameOfTheFather", nameOfTheFather),
+//                entry("nameOfTheMother", nameOfTheMother),
+//                entry("lastCompletedEducation", lastCompletedEducation)
+//        ));
 
+        Map<String, ?> characteristics = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(characteristics, "[");
     }
 }

@@ -6,12 +6,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Setter
 @Getter
@@ -105,24 +103,28 @@ public class BankTellerResponsibilities extends EmployeeGenericResponsibilities 
     public BankTellerResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("cashChecks", cashChecks),
-                entry("withdrawMoney", withdrawMoney),
-                entry("moveTransactions", moveTransactions),
-                entry("createCheckingAccounts", createCheckingAccounts),
-                entry("createSavingsAccounts", createSavingsAccounts),
-                entry("provideChecks", provideChecks),
-                entry("informClientsOfDifferentBankOfferings", informClientsOfDifferentBankOfferings),
-                entry("maintainingConfidentialityWithAllTransactions", maintainingConfidentialityWithAllTransactions),
-                entry("recordsDailyTransactions", recordsDailyTransactions),
-                entry("compileWithBankSecrecyAct", compileWithBankSecrecyAct),
-                entry("ensureQualityServicesToCustomers", ensureQualityServicesToCustomers),
-                entry("acceptingDepositsAndWithdrawals", acceptingDepositsAndWithdrawals),
-                entry("identifyAndResolveCustomerNeeds", identifyAndResolveCustomerNeeds),
-                entry("makeSalesReferrals", makeSalesReferrals),
-                entry("processCashWithdrawals", processCashWithdrawals),
-                entry("servesCustomersByCompletingAccountTransactions", servesCustomersByCompletingAccountTransactions),
-                entry("answeringCustomerQuestions", answeringCustomerQuestions)
-        )));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("cashChecks", cashChecks),
+//                entry("withdrawMoney", withdrawMoney),
+//                entry("moveTransactions", moveTransactions),
+//                entry("createCheckingAccounts", createCheckingAccounts),
+//                entry("createSavingsAccounts", createSavingsAccounts),
+//                entry("provideChecks", provideChecks),
+//                entry("informClientsOfDifferentBankOfferings", informClientsOfDifferentBankOfferings),
+//                entry("maintainingConfidentialityWithAllTransactions", maintainingConfidentialityWithAllTransactions),
+//                entry("recordsDailyTransactions", recordsDailyTransactions),
+//                entry("compileWithBankSecrecyAct", compileWithBankSecrecyAct),
+//                entry("ensureQualityServicesToCustomers", ensureQualityServicesToCustomers),
+//                entry("acceptingDepositsAndWithdrawals", acceptingDepositsAndWithdrawals),
+//                entry("identifyAndResolveCustomerNeeds", identifyAndResolveCustomerNeeds),
+//                entry("makeSalesReferrals", makeSalesReferrals),
+//                entry("processCashWithdrawals", processCashWithdrawals),
+//                entry("servesCustomersByCompletingAccountTransactions", servesCustomersByCompletingAccountTransactions),
+//                entry("answeringCustomerQuestions", answeringCustomerQuestions)
+//        )));
+
+        super.setResponsibilities(m);
     }
 }

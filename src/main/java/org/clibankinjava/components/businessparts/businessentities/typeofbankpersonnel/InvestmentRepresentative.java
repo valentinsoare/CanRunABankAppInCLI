@@ -32,7 +32,7 @@ public class InvestmentRepresentative extends Employee {
 
     @OrderBy
     @LazyGroup("CLIENT")
-    @OneToMany(mappedBy = "investmentRepresentative", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "relationshipWithEmployees.investmentRepresentative", fetch = FetchType.LAZY)
     private Set<Client> listOfClients;
 
 

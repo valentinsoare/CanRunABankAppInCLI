@@ -6,12 +6,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -75,18 +73,22 @@ public class LoanOfficerResponsibilities extends EmployeeGenericResponsibilities
     public LoanOfficerResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("processLoanApplications", processLoanApplications),
-                entry("evaluateCreditWorthiness", evaluateCreditWorthiness),
-                entry("interviewApplicantsToDetermineFinancialEligibility", interviewApplicantsToDetermineFinancialEligibility),
-                entry("settingUpDebtPaymentPlans", settingUpDebtPaymentPlans),
-                entry("determineAllApplicableRatiosAndMetrics", determineAllApplicableRatiosAndMetrics),
-                entry("communicateWithClients", communicateWithClients),
-                entry("justifyDecisionsAndReportOnThem", justifyDecisionsAndReportOnThem),
-                entry("completeLoanContractsAndCounselClientsOnPoliciesAndRestrictions", completeLoanContractsAndCounselClientsOnPoliciesAndRestrictions),
-                entry("maintainAndUpdateAccountRecords", maintainAndUpdateAccountRecords),
-                entry("assessCustomerNeedsAndIntroduceDifferentTypesOfLoans", assessCustomerNeedsAndIntroduceDifferentTypesOfLoans),
-                entry("developReferralNetworks", developReferralNetworks)
-        )));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+//
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("processLoanApplications", processLoanApplications),
+//                entry("evaluateCreditWorthiness", evaluateCreditWorthiness),
+//                entry("interviewApplicantsToDetermineFinancialEligibility", interviewApplicantsToDetermineFinancialEligibility),
+//                entry("settingUpDebtPaymentPlans", settingUpDebtPaymentPlans),
+//                entry("determineAllApplicableRatiosAndMetrics", determineAllApplicableRatiosAndMetrics),
+//                entry("communicateWithClients", communicateWithClients),
+//                entry("justifyDecisionsAndReportOnThem", justifyDecisionsAndReportOnThem),
+//                entry("completeLoanContractsAndCounselClientsOnPoliciesAndRestrictions", completeLoanContractsAndCounselClientsOnPoliciesAndRestrictions),
+//                entry("maintainAndUpdateAccountRecords", maintainAndUpdateAccountRecords),
+//                entry("assessCustomerNeedsAndIntroduceDifferentTypesOfLoans", assessCustomerNeedsAndIntroduceDifferentTypesOfLoans),
+//                entry("developReferralNetworks", developReferralNetworks)
+//        )));
+
+        super.setResponsibilities(m);
     }
 }

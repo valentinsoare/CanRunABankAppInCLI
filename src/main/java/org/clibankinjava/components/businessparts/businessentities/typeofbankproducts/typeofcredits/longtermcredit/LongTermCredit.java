@@ -5,16 +5,14 @@ import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.creditwithdetails.Credit;
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -132,17 +130,18 @@ public class LongTermCredit extends Credit {
 
     @Override
     public String toString() {
-        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
-                entry("minimumNumberOfMonthsForCreditTermIsNecessary", String.valueOf(minimumNumberOfMonthsForCreditTermIsNecessary)),
-                entry("numberOfMonthsWithNoReimbursementNecessary", String.valueOf(numberOfMonthsWithNoReimbursementNecessary)),
-                entry("isCoSignerNeeded", String.valueOf(isCoSignerNeeded)),
-                entry("coSigner", String.format("%s", coSigner.getClientRegistrationNumber())),
-                entry("whyLongTermCredit", whyLongTermCredit.toString()),
-                entry("creditValueIsInsured", String.valueOf(creditValueIsInsured)),
-                entry("maximumAmountOfMoneyThatCanBeTaken", maximumAmountOfMoneyThatCanBeTaken.toString()),
-                entry("minimumPaymentForCurrentMonth", minimumPaymentForCurrentMonth.toString())
-        ));
+//        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
+//                entry("minimumNumberOfMonthsForCreditTermIsNecessary", String.valueOf(minimumNumberOfMonthsForCreditTermIsNecessary)),
+//                entry("numberOfMonthsWithNoReimbursementNecessary", String.valueOf(numberOfMonthsWithNoReimbursementNecessary)),
+//                entry("isCoSignerNeeded", String.valueOf(isCoSignerNeeded)),
+//                entry("coSigner", String.format("%s", coSigner.getClientRegistrationNumber())),
+//                entry("whyLongTermCredit", whyLongTermCredit.toString()),
+//                entry("creditValueIsInsured", String.valueOf(creditValueIsInsured)),
+//                entry("maximumAmountOfMoneyThatCanBeTaken", maximumAmountOfMoneyThatCanBeTaken.toString()),
+//                entry("minimumPaymentForCurrentMonth", minimumPaymentForCurrentMonth.toString())
+//        ));
 
+        Map<String, ?> output = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(output, String.format("LongTermCredit [%s", super.toString()));
     }
 }

@@ -9,14 +9,12 @@ import org.clibankinjava.components.businessparts.businessentities.typeofclients
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.EconomicDetailsForIndividualClient;
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.PersonalIdentificationForAnIndividualClient;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.BatchSize;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -84,11 +82,13 @@ public class IndividualClient extends Client {
 
     @Override
     public String toString() {
-        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
-                entry("identification", identification.toString()),
-                entry("address", address.toString()),
-                entry("economicDetails", economicDetails.toString())
-        ));
+//        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
+//                entry("identification", identification.toString()),
+//                entry("address", address.toString()),
+//                entry("economicDetails", economicDetails.toString())
+//        ));
+
+        Map<String, ?> characteristics = OperationsOnMap.putObjectAttributes(this);
 
         return CustomPrinting.of(characteristics,
                 String.format("IndividualClient [%s", super.toString()));

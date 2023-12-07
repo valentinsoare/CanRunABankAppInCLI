@@ -3,14 +3,12 @@ package org.clibankinjava.components.businessparts.businessentities.typeofclient
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -99,16 +97,17 @@ public class AddressForIndividualClient implements Comparable<AddressForIndividu
 
     @Override
     public String toString() {
-        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
-                entry("street", street),
-                entry("number", number),
-                entry("isApartment", String.valueOf(isApartment)),
-                entry("apartmentNumber", apartmentNumber),
-                entry("zipCode", zipCode),
-                entry("country", country),
-                entry("city", city)
-        ));
+//        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
+//                entry("street", street),
+//                entry("number", number),
+//                entry("isApartment", String.valueOf(isApartment)),
+//                entry("apartmentNumber", apartmentNumber),
+//                entry("zipCode", zipCode),
+//                entry("country", country),
+//                entry("city", city)
+//        ));
 
+        Map<String, ?> output = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(output, "Address [");
     }
 }

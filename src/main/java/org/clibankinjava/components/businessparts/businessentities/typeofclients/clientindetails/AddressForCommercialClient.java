@@ -6,14 +6,12 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -91,15 +89,16 @@ public class AddressForCommercialClient implements Comparable<AddressForCommerci
 
     @Override
     public String toString() {
-        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
-                entry("street", street),
-                entry("number", number),
-                entry("isAnOfficeBuilding", String.valueOf(isAnOfficeBuilding)),
-                entry("zipCode", zipCode),
-                entry("city", city),
-                entry("country", country)
-        ));
+//        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
+//                entry("street", street),
+//                entry("number", number),
+//                entry("isAnOfficeBuilding", String.valueOf(isAnOfficeBuilding)),
+//                entry("zipCode", zipCode),
+//                entry("city", city),
+//                entry("country", country)
+//        ));
 
+        Map<String, ?> characteristics = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(characteristics, "[");
     }
 }

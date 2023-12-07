@@ -3,6 +3,7 @@ package org.clibankinjava.components.businessparts.businessentities.typeofclient
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.annotations.LazyGroup;
@@ -10,10 +11,7 @@ import org.hibernate.type.SqlTypes;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -126,21 +124,22 @@ public class EconomicDetailsForCompany implements Comparable<EconomicDetailsForC
 
     @Override
     public String toString() {
-        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
-                entry("CAEN", CAEN),
-                entry("activityType", activityType.toString()),
-                entry("activityDescription", activityDescription),
-                entry("isPrivatelyOwned", String.valueOf(isPrivatelyOwned)),
-                entry("marketCapitalizationValue", marketCapitalizationValue.toString()),
-                entry("companyOnStockExchange", String.valueOf(companyOnStockExchange)),
-                entry("currentStockValue", currentStockValue.toString()),
-                entry("averageSalary", averageSalary.toString()),
-                entry("numberOfEmployees", String.valueOf(numberOfEmployees)),
-                entry("executiveOfficer", executiveOfficer),
-                entry("financialOfficer", financialOfficer),
-                entry("operationsOfficer", operationsOfficer)
-        ));
+//        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
+//                entry("CAEN", CAEN),
+//                entry("activityType", activityType.toString()),
+//                entry("activityDescription", activityDescription),
+//                entry("isPrivatelyOwned", String.valueOf(isPrivatelyOwned)),
+//                entry("marketCapitalizationValue", marketCapitalizationValue.toString()),
+//                entry("companyOnStockExchange", String.valueOf(companyOnStockExchange)),
+//                entry("currentStockValue", currentStockValue.toString()),
+//                entry("averageSalary", averageSalary.toString()),
+//                entry("numberOfEmployees", String.valueOf(numberOfEmployees)),
+//                entry("executiveOfficer", executiveOfficer),
+//                entry("financialOfficer", financialOfficer),
+//                entry("operationsOfficer", operationsOfficer)
+//        ));
 
+        Map<String, ?> characteristics = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(characteristics, "[");
     }
 }

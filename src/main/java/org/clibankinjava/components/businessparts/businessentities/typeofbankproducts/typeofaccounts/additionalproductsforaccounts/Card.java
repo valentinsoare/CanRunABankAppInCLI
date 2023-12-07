@@ -3,16 +3,14 @@ package org.clibankinjava.components.businessparts.businessentities.typeofbankpr
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -113,15 +111,17 @@ public abstract class Card implements Comparable<Card> {
 
     @Override
     public String toString() {
-        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
-                entry("identificationNumber", identificationNumber),
-                entry("ownerFirstName", ownerFirstName),
-                entry("ownerLastName", ownerLastName),
-                entry("expirationDate", expirationDate.toString()),
-                entry("securityCode", securityCode),
-                entry("cardProvider", cardProvider.toString()),
-                entry("howManyDaysUntilExpiration", howManyDaysUntilExpiration.toString())
-        ));
+//        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
+//                entry("identificationNumber", identificationNumber),
+//                entry("ownerFirstName", ownerFirstName),
+//                entry("ownerLastName", ownerLastName),
+//                entry("expirationDate", expirationDate.toString()),
+//                entry("securityCode", securityCode),
+//                entry("cardProvider", cardProvider.toString()),
+//                entry("howManyDaysUntilExpiration", howManyDaysUntilExpiration.toString())
+//        ));
+
+        Map<String, ?> output = OperationsOnMap.putObjectAttributes(this);
 
         return CustomPrinting.of(output, "");
     }

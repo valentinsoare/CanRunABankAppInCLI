@@ -6,12 +6,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Setter
 @Getter
@@ -80,20 +78,24 @@ public class FinancialAnalystResponsibilities extends EmployeeGenericResponsibil
     public FinancialAnalystResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("gatheringDataAndInformation", gatheringDataAndInformation),
-                entry("organizeInformation", organizeInformation),
-                entry("analyzeFinancialResults", analyzeFinancialResults),
-                entry("makeForecastsAndProjections", makeForecastsAndProjections),
-                entry("developRecommendations", developRecommendations),
-                entry("buildExcelModels", buildExcelModels),
-                entry("makePresentations", makePresentations),
-                entry("generateReports", generateReports),
-                entry("developFinancialModels", developFinancialModels),
-                entry("identifyTrends", identifyTrends),
-                entry("reconcileTransactions", reconcileTransactions),
-                entry("provideRecommendations", provideRecommendations))
-        ));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("gatheringDataAndInformation", gatheringDataAndInformation),
+//                entry("organizeInformation", organizeInformation),
+//                entry("analyzeFinancialResults", analyzeFinancialResults),
+//                entry("makeForecastsAndProjections", makeForecastsAndProjections),
+//                entry("developRecommendations", developRecommendations),
+//                entry("buildExcelModels", buildExcelModels),
+//                entry("makePresentations", makePresentations),
+//                entry("generateReports", generateReports),
+//                entry("developFinancialModels", developFinancialModels),
+//                entry("identifyTrends", identifyTrends),
+//                entry("reconcileTransactions", reconcileTransactions),
+//                entry("provideRecommendations", provideRecommendations))
+//        ));
+
+        super.setResponsibilities(m);
     }
 }
 

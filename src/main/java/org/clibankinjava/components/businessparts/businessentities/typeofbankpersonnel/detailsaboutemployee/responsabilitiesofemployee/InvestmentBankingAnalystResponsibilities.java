@@ -6,12 +6,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -65,16 +63,20 @@ public class InvestmentBankingAnalystResponsibilities extends EmployeeGenericRes
     public InvestmentBankingAnalystResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("meetingWithClientsOrBankRepresentativesToUnderstandFinancialNeedsAndGoals", meetingWithClientsOrBankRepresentativesToUnderstandFinancialNeedsAndGoals),
-                entry("servingAsAnIntermediaryBetweenInvestorsAndCorporationsLookingForCapital", servingAsAnIntermediaryBetweenInvestorsAndCorporationsLookingForCapital),
-                entry("usingFinancialModels", usingFinancialModels),
-                entry("developingNewFinancialModels", developingNewFinancialModels),
-                entry("researchingTheHistoricalAndCurrentPerformanceOfFinancialProducts", researchingTheHistoricalAndCurrentPerformanceOfFinancialProducts),
-                entry("collectingAndAnalyzingFinancialDataToReviewPortfoliosAndOpportunities", collectingAndAnalyzingFinancialDataToReviewPortfoliosAndOpportunities),
-                entry("creatingNewFinancialOfferings", creatingNewFinancialOfferings),
-                entry("compilingReportsOnPortfoliosTransactionsAndProjections", compilingReportsOnPortfoliosTransactionsAndProjections),
-                entry("performingAdministrativeDutiesWhenNeeded", performingAdministrativeDutiesWhenNeeded)
-        )));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+//
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("meetingWithClientsOrBankRepresentativesToUnderstandFinancialNeedsAndGoals", meetingWithClientsOrBankRepresentativesToUnderstandFinancialNeedsAndGoals),
+//                entry("servingAsAnIntermediaryBetweenInvestorsAndCorporationsLookingForCapital", servingAsAnIntermediaryBetweenInvestorsAndCorporationsLookingForCapital),
+//                entry("usingFinancialModels", usingFinancialModels),
+//                entry("developingNewFinancialModels", developingNewFinancialModels),
+//                entry("researchingTheHistoricalAndCurrentPerformanceOfFinancialProducts", researchingTheHistoricalAndCurrentPerformanceOfFinancialProducts),
+//                entry("collectingAndAnalyzingFinancialDataToReviewPortfoliosAndOpportunities", collectingAndAnalyzingFinancialDataToReviewPortfoliosAndOpportunities),
+//                entry("creatingNewFinancialOfferings", creatingNewFinancialOfferings),
+//                entry("compilingReportsOnPortfoliosTransactionsAndProjections", compilingReportsOnPortfoliosTransactionsAndProjections),
+//                entry("performingAdministrativeDutiesWhenNeeded", performingAdministrativeDutiesWhenNeeded)
+//        )));
+
+        super.setResponsibilities(m);
     }
 }

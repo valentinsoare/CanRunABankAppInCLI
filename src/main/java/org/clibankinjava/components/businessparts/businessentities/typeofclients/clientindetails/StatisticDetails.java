@@ -6,15 +6,13 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -88,16 +86,16 @@ public class StatisticDetails implements Comparable<StatisticDetails> {
 
     @Override
     public String toString() {
-        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
-                entry("numberOfCreditsContracted", String.valueOf(numberOfCreditsContracted)),
-                entry("numberOfActiveCredits", String.valueOf(numberOfActiveCredits)),
-                entry("numberOfClosedCredits", String.valueOf(numberOfClosedCredits)),
-                entry("isBehindOnPayingInterestRateForAnyCreditFromTheList", String.valueOf(isBehindOnPayingInterestRateForAnyCreditFromTheList)),
-                entry("totalValueOfPenaltiesForAllCredits", totalValueOfPenaltiesForAllCredits.toString()),
-                entry("numberOfCreditsWerePenaltiesArePresent", String.valueOf(numberOfCreditsWerePenaltiesArePresent)),
-                entry("clientInternalScore", String.valueOf(clientInternalScore))
-        ));
-
+//        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
+//                entry("numberOfCreditsContracted", String.valueOf(numberOfCreditsContracted)),
+//                entry("numberOfActiveCredits", String.valueOf(numberOfActiveCredits)),
+//                entry("numberOfClosedCredits", String.valueOf(numberOfClosedCredits)),
+//                entry("isBehindOnPayingInterestRateForAnyCreditFromTheList", String.valueOf(isBehindOnPayingInterestRateForAnyCreditFromTheList)),
+//                entry("totalValueOfPenaltiesForAllCredits", totalValueOfPenaltiesForAllCredits.toString()),
+//                entry("numberOfCreditsWerePenaltiesArePresent", String.valueOf(numberOfCreditsWerePenaltiesArePresent)),
+//                entry("clientInternalScore", String.valueOf(clientInternalScore))
+//        ));
+        Map<String, ?> characteristics = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(characteristics, "[");
     }
 }

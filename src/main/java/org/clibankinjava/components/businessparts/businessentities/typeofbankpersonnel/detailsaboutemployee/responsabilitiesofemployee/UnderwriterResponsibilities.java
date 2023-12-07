@@ -6,12 +6,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 
 @Setter
@@ -76,18 +74,22 @@ public class UnderwriterResponsibilities extends EmployeeGenericResponsibilities
     public UnderwriterResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("reviewApprovedLoansToEnsureAllLegalRegulationsAreMet", reviewApprovedLoansToEnsureAllLegalRegulationsAreMet),
-                entry("makeSureAllCompanyPoliciesAreMet", makeSureAllCompanyPoliciesAreMet),
-                entry("researchAllAreasOfAnApplicantsFinancialBackgroundAndMakeSureAllOk", researchAllAreasOfAnApplicantsFinancialBackgroundAndMakeSureAllOk),
-                entry("checkEmploymentHistory", checkEmploymentHistory),
-                entry("reviewCreditReports", reviewCreditReports),
-                entry("reviewAssetInformation", reviewAssetInformation),
-                entry("createRiskAssessmentReportsForEachApplicant", createRiskAssessmentReportsForEachApplicant),
-                entry("analyzeFinancialInformation", analyzeFinancialInformation),
-                entry("adviseTheCompanyToApproveOrNotTheLoanBasedOnRisk", adviseTheCompanyToApproveOrNotTheLoanBasedOnRisk),
-                entry("creditRiskAssessment", creditRiskAssessment),
-                entry("proofreadFilesBeforeTheyAreSubmittedForApproval", proofreadFilesBeforeTheyAreSubmittedForApproval)
-        )));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("reviewApprovedLoansToEnsureAllLegalRegulationsAreMet", reviewApprovedLoansToEnsureAllLegalRegulationsAreMet),
+//                entry("makeSureAllCompanyPoliciesAreMet", makeSureAllCompanyPoliciesAreMet),
+//                entry("researchAllAreasOfAnApplicantsFinancialBackgroundAndMakeSureAllOk", researchAllAreasOfAnApplicantsFinancialBackgroundAndMakeSureAllOk),
+//                entry("checkEmploymentHistory", checkEmploymentHistory),
+//                entry("reviewCreditReports", reviewCreditReports),
+//                entry("reviewAssetInformation", reviewAssetInformation),
+//                entry("createRiskAssessmentReportsForEachApplicant", createRiskAssessmentReportsForEachApplicant),
+//                entry("analyzeFinancialInformation", analyzeFinancialInformation),
+//                entry("adviseTheCompanyToApproveOrNotTheLoanBasedOnRisk", adviseTheCompanyToApproveOrNotTheLoanBasedOnRisk),
+//                entry("creditRiskAssessment", creditRiskAssessment),
+//                entry("proofreadFilesBeforeTheyAreSubmittedForApproval", proofreadFilesBeforeTheyAreSubmittedForApproval)
+//        )));
+
+        super.setResponsibilities(m);
     }
 }

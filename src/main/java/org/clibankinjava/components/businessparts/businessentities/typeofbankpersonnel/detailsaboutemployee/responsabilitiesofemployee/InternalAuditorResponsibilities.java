@@ -6,12 +6,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -68,18 +66,21 @@ public class InternalAuditorResponsibilities extends EmployeeGenericResponsibili
     private boolean assureSafeguardsAreInPlaceToProtectOrganizationsResources;
 
     public InternalAuditorResponsibilities() {
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("assessingCompanyFinancialRisk", assessingCompanyFinancialRisk),
-                entry("safeguardingAssets", safeguardingAssets),
-                entry("gatheringAndAnalysingData", gatheringAndAnalysingData),
-                entry("checkingTheAccuracyOfFinancialReports", checkingTheAccuracyOfFinancialReports),
-                entry("auditingTheEfficiencyOfBusinessProcesses", auditingTheEfficiencyOfBusinessProcesses),
-                entry("ensuringTheBusinessAdheresToPoliciesProceduresLegislationAndRegulations", ensuringTheBusinessAdheresToPoliciesProceduresLegislationAndRegulations),
-                entry("stakeholderCommunication", stakeholderCommunication),
-                entry("investigateFraud", investigateFraud),
-                entry("documentTheResultsOfAuditProcedures", documentTheResultsOfAuditProcedures),
-                entry("assureSafeguardsAreInPlaceToProtectOrganizationsResources", assureSafeguardsAreInPlaceToProtectOrganizationsResources)
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("assessingCompanyFinancialRisk", assessingCompanyFinancialRisk),
+//                entry("safeguardingAssets", safeguardingAssets),
+//                entry("gatheringAndAnalysingData", gatheringAndAnalysingData),
+//                entry("checkingTheAccuracyOfFinancialReports", checkingTheAccuracyOfFinancialReports),
+//                entry("auditingTheEfficiencyOfBusinessProcesses", auditingTheEfficiencyOfBusinessProcesses),
+//                entry("ensuringTheBusinessAdheresToPoliciesProceduresLegislationAndRegulations", ensuringTheBusinessAdheresToPoliciesProceduresLegislationAndRegulations),
+//                entry("stakeholderCommunication", stakeholderCommunication),
+//                entry("investigateFraud", investigateFraud),
+//                entry("documentTheResultsOfAuditProcedures", documentTheResultsOfAuditProcedures),
+//                entry("assureSafeguardsAreInPlaceToProtectOrganizationsResources", assureSafeguardsAreInPlaceToProtectOrganizationsResources)
+//
+//        )));
 
-        )));
+        super.setResponsibilities(m);
     }
 }

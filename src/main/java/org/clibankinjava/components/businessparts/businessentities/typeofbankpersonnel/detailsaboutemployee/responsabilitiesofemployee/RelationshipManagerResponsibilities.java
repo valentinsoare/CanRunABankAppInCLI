@@ -6,12 +6,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -65,16 +63,20 @@ public class RelationshipManagerResponsibilities extends EmployeeGenericResponsi
     public RelationshipManagerResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-            entry("understandCustomerNeeds", understandCustomerNeeds),
-                entry("cultivateProfitableRelationshipsInClientCompanies", cultivateProfitableRelationshipsInClientCompanies),
-                entry("resolveCustomerComplaints", resolveCustomerComplaints),
-                entry("forwardUpsellingAndCrossSellingOpportunitiesToSalesTeam", forwardUpsellingAndCrossSellingOpportunitiesToSalesTeam),
-                entry("promoteHighQualitySalesAndSupply", promoteHighQualitySalesAndSupply),
-                entry("promoteCustomerServiceProgresses", promoteCustomerServiceProgresses),
-                entry("aimToPreserveCustomers", aimToPreserveCustomers),
-                entry("renewContracts", renewContracts),
-                entry("gainSolidKnowledgeOfCompetitors", gainSolidKnowledgeOfCompetitors)
-        )));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//            entry("understandCustomerNeeds", understandCustomerNeeds),
+//                entry("cultivateProfitableRelationshipsInClientCompanies", cultivateProfitableRelationshipsInClientCompanies),
+//                entry("resolveCustomerComplaints", resolveCustomerComplaints),
+//                entry("forwardUpsellingAndCrossSellingOpportunitiesToSalesTeam", forwardUpsellingAndCrossSellingOpportunitiesToSalesTeam),
+//                entry("promoteHighQualitySalesAndSupply", promoteHighQualitySalesAndSupply),
+//                entry("promoteCustomerServiceProgresses", promoteCustomerServiceProgresses),
+//                entry("aimToPreserveCustomers", aimToPreserveCustomers),
+//                entry("renewContracts", renewContracts),
+//                entry("gainSolidKnowledgeOfCompetitors", gainSolidKnowledgeOfCompetitors)
+//        )));
+
+        super.setResponsibilities(m);
     }
 }

@@ -5,16 +5,14 @@ import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.*;
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -271,46 +269,47 @@ public abstract class Credit implements Comparable<Credit> {
 
     @Override
     public String toString() {
-        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
-                entry("client", String.format("%s", client.getClientRegistrationNumber())),
-                entry("typeOfCredit", typeOfCredit.toString()),
-                entry("valueOfTheCreditWithoutTheInterestAtTheEndOfIt", valueOfTheCreditWithoutTheInterestAtTheEndOfIt.toString()),
-                entry("valueOfTheCreditAtTheEndOfItWithInterest", valueOfTheCreditAtTheEndOfItWithInterest.toString()),
-                entry("valueOfTheInterestAtTheEndOfCredit", valueOfTheInterestAtTheEndOfCredit.toString()),
-                entry("fixedInterestRateMonthly", String.valueOf(fixedInterestRateMonthly)),
-                entry("interestRateMonthly", interestRateMonthly.toString()),
-                entry("termInMonths", termInMonths.toString()),
-                entry("fixedEffectiveAnnualRate", String.valueOf(fixedEffectiveAnnualRate)),
-                entry("effectiveAnnualRate", effectiveAnnualRate.toString()),
-                entry("howMuchMoneyPaidUntilNow", howMuchMoneyPaidUntilNow.toString()),
-                entry("collateralNeeded", String.valueOf(collateralNeeded)),
-                entry("valueOfTheCollateralNeeded", valueOfTheCollateralNeeded.toString()),
-                entry("administrationFeeApplied", String.valueOf(administrationFeeApplied)),
-                entry("administrationFeeMonthly", administrationFeeMonthly.toString()),
-                entry("processingDocumentsFeeApplied", String.valueOf(processingDocumentsFeeApplied)),
-                entry("processingDocumentsForCreditFeeOneShot", processingDocumentsForCreditFeeOneShot.toString()),
-                entry("assessmentFeeApplied", String.valueOf(assessmentFeeApplied)),
-                entry("assessmentFeeOneShot", assessmentFeeOneShot.toString()),
-                entry("penaltiesPerCreditMonthly", penaltiesPerCreditMonthly.toString()),
-                entry("isWithPenalties", String.valueOf(isWithPenalties)),
-                entry("percentForCalculatingPenaltiesCompoundFromMonthlyPayment", percentForCalculatingPenaltiesCompoundFromMonthlyPayment.toString()),
-                entry("paidForTheCurrentMonth", String.valueOf(paidForTheCurrentMonth)),
-                entry("howManyMonthsWerePaidInAdvanced", String.valueOf(howManyMonthsWerePaidInAdvanced)),
-                entry("whenCreditWasTaken", whenCreditWasTaken.toString()),
-                entry("whenIsDueDateForPayingMonthly", whenIsDueDateForPayingMonthly.toString()),
-                entry("numberOfDaysFromWhenTheCreditWasTaken", numberOfDaysFromWhenTheCreditWasTaken.toString()),
-                entry("numberOfDaysUntilDueDateOfMonthlyPayment", String.valueOf(numberOfDaysUntilDueDateOfMonthlyPayment)),
-                entry("numberOfDaysFromTheLastPayment", numberOfDaysFromTheLastPayment.toString()),
-                entry("loanOfficer", String.format("%s; %s; %s",
-                        loanOfficer.getFirstName(), loanOfficer.getLastName(), loanOfficer.getEmail())),
-                entry("loanProcessor", String.format("%s; %s; %s",
-                        loanProcessor.getFirstName(), loanProcessor.getLastName(), loanProcessor.getEmail())),
-                entry("creditAnalyst", String.format("%s; %s; %s",
-                        creditAnalyst.getFirstName(), creditAnalyst.getLastName(), creditAnalyst.getEmail())),
-                entry("underwriter", String.format("%s; %s; %s",
-                        underwriter.getFirstName(), underwriter.getLastName(), underwriter.getEmail()))
-        ));
+//        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
+//                entry("client", String.format("%s", client.getClientRegistrationNumber())),
+//                entry("typeOfCredit", typeOfCredit.toString()),
+//                entry("valueOfTheCreditWithoutTheInterestAtTheEndOfIt", valueOfTheCreditWithoutTheInterestAtTheEndOfIt.toString()),
+//                entry("valueOfTheCreditAtTheEndOfItWithInterest", valueOfTheCreditAtTheEndOfItWithInterest.toString()),
+//                entry("valueOfTheInterestAtTheEndOfCredit", valueOfTheInterestAtTheEndOfCredit.toString()),
+//                entry("fixedInterestRateMonthly", String.valueOf(fixedInterestRateMonthly)),
+//                entry("interestRateMonthly", interestRateMonthly.toString()),
+//                entry("termInMonths", termInMonths.toString()),
+//                entry("fixedEffectiveAnnualRate", String.valueOf(fixedEffectiveAnnualRate)),
+//                entry("effectiveAnnualRate", effectiveAnnualRate.toString()),
+//                entry("howMuchMoneyPaidUntilNow", howMuchMoneyPaidUntilNow.toString()),
+//                entry("collateralNeeded", String.valueOf(collateralNeeded)),
+//                entry("valueOfTheCollateralNeeded", valueOfTheCollateralNeeded.toString()),
+//                entry("administrationFeeApplied", String.valueOf(administrationFeeApplied)),
+//                entry("administrationFeeMonthly", administrationFeeMonthly.toString()),
+//                entry("processingDocumentsFeeApplied", String.valueOf(processingDocumentsFeeApplied)),
+//                entry("processingDocumentsForCreditFeeOneShot", processingDocumentsForCreditFeeOneShot.toString()),
+//                entry("assessmentFeeApplied", String.valueOf(assessmentFeeApplied)),
+//                entry("assessmentFeeOneShot", assessmentFeeOneShot.toString()),
+//                entry("penaltiesPerCreditMonthly", penaltiesPerCreditMonthly.toString()),
+//                entry("isWithPenalties", String.valueOf(isWithPenalties)),
+//                entry("percentForCalculatingPenaltiesCompoundFromMonthlyPayment", percentForCalculatingPenaltiesCompoundFromMonthlyPayment.toString()),
+//                entry("paidForTheCurrentMonth", String.valueOf(paidForTheCurrentMonth)),
+//                entry("howManyMonthsWerePaidInAdvanced", String.valueOf(howManyMonthsWerePaidInAdvanced)),
+//                entry("whenCreditWasTaken", whenCreditWasTaken.toString()),
+//                entry("whenIsDueDateForPayingMonthly", whenIsDueDateForPayingMonthly.toString()),
+//                entry("numberOfDaysFromWhenTheCreditWasTaken", numberOfDaysFromWhenTheCreditWasTaken.toString()),
+//                entry("numberOfDaysUntilDueDateOfMonthlyPayment", String.valueOf(numberOfDaysUntilDueDateOfMonthlyPayment)),
+//                entry("numberOfDaysFromTheLastPayment", numberOfDaysFromTheLastPayment.toString()),
+//                entry("loanOfficer", String.format("%s; %s; %s",
+//                        loanOfficer.getFirstName(), loanOfficer.getLastName(), loanOfficer.getEmail())),
+//                entry("loanProcessor", String.format("%s; %s; %s",
+//                        loanProcessor.getFirstName(), loanProcessor.getLastName(), loanProcessor.getEmail())),
+//                entry("creditAnalyst", String.format("%s; %s; %s",
+//                        creditAnalyst.getFirstName(), creditAnalyst.getLastName(), creditAnalyst.getEmail())),
+//                entry("underwriter", String.format("%s; %s; %s",
+//                        underwriter.getFirstName(), underwriter.getLastName(), underwriter.getEmail()))
+//        ));
 
+        Map<String, ?> output = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(output, "Credit [");
     }
 }

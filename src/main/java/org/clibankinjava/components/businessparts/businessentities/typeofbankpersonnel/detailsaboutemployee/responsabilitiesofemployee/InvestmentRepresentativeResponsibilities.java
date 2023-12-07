@@ -6,12 +6,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -70,17 +68,21 @@ public class InvestmentRepresentativeResponsibilities extends EmployeeGenericRes
     public InvestmentRepresentativeResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("promoteInvestmentProductsAndServices", promoteInvestmentProductsAndServices),
-                entry("sellInvestmentProductsAndServicesToFinalCustomers", sellInvestmentProductsAndServicesToFinalCustomers),
-                entry("identifySalesOpportunities", identifySalesOpportunities),
-                entry("generateSalesOpportunities", generateSalesOpportunities),
-                entry("crossSellAllInvestmentProductsAndServices", crossSellAllInvestmentProductsAndServices),
-                entry("participateInSalesProgram", participateInSalesProgram),
-                entry("monitoringTheRenewalOfMaturingInvestments", monitoringTheRenewalOfMaturingInvestments),
-                entry("updateTransactionsRecords", updateTransactionsRecords),
-                entry("processTransactionsDocuments", processTransactionsDocuments),
-                entry("completeMutualFundLicensingRequirements", completeMutualFundLicensingRequirements)
-        )));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+//
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("promoteInvestmentProductsAndServices", promoteInvestmentProductsAndServices),
+//                entry("sellInvestmentProductsAndServicesToFinalCustomers", sellInvestmentProductsAndServicesToFinalCustomers),
+//                entry("identifySalesOpportunities", identifySalesOpportunities),
+//                entry("generateSalesOpportunities", generateSalesOpportunities),
+//                entry("crossSellAllInvestmentProductsAndServices", crossSellAllInvestmentProductsAndServices),
+//                entry("participateInSalesProgram", participateInSalesProgram),
+//                entry("monitoringTheRenewalOfMaturingInvestments", monitoringTheRenewalOfMaturingInvestments),
+//                entry("updateTransactionsRecords", updateTransactionsRecords),
+//                entry("processTransactionsDocuments", processTransactionsDocuments),
+//                entry("completeMutualFundLicensingRequirements", completeMutualFundLicensingRequirements)
+//        )));
+
+        super.setResponsibilities(m);
     }
 }

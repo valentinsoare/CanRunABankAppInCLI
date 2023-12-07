@@ -5,16 +5,14 @@ import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.employeedefinition.Employee;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.accountwithdetails.Account;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -166,25 +164,26 @@ public class SalaryAccount extends Account {
 
     @Override
     public String toString() {
-        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
-                entry("provideInterest", String.valueOf(provideInterest)),
-                entry("fixedInterestRate", String.valueOf(fixedInterestRate)),
-                entry("interestRateMonthly", interestRateMonthly.toString()),
-                entry("withdrawLimit", withdrawLimit.toString()),
-                entry("benefitsFeeMonthly", benefitsFeeMonthly.toString()),
-                entry("designatedForBankEmployee", String.valueOf(designatedForBankEmployee)),
-                entry("employee", (employee != null) ? String.valueOf(employee.getPresentWorkDetails().getEmployeeId()) : "none"),
-                entry("employer", employer),
-                entry("isAccountProtected", String.valueOf(isAccountProtected)),
-                entry("protectedUpTo", protectedUpTo.toString()),
-                entry("possibleToOverdraft", String.valueOf(possibleToOverdraft)),
-                entry("maximumOverdraftValueAvailable", maximumOverdraftValueAvailable.toString()),
-                entry("overdraftFeeOneShot", overdraftFeeOneShot.toString()),
-                entry("overdraftFeeWasApplied", String.valueOf(overdraftFeeWasApplied)),
-                entry("overdraftInterestRateMonthly", overdraftInterestRateMonthly.toString()),
-                entry("interestRateForOverdraftPaidMonthly", String.valueOf(interestRateForOverdraftPaidMonthly))
-        ));
+//        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
+//                entry("provideInterest", String.valueOf(provideInterest)),
+//                entry("fixedInterestRate", String.valueOf(fixedInterestRate)),
+//                entry("interestRateMonthly", interestRateMonthly.toString()),
+//                entry("withdrawLimit", withdrawLimit.toString()),
+//                entry("benefitsFeeMonthly", benefitsFeeMonthly.toString()),
+//                entry("designatedForBankEmployee", String.valueOf(designatedForBankEmployee)),
+//                entry("employee", (employee != null) ? String.valueOf(employee.getPresentWorkDetails().getEmployeeId()) : "none"),
+//                entry("employer", employer),
+//                entry("isAccountProtected", String.valueOf(isAccountProtected)),
+//                entry("protectedUpTo", protectedUpTo.toString()),
+//                entry("possibleToOverdraft", String.valueOf(possibleToOverdraft)),
+//                entry("maximumOverdraftValueAvailable", maximumOverdraftValueAvailable.toString()),
+//                entry("overdraftFeeOneShot", overdraftFeeOneShot.toString()),
+//                entry("overdraftFeeWasApplied", String.valueOf(overdraftFeeWasApplied)),
+//                entry("overdraftInterestRateMonthly", overdraftInterestRateMonthly.toString()),
+//                entry("interestRateForOverdraftPaidMonthly", String.valueOf(interestRateForOverdraftPaidMonthly))
+//        ));
 
+        Map<String, ?> output = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(output, String.format("SalaryAccount [%s", super.toString()));
     }
 }

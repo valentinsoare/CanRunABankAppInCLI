@@ -6,15 +6,14 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
 import java.util.Map;
 
-import static java.util.Map.entry;
 @Getter
 @Setter
 @Embeddable
@@ -124,20 +123,21 @@ public class EconomicDetailsForIndividualClient implements Comparable<EconomicDe
 
     @Override
     public String toString() {
-        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
-                entry("currentEmployer", currentEmployer),
-                entry("estimatedMonthlyRevenue", estimatedMonthlyRevenue.toString()),
-                entry("hasBeenFiredInHisCareer", String.valueOf(hasBeenFiredInHisCareer)),
-                entry("bureauOfCreditCurrentScore", String.valueOf(bureauOfCreditCurrentScore)),
-                entry("centralCreditRiskCurrentScore", String.valueOf(centralCreditRiskCurrentScore)),
-                entry("registeredInTheBureauOfCredit", String.valueOf(registeredInTheBureauOfCredit)),
-                entry("registeredInCentralCreditRisk", String.valueOf(registeredInCentralCreditRisk)),
-                entry("valueOfTheLastCreditTaken", valueOfTheLastCreditTaken.toString()),
-                entry("isPaid", String.valueOf(isPaid)),
-                entry("homeOwner", String.valueOf(homeOwner)),
-                entry("carOwner", String.valueOf(carOwner))
-        ));
+//        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
+//                entry("currentEmployer", currentEmployer),
+//                entry("estimatedMonthlyRevenue", estimatedMonthlyRevenue.toString()),
+//                entry("hasBeenFiredInHisCareer", String.valueOf(hasBeenFiredInHisCareer)),
+//                entry("bureauOfCreditCurrentScore", String.valueOf(bureauOfCreditCurrentScore)),
+//                entry("centralCreditRiskCurrentScore", String.valueOf(centralCreditRiskCurrentScore)),
+//                entry("registeredInTheBureauOfCredit", String.valueOf(registeredInTheBureauOfCredit)),
+//                entry("registeredInCentralCreditRisk", String.valueOf(registeredInCentralCreditRisk)),
+//                entry("valueOfTheLastCreditTaken", valueOfTheLastCreditTaken.toString()),
+//                entry("isPaid", String.valueOf(isPaid)),
+//                entry("homeOwner", String.valueOf(homeOwner)),
+//                entry("carOwner", String.valueOf(carOwner))
+//        ));
 
+        Map<String, ?> characteristics = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(characteristics, "[");
     }
 }

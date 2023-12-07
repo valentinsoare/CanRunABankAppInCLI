@@ -6,12 +6,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -60,15 +58,19 @@ public class MortgageConsultantResponsibilities extends EmployeeGenericResponsib
     public MortgageConsultantResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("researchingCurrentMortgageRatesAndProducts", researchingCurrentMortgageRatesAndProducts),
-                entry("determiningOptionsThatFitClientNeeds", determiningOptionsThatFitClientNeeds),
-                entry("communicatingWithLendersToFindLoansForClients", communicatingWithLendersToFindLoansForClients),
-                entry("explainingDetailsAboutLoansToClients", explainingDetailsAboutLoansToClients),
-                entry("describingDifferencesBetweenLoanOptions", describingDifferencesBetweenLoanOptions),
-                entry("requestingNecessaryDocumentsFromClients", requestingNecessaryDocumentsFromClients),
-                entry("verifyingAllDocumentation", verifyingAllDocumentation),
-                entry("managingLoanProcessingAndClosingProcedures", managingLoanProcessingAndClosingProcedures)
-        )));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("researchingCurrentMortgageRatesAndProducts", researchingCurrentMortgageRatesAndProducts),
+//                entry("determiningOptionsThatFitClientNeeds", determiningOptionsThatFitClientNeeds),
+//                entry("communicatingWithLendersToFindLoansForClients", communicatingWithLendersToFindLoansForClients),
+//                entry("explainingDetailsAboutLoansToClients", explainingDetailsAboutLoansToClients),
+//                entry("describingDifferencesBetweenLoanOptions", describingDifferencesBetweenLoanOptions),
+//                entry("requestingNecessaryDocumentsFromClients", requestingNecessaryDocumentsFromClients),
+//                entry("verifyingAllDocumentation", verifyingAllDocumentation),
+//                entry("managingLoanProcessingAndClosingProcedures", managingLoanProcessingAndClosingProcedures)
+//        )));
+
+        super.setResponsibilities(m);
     }
 }

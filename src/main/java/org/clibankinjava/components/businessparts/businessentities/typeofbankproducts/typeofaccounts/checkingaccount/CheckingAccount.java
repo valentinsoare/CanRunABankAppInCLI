@@ -4,16 +4,14 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.accountwithdetails.Account;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -140,21 +138,22 @@ public class CheckingAccount extends Account {
 
     @Override
     public String toString() {
-        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
-                entry("provideInterest", String.valueOf(provideInterest)),
-                entry("fixedInterestRate", String.valueOf(fixedInterestRate)),
-                entry("interestRateAnnually", interestRateAnnually.toString()),
-                entry("administrationFeeMonthly", administrationFeeMonthly.toString()),
-                entry("possibleToOverdraft", String.valueOf(possibleToOverdraft)),
-                entry("maximumOverdraftValueAvailable", maximumOverdraftValueAvailable.toString()),
-                entry("overdraftFeeOneShot", overdraftFeeOneShot.toString()),
-                entry("overdraftFeeWasApplied", String.valueOf(overdraftFeeWasApplied)),
-                entry("overdraftInterestRateMonthly", overdraftInterestRateMonthly.toString()),
-                entry("interestRateForOverdraftPaidMonthly", String.valueOf(interestRateForOverdraftPaidMonthly)),
-                entry("isAccountProtected", String.valueOf(isAccountProtected)),
-                entry("protectedUpTo", String.valueOf(protectedUpTo))
-        ));
+//        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
+//                entry("provideInterest", String.valueOf(provideInterest)),
+//                entry("fixedInterestRate", String.valueOf(fixedInterestRate)),
+//                entry("interestRateAnnually", interestRateAnnually.toString()),
+//                entry("administrationFeeMonthly", administrationFeeMonthly.toString()),
+//                entry("possibleToOverdraft", String.valueOf(possibleToOverdraft)),
+//                entry("maximumOverdraftValueAvailable", maximumOverdraftValueAvailable.toString()),
+//                entry("overdraftFeeOneShot", overdraftFeeOneShot.toString()),
+//                entry("overdraftFeeWasApplied", String.valueOf(overdraftFeeWasApplied)),
+//                entry("overdraftInterestRateMonthly", overdraftInterestRateMonthly.toString()),
+//                entry("interestRateForOverdraftPaidMonthly", String.valueOf(interestRateForOverdraftPaidMonthly)),
+//                entry("isAccountProtected", String.valueOf(isAccountProtected)),
+//                entry("protectedUpTo", String.valueOf(protectedUpTo))
+//        ));
 
+        Map<String, ?> characteristics = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(characteristics, String.format("CheckingAccount [%s", super.toString()));
     }
 }

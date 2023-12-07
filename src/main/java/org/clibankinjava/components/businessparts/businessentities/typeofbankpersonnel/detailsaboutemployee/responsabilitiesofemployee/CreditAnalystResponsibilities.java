@@ -6,6 +6,7 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
 import java.util.LinkedHashMap;
@@ -106,5 +107,7 @@ public class CreditAnalystResponsibilities extends EmployeeGenericResponsibiliti
                 entry("usingCreditScoringSystemsForCreditAmounts", usingCreditScoringSystemsForCreditAmounts),
                 entry("helpingToEnhanceQualityOfCreditApplications", helpingToEnhanceQualityOfCreditApplications)
         )));
+
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
     }
 }

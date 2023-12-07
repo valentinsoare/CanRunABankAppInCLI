@@ -6,16 +6,14 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -137,21 +135,22 @@ public class IdentificationForACompany implements Comparable<IdentificationForAC
 
     @Override
     public String toString() {
-        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
-                entry("nameOfTheCompany", nameOfTheCompany),
-                entry("CUI", CUI),
-                entry("vatPayer", String.valueOf(vatPayer)),
-                entry("companyType", companyType.toString()),
-                entry("registrationNumber", registrationNumber),
-                entry("EUID", EUID),
-                entry("dateOfRegistration", dateOfRegistration.toString()),
-                entry("howManyYearsFromCompanyRegistration", howManyYearsFromCompanyRegistration.toString()),
-                entry("companyAdministratorName", companyAdministratorName),
-                entry("phoneNumber", phoneNumber),
-                entry("email", email),
-                entry("webAddress", webAddress)
-        ));
+//        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
+//                entry("nameOfTheCompany", nameOfTheCompany),
+//                entry("CUI", CUI),
+//                entry("vatPayer", String.valueOf(vatPayer)),
+//                entry("companyType", companyType.toString()),
+//                entry("registrationNumber", registrationNumber),
+//                entry("EUID", EUID),
+//                entry("dateOfRegistration", dateOfRegistration.toString()),
+//                entry("howManyYearsFromCompanyRegistration", howManyYearsFromCompanyRegistration.toString()),
+//                entry("companyAdministratorName", companyAdministratorName),
+//                entry("phoneNumber", phoneNumber),
+//                entry("email", email),
+//                entry("webAddress", webAddress)
+//        ));
 
+        Map<String, ?> characteristics = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(characteristics, "[");
     }
 }

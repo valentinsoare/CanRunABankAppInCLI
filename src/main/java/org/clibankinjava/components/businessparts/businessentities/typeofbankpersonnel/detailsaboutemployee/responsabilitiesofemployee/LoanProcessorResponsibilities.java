@@ -6,12 +6,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -80,19 +78,23 @@ public class LoanProcessorResponsibilities extends EmployeeGenericResponsibiliti
     public LoanProcessorResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("riskAnalysis", riskAnalysis),
-                entry("reviewLoanApplications", reviewLoanApplications),
-                entry("approveApplicants", approveApplicants),
-                entry("denyApplicants", denyApplicants),
-                entry("interviewApplicantsAndEvaluateThem", interviewApplicantsAndEvaluateThem),
-                entry("followUpWithClients", followUpWithClients),
-                entry("finalizeLoanContractsAndKeepClientsInformed", finalizeLoanContractsAndKeepClientsInformed),
-                entry("createAndRenewRecords", createAndRenewRecords),
-                entry("identifyCustomerNeeds", identifyCustomerNeeds),
-                entry("cultivateTrustworthyReferralNetworks", cultivateTrustworthyReferralNetworks),
-                entry("forgeTrustRelationships", forgeTrustRelationships),
-                entry("enhanceCustomerDedication", enhanceCustomerDedication)
-        )));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+//
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("riskAnalysis", riskAnalysis),
+//                entry("reviewLoanApplications", reviewLoanApplications),
+//                entry("approveApplicants", approveApplicants),
+//                entry("denyApplicants", denyApplicants),
+//                entry("interviewApplicantsAndEvaluateThem", interviewApplicantsAndEvaluateThem),
+//                entry("followUpWithClients", followUpWithClients),
+//                entry("finalizeLoanContractsAndKeepClientsInformed", finalizeLoanContractsAndKeepClientsInformed),
+//                entry("createAndRenewRecords", createAndRenewRecords),
+//                entry("identifyCustomerNeeds", identifyCustomerNeeds),
+//                entry("cultivateTrustworthyReferralNetworks", cultivateTrustworthyReferralNetworks),
+//                entry("forgeTrustRelationships", forgeTrustRelationships),
+//                entry("enhanceCustomerDedication", enhanceCustomerDedication)
+//        )));
+
+        super.setResponsibilities(m);
     }
 }

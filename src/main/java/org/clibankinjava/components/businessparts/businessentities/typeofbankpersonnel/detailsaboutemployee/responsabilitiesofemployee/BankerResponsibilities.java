@@ -3,12 +3,10 @@ package org.clibankinjava.components.businessparts.businessentities.typeofbankpe
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -67,17 +65,21 @@ public class BankerResponsibilities extends EmployeeGenericResponsibilities {
     public BankerResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("signingNewClients", signingNewClients),
-                entry("helpWithOnboardingProcess", helpWithOnboardingProcess),
-                entry("adviseCustomerOnBankServices", adviseCustomerOnBankServices),
-                entry("resolveIssuesWithBankingServicesAndAccounts", resolveIssuesWithBankingServicesAndAccounts),
-                entry("referClientsToInHouseFinancialExperts", referClientsToInHouseFinancialExperts),
-                entry("presentFinancialProductsAndServicesToExistingAndProspectiveCustomers", presentFinancialProductsAndServicesToExistingAndProspectiveCustomers),
-                entry("performAdministrativeDuties", performAdministrativeDuties),
-                entry("meetingsWithBankMembers", meetingsWithBankMembers),
-                entry("givingHelpAcquiringLoans", givingHelpAcquiringLoans),
-                entry("paidConsultation", paidConsultation)
-        )));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("signingNewClients", signingNewClients),
+//                entry("helpWithOnboardingProcess", helpWithOnboardingProcess),
+//                entry("adviseCustomerOnBankServices", adviseCustomerOnBankServices),
+//                entry("resolveIssuesWithBankingServicesAndAccounts", resolveIssuesWithBankingServicesAndAccounts),
+//                entry("referClientsToInHouseFinancialExperts", referClientsToInHouseFinancialExperts),
+//                entry("presentFinancialProductsAndServicesToExistingAndProspectiveCustomers", presentFinancialProductsAndServicesToExistingAndProspectiveCustomers),
+//                entry("performAdministrativeDuties", performAdministrativeDuties),
+//                entry("meetingsWithBankMembers", meetingsWithBankMembers),
+//                entry("givingHelpAcquiringLoans", givingHelpAcquiringLoans),
+//                entry("paidConsultation", paidConsultation)
+//        )));
+
+        super.setResponsibilities(m);
     }
 }

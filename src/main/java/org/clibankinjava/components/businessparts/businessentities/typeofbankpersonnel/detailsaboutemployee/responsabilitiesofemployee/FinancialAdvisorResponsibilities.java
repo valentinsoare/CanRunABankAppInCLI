@@ -6,12 +6,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -90,21 +88,25 @@ public class FinancialAdvisorResponsibilities extends EmployeeGenericResponsibil
     public FinancialAdvisorResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("helpClientsDetermineGoals", helpClientsDetermineGoals),
-                entry("helpClientsAchieveGoals", helpClientsAchieveGoals),
-                entry("tradingInTheStockMarket", tradingInTheStockMarket),
-                entry("reviewingFinancialHistory", reviewingFinancialHistory),
-                entry("provideStrategicAdviceForDebtManagement", provideStrategicAdviceForDebtManagement),
-                entry("provideAdviceForCashManagement", provideAdviceForCashManagement),
-                entry("provideStrategicAdviceForDebtInsuranceCoverage", provideStrategicAdviceForDebtInsuranceCoverage),
-                entry("provideAdviceForInvestments", provideAdviceForInvestments),
-                entry("assessClientOverallFinancialSituation", assessClientOverallFinancialSituation),
-                entry("developFinancialPlan", developFinancialPlan),
-                entry("cultivateClientBaseAndBuildRelationships", cultivateClientBaseAndBuildRelationships),
-                entry("generateLeads", generateLeads),
-                entry("sellMutualFundsStocksAndBonds", sellMutualFundsStocksAndBonds),
-                entry("overseeTheCourseOfTheFinancialPlan", overseeTheCourseOfTheFinancialPlan)
-        )));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("helpClientsDetermineGoals", helpClientsDetermineGoals),
+//                entry("helpClientsAchieveGoals", helpClientsAchieveGoals),
+//                entry("tradingInTheStockMarket", tradingInTheStockMarket),
+//                entry("reviewingFinancialHistory", reviewingFinancialHistory),
+//                entry("provideStrategicAdviceForDebtManagement", provideStrategicAdviceForDebtManagement),
+//                entry("provideAdviceForCashManagement", provideAdviceForCashManagement),
+//                entry("provideStrategicAdviceForDebtInsuranceCoverage", provideStrategicAdviceForDebtInsuranceCoverage),
+//                entry("provideAdviceForInvestments", provideAdviceForInvestments),
+//                entry("assessClientOverallFinancialSituation", assessClientOverallFinancialSituation),
+//                entry("developFinancialPlan", developFinancialPlan),
+//                entry("cultivateClientBaseAndBuildRelationships", cultivateClientBaseAndBuildRelationships),
+//                entry("generateLeads", generateLeads),
+//                entry("sellMutualFundsStocksAndBonds", sellMutualFundsStocksAndBonds),
+//                entry("overseeTheCourseOfTheFinancialPlan", overseeTheCourseOfTheFinancialPlan)
+//        )));
+
+        super.setResponsibilities(m);
     }
 }

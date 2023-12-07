@@ -5,16 +5,14 @@ import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.creditwithdetails.Credit;
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -119,17 +117,18 @@ public class MidTermCredit extends Credit {
 
     @Override
     public String toString() {
-        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
-                entry("coSigner", String.format("%s", coSigner.getClientRegistrationNumber())),
-                entry("creditIsEnsured", String.valueOf(creditIsEnsured)),
-                entry("minimumNumberMonthsForTermOfCredit", String.valueOf(minimumNumberMonthsForTermOfCredit)),
-                entry("maximumNumberOfMonthsForTermOfCredit", String.valueOf(maximumNumberOfMonthsForTermOfCredit)),
-                entry("numberOfMonthsWithNoReimbursementNecessary", String.valueOf(numberOfMonthsWithNoReimbursementNecessary)),
-                entry("whyMidTermCredit", whyMidTermCredit.toString()),
-                entry("possibleToRefinancing", String.valueOf(possibleToRefinancing)),
-                entry("expeditingAssessmentCreditFee", expeditingAssessmentCreditFee.toString())
-        ));
+//        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
+//                entry("coSigner", String.format("%s", coSigner.getClientRegistrationNumber())),
+//                entry("creditIsEnsured", String.valueOf(creditIsEnsured)),
+//                entry("minimumNumberMonthsForTermOfCredit", String.valueOf(minimumNumberMonthsForTermOfCredit)),
+//                entry("maximumNumberOfMonthsForTermOfCredit", String.valueOf(maximumNumberOfMonthsForTermOfCredit)),
+//                entry("numberOfMonthsWithNoReimbursementNecessary", String.valueOf(numberOfMonthsWithNoReimbursementNecessary)),
+//                entry("whyMidTermCredit", whyMidTermCredit.toString()),
+//                entry("possibleToRefinancing", String.valueOf(possibleToRefinancing)),
+//                entry("expeditingAssessmentCreditFee", expeditingAssessmentCreditFee.toString())
+//        ));
 
+        Map<String, ?> output = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(output, String.format("MidTermCredit [%s", super.toString()));
     }
 }

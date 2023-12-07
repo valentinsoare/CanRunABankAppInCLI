@@ -4,16 +4,14 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.accountwithdetails.Account;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -126,19 +124,20 @@ public class SavingsAccount extends Account {
 
     @Override
     public String toString() {
-        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
-                entry("fixedInterestRate", String.valueOf(fixedInterestRate)),
-                entry("interestRate", interestRate.toString()),
-                entry("termOfApplyingTheInterestRate", String.valueOf(termOfApplyingTheInterestRate)),
-                entry("howManyTimeInterestRateWasApplied", String.valueOf(howManyTimeInterestRateWasApplied)),
-                entry("administrationFeeWasApplied", String.valueOf(administrationFeeWasApplied)),
-                entry("howManyTimesAdministrationFeeApplied", String.valueOf(howManyTimesAdministrationFeeApplied)),
-                entry("administrationFee", administrationFee.toString()),
-                entry("termOfAdministrationFee", String.valueOf(termOfAdministrationFee)),
-                entry("isAccountProtected", String.valueOf(isAccountProtected)),
-                entry("protectedUpTo", protectedUpTo.toString())
-        ));
+//        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
+//                entry("fixedInterestRate", String.valueOf(fixedInterestRate)),
+//                entry("interestRate", interestRate.toString()),
+//                entry("termOfApplyingTheInterestRate", String.valueOf(termOfApplyingTheInterestRate)),
+//                entry("howManyTimeInterestRateWasApplied", String.valueOf(howManyTimeInterestRateWasApplied)),
+//                entry("administrationFeeWasApplied", String.valueOf(administrationFeeWasApplied)),
+//                entry("howManyTimesAdministrationFeeApplied", String.valueOf(howManyTimesAdministrationFeeApplied)),
+//                entry("administrationFee", administrationFee.toString()),
+//                entry("termOfAdministrationFee", String.valueOf(termOfAdministrationFee)),
+//                entry("isAccountProtected", String.valueOf(isAccountProtected)),
+//                entry("protectedUpTo", protectedUpTo.toString())
+//        ));
 
+        Map<String, ?> output = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(output, String.format("SavingsAccount [%s", super.toString()));
     }
 }

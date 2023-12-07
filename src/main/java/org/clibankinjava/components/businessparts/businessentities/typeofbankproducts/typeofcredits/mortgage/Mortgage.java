@@ -6,16 +6,14 @@ import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.MortgageConsultant;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.creditwithdetails.Credit;
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -136,24 +134,25 @@ public class Mortgage extends Credit {
 
     @Override
     public String toString() {
-        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
-                entry("creditValueIsInsured", String.valueOf(creditValueIsInsured)),
-                entry("possibleToRefinancing", String.valueOf(possibleToRefinancing)),
-                entry("numberOfMonthsWithNoReimbursementNecessary", String.valueOf(numberOfMonthsWithNoReimbursementNecessary)),
-                entry("isCoSignerNeeded", String.valueOf(isCoSignerNeeded)),
-                entry("coSigner", String.format("%s", coSigner.getClientRegistrationNumber())),
-                entry("minimumNumberOfTermInMonths", String.valueOf(minimumNumberOfTermInMonths)),
-                entry("maximumNumberOfTermInMonths", String.valueOf(maximumNumberOfTermInMonths)),
-                entry("maximumAmountOfMoneyThatCanBeTaken", maximumAmountOfMoneyThatCanBeTaken.toString()),
-                entry("minimumPaymentForCurrentMonth", minimumPaymentForCurrentMonth.toString()),
-                entry("isForeclosed", String.valueOf(isForeclosed)),
-                entry("isRepossessed", String.valueOf(isRepossessed)),
-                entry("settlementOfTheMortgageDeed", String.valueOf(settlementOfTheMortgageDeed)),
-                entry("isRedeemed", String.valueOf(isRedeemed)),
-                entry("mortgageConsultant", String.format("%s; %s; %s;",
-                        mortgageConsultant.getFirstName(), mortgageConsultant.getLastName(), mortgageConsultant.getEmail()))
-        ));
+//        Map<String, String> output = new LinkedHashMap<>(Map.ofEntries(
+//                entry("creditValueIsInsured", String.valueOf(creditValueIsInsured)),
+//                entry("possibleToRefinancing", String.valueOf(possibleToRefinancing)),
+//                entry("numberOfMonthsWithNoReimbursementNecessary", String.valueOf(numberOfMonthsWithNoReimbursementNecessary)),
+//                entry("isCoSignerNeeded", String.valueOf(isCoSignerNeeded)),
+//                entry("coSigner", String.format("%s", coSigner.getClientRegistrationNumber())),
+//                entry("minimumNumberOfTermInMonths", String.valueOf(minimumNumberOfTermInMonths)),
+//                entry("maximumNumberOfTermInMonths", String.valueOf(maximumNumberOfTermInMonths)),
+//                entry("maximumAmountOfMoneyThatCanBeTaken", maximumAmountOfMoneyThatCanBeTaken.toString()),
+//                entry("minimumPaymentForCurrentMonth", minimumPaymentForCurrentMonth.toString()),
+//                entry("isForeclosed", String.valueOf(isForeclosed)),
+//                entry("isRepossessed", String.valueOf(isRepossessed)),
+//                entry("settlementOfTheMortgageDeed", String.valueOf(settlementOfTheMortgageDeed)),
+//                entry("isRedeemed", String.valueOf(isRedeemed)),
+//                entry("mortgageConsultant", String.format("%s; %s; %s;",
+//                        mortgageConsultant.getFirstName(), mortgageConsultant.getLastName(), mortgageConsultant.getEmail()))
+//        ));
 
+        Map<String, ?> output = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(output, String.format("Mortgage [%s", super.toString()));
     }
 }

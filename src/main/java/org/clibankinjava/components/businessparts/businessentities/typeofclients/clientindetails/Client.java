@@ -7,16 +7,14 @@ import org.clibankinjava.components.businessparts.businessentities.typeofbankper
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.accountwithdetails.Account;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.creditwithdetails.Credit;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofcredits.longtermcredit.LongTermCredit;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashSet;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -125,16 +123,17 @@ public abstract class Client implements Comparable<Client> {
 
     @Override
     public String toString() {
-        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
-                entry("clientRegistrationNumber", clientRegistrationNumber),
-                entry("clientType", clientType.toString()),
-                entry("statisticDetails", statisticDetails.toString()),
-                entry("clientCreatedBy", String.format("%s; %s; %s", clientCreatedBy.getFirstName(),
-                        clientCreatedBy.getLastName(), clientCreatedBy.getEmail())),
-                entry("relationshipWithEmployees", relationshipWithEmployees.toString()),
-                entry("salaryAccountAvailableAtThisBank", String.valueOf(salaryAccountAvailableAtThisBank))
-        ));
+//        Map<String, String> characteristics = new LinkedHashMap<>(Map.ofEntries(
+//                entry("clientRegistrationNumber", clientRegistrationNumber),
+//                entry("clientType", clientType.toString()),
+//                entry("statisticDetails", statisticDetails.toString()),
+//                entry("clientCreatedBy", String.format("%s; %s; %s", clientCreatedBy.getFirstName(),
+//                        clientCreatedBy.getLastName(), clientCreatedBy.getEmail())),
+//                entry("relationshipWithEmployees", relationshipWithEmployees.toString()),
+//                entry("salaryAccountAvailableAtThisBank", String.valueOf(salaryAccountAvailableAtThisBank))
+//        ));
 
+        Map<String, ?> characteristics = OperationsOnMap.putObjectAttributes(this);
         return CustomPrinting.of(characteristics, "Client [");
     }
 }

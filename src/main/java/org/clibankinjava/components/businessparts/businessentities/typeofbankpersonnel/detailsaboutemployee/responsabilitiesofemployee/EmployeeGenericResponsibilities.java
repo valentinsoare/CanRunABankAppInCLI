@@ -38,7 +38,7 @@ public abstract class EmployeeGenericResponsibilities {
     private boolean ableToGiveConfidentialInformation;
 
     @Transient
-    private Map<String, Boolean> responsibilities;
+    private Map<String, ?> responsibilities;
 
     protected EmployeeGenericResponsibilities() {}
 
@@ -46,7 +46,7 @@ public abstract class EmployeeGenericResponsibilities {
     public String toString() {
         StringBuilder printingResponsibilities = new StringBuilder("Responsibilities [");
 
-        for (Map.Entry<String, Boolean> element : responsibilities.entrySet()) {
+        for (Map.Entry<String, ?> element : responsibilities.entrySet()) {
             printingResponsibilities.append(String.format("%s: %s, ", element.getKey(), element.getValue()));
         }
 

@@ -6,12 +6,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -60,15 +58,19 @@ public class InvestmentBankerResponsibilities extends EmployeeGenericResponsibil
     public InvestmentBankerResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("conductStrategicResearchAndDueDiligenceInvestigations", conductStrategicResearchAndDueDiligenceInvestigations),
-                entry("issueDebtAndSellEquityToRaiseCapital", issueDebtAndSellEquityToRaiseCapital),
-                entry("manageIpoAndPrivateEquityPlacements", manageIpoAndPrivateEquityPlacements),
-                entry("discoverAndClosePotentialInvestors", discoverAndClosePotentialInvestors),
-                entry("facilitateMergersAndAcquisitions", facilitateMergersAndAcquisitions),
-                entry("assistWithCorporateRestructuring", assistWithCorporateRestructuring),
-                entry("analyzeRiskAndOfferFinancialAdvice", analyzeRiskAndOfferFinancialAdvice),
-                entry("prepareReportsModelsAndForecasts", prepareReportsModelsAndForecasts)
-        )));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("conductStrategicResearchAndDueDiligenceInvestigations", conductStrategicResearchAndDueDiligenceInvestigations),
+//                entry("issueDebtAndSellEquityToRaiseCapital", issueDebtAndSellEquityToRaiseCapital),
+//                entry("manageIpoAndPrivateEquityPlacements", manageIpoAndPrivateEquityPlacements),
+//                entry("discoverAndClosePotentialInvestors", discoverAndClosePotentialInvestors),
+//                entry("facilitateMergersAndAcquisitions", facilitateMergersAndAcquisitions),
+//                entry("assistWithCorporateRestructuring", assistWithCorporateRestructuring),
+//                entry("analyzeRiskAndOfferFinancialAdvice", analyzeRiskAndOfferFinancialAdvice),
+//                entry("prepareReportsModelsAndForecasts", prepareReportsModelsAndForecasts)
+//        )));
+
+        super.setResponsibilities(m);
     }
 }
