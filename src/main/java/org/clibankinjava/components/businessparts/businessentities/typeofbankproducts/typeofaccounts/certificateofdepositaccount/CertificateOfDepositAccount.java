@@ -4,16 +4,14 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.accountwithdetails.Account;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -117,18 +115,22 @@ public class CertificateOfDepositAccount extends Account {
 
     @Override
     public String toString() {
-        Map<String, String> valuesToBePrinted = new LinkedHashMap<>(Map.ofEntries(
-                entry("fixedInterestRate", String.valueOf(fixedInterestRate)),
-                entry("annuallyInterestRate", annuallyInterestRate.toString()),
-                entry("term", String.valueOf(term)),
-                entry("thePrincipal", thePrincipal.toString()),
-                entry("earlyWithdrawPenalties", earlyWithdrawPenalties.toString()),
-                entry("automaticallyReinvested", String.valueOf(automaticallyReinvested)),
-                entry("isAccountProtected", String.valueOf(isAccountProtected)),
-                entry("protectedUpTo", protectedUpTo.toString())
-        ));
+//        Map<String, String> valuesToBePrinted = new LinkedHashMap<>(Map.ofEntries(
+//                entry("fixedInterestRate", String.valueOf(fixedInterestRate)),
+//                entry("annuallyInterestRate", annuallyInterestRate.toString()),
+//                entry("term", String.valueOf(term)),
+//                entry("thePrincipal", thePrincipal.toString()),
+//                entry("earlyWithdrawPenalties", earlyWithdrawPenalties.toString()),
+//                entry("automaticallyReinvested", String.valueOf(automaticallyReinvested)),
+//                entry("isAccountProtected", String.valueOf(isAccountProtected)),
+//                entry("protectedUpTo", protectedUpTo.toString())
+//        ));
 
-        return CustomPrinting.of(valuesToBePrinted, String.format("CertificateOfDeposit [%s",
-                super.toString()));
+
+        Map<String, ?> objectCertificateOfDepositAccountMap =
+                OperationsOnMap.putObjectAttributes(this);
+
+        return CustomPrinting.of(objectCertificateOfDepositAccountMap,
+                String.format("CertificateOfDeposit [%s", super.toString()));
     }
 }

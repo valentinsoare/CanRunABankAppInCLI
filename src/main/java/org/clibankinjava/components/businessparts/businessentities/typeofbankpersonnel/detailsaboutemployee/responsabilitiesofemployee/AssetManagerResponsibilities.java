@@ -3,13 +3,10 @@ package org.clibankinjava.components.businessparts.businessentities.typeofbankpe
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.clibankinjava.customdatastructures.operationswithcustomdatastructures.OperationsOnMaps;
+import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static java.util.Map.entry;
 
 @Getter
 @Setter
@@ -78,19 +75,23 @@ public class AssetManagerResponsibilities extends EmployeeGenericResponsibilitie
     public AssetManagerResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("runningAndAnalysingInventoriesOfAllAssets", runningAndAnalysingInventoriesOfAllAssets),
-                entry("liaisingWithSuppliersToObtainTheBestPriceForAssets", liaisingWithSuppliersToObtainTheBestPriceForAssets),
-                entry("investingMoneyForUpcomingProjects", investingMoneyForUpcomingProjects),
-                entry("workingWithAssetManagementSystemsAndTrackingTechnologies", workingWithAssetManagementSystemsAndTrackingTechnologies),
-                entry("ensuringFinancialRecordsAreUpToDateAndAccurate", ensuringFinancialRecordsAreUpToDateAndAccurate),
-                entry("monitoringMaterialsWorkforceToolsEquipmentAndSupplies", monitoringMaterialsWorkforceToolsEquipmentAndSupplies),
-                entry("reportingOnFinanceAndForecastingBudgets", reportingOnFinanceAndForecastingBudgets),
-                entry("reviewingClientFinancialPortfolio", reviewingClientFinancialPortfolio),
-                entry("monitoringStockMarket", monitoringStockMarket),
-                entry("determineBestInvestDecisionForClient", determineBestInvestDecisionForClient),
-                entry("investInStocksAndOtherAssets", investInStocksAndOtherAssets),
-                entry("makeInformedDecisionsPotentialInvestments", makeInformedDecisionsPotentialInvestments)
-        )));
+        Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("runningAndAnalysingInventoriesOfAllAssets", runningAndAnalysingInventoriesOfAllAssets),
+//                entry("liaisingWithSuppliersToObtainTheBestPriceForAssets", liaisingWithSuppliersToObtainTheBestPriceForAssets),
+//                entry("investingMoneyForUpcomingProjects", investingMoneyForUpcomingProjects),
+//                entry("workingWithAssetManagementSystemsAndTrackingTechnologies", workingWithAssetManagementSystemsAndTrackingTechnologies),
+//                entry("ensuringFinancialRecordsAreUpToDateAndAccurate", ensuringFinancialRecordsAreUpToDateAndAccurate),
+//                entry("monitoringMaterialsWorkforceToolsEquipmentAndSupplies", monitoringMaterialsWorkforceToolsEquipmentAndSupplies),
+//                entry("reportingOnFinanceAndForecastingBudgets", reportingOnFinanceAndForecastingBudgets),
+//                entry("reviewingClientFinancialPortfolio", reviewingClientFinancialPortfolio),
+//                entry("monitoringStockMarket", monitoringStockMarket),
+//                entry("determineBestInvestDecisionForClient", determineBestInvestDecisionForClient),
+//                entry("investInStocksAndOtherAssets", investInStocksAndOtherAssets),
+//                entry("makeInformedDecisionsPotentialInvestments", makeInformedDecisionsPotentialInvestments)
+//        )));
+
+        super.setResponsibilities(m);
     }
 }

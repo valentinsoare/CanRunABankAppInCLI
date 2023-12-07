@@ -23,11 +23,12 @@ public class CustomPrinting {
         return customFormat;
     }
 
-    public static String of(Map<String, String> characteristics, String typeOfAccount) {
+    @SuppressWarnings("unchecked")
+    public static <T> String of(Map<String, T> characteristics, String typeOfAccount) {
         StringBuilder output = new StringBuilder(typeOfAccount);
 
         int j = 0;
-        for (Map.Entry<String, String> element : characteristics.entrySet()) {
+        for (Map.Entry<String, T> element : characteristics.entrySet()) {
             output.append(String.format("%s: %s", element.getKey(), element.getValue()));
 
             if (j++ < characteristics.size() - 1) {
