@@ -7,7 +7,7 @@ import org.clibankinjava.components.businessparts.businessentities.typeofbankper
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.accountwithdetails.Account;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.creditwithdetails.Credit;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofcredits.longtermcredit.LongTermCredit;
-import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
+import org.clibankinjava.customdatastructureandoperationsonthem.operations.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;

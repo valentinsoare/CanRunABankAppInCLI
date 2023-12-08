@@ -3,7 +3,7 @@ package org.clibankinjava.components.businessparts.businessentities.typeofbankpr
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
+import org.clibankinjava.customdatastructureandoperationsonthem.operations.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;

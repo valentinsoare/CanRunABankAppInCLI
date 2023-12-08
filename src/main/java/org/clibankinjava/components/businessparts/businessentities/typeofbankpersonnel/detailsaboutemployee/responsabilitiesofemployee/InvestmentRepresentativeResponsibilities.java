@@ -6,7 +6,7 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
-import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
+import org.clibankinjava.customdatastructureandoperationsonthem.operations.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
 import java.util.Map;

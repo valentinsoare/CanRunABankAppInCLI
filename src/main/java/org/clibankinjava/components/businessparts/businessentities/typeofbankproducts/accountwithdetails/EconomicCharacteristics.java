@@ -8,7 +8,7 @@ import org.clibankinjava.components.businessparts.businessentities.typeofbankpro
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofaccounts.additionalproductsforaccounts.CreditCard;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofaccounts.additionalproductsforaccounts.DebitCard;
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.TypeOfClient;
-import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
+import org.clibankinjava.customdatastructureandoperationsonthem.operations.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;

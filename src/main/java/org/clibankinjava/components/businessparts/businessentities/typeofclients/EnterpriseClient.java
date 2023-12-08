@@ -9,7 +9,7 @@ import org.clibankinjava.components.businessparts.businessentities.typeofclients
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.EconomicDetailsForCompany;
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.IdentificationForACompany;
-import org.clibankinjava.customdatastructureandoperationsonthem.OperationsOnMap;
+import org.clibankinjava.customdatastructureandoperationsonthem.operations.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
 import org.hibernate.annotations.BatchSize;
 import org.jetbrains.annotations.NotNull;
