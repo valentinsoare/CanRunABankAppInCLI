@@ -91,23 +91,24 @@ public class CreditAnalystResponsibilities extends EmployeeGenericResponsibiliti
     public CreditAnalystResponsibilities() {
         super();
 
-        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
-                entry("reviewingFinancialHistory", reviewingFinancialHistory),
-                entry("reviewingCreditScore", reviewingCreditScore),
-                entry("provideRecommendationForApproving", provideRecommendationForApproving),
-                entry("gathersAndAnalyzesLoanApplicantsFinancialDataToEvaluateRisk", gathersAndAnalyzesLoanApplicantsFinancialDataToEvaluateRisk),
-                entry("gatheringInformationAboutClients", gatheringInformationAboutClients),
-                entry("undertakingRiskAnalysisByUsingSpecialistSoftware", undertakingRiskAnalysisByUsingSpecialistSoftware),
-                entry("developingStatisticalModels", developingStatisticalModels),
-                entry("assessingFinancialInformation", assessingFinancialInformation),
-                entry("analysingFinancialInformation", analysingFinancialInformation),
-                entry("buildingAndMaintainingClientRelationships", buildingAndMaintainingClientRelationships),
-                entry("creatingAndDeliveringPresentations", creatingAndDeliveringPresentations),
-                entry("creatingFinancialReports", creatingFinancialReports),
-                entry("usingCreditScoringSystemsForCreditAmounts", usingCreditScoringSystemsForCreditAmounts),
-                entry("helpingToEnhanceQualityOfCreditApplications", helpingToEnhanceQualityOfCreditApplications)
-        )));
+//        super.setResponsibilities(new LinkedHashMap<>(Map.ofEntries(
+//                entry("reviewingFinancialHistory", reviewingFinancialHistory),
+//                entry("reviewingCreditScore", reviewingCreditScore),
+//                entry("provideRecommendationForApproving", provideRecommendationForApproving),
+//                entry("gathersAndAnalyzesLoanApplicantsFinancialDataToEvaluateRisk", gathersAndAnalyzesLoanApplicantsFinancialDataToEvaluateRisk),
+//                entry("gatheringInformationAboutClients", gatheringInformationAboutClients),
+//                entry("undertakingRiskAnalysisByUsingSpecialistSoftware", undertakingRiskAnalysisByUsingSpecialistSoftware),
+//                entry("developingStatisticalModels", developingStatisticalModels),
+//                entry("assessingFinancialInformation", assessingFinancialInformation),
+//                entry("analysingFinancialInformation", analysingFinancialInformation),
+//                entry("buildingAndMaintainingClientRelationships", buildingAndMaintainingClientRelationships),
+//                entry("creatingAndDeliveringPresentations", creatingAndDeliveringPresentations),
+//                entry("creatingFinancialReports", creatingFinancialReports),
+//                entry("usingCreditScoringSystemsForCreditAmounts", usingCreditScoringSystemsForCreditAmounts),
+//                entry("helpingToEnhanceQualityOfCreditApplications", helpingToEnhanceQualityOfCreditApplications)
+//        )));
 
         Map<String, ?> m = OperationsOnMap.putObjectAttributes(this);
+        super.setResponsibilities(m);
     }
 }

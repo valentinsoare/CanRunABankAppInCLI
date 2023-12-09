@@ -4,6 +4,7 @@ import org.clibankinjava.customprinting.PrintMenu;
 import org.clibankinjava.components.menus.Menu;
 
 public class PrintingTheMenuThread implements Runnable {
+
     private final Menu menu;
 
     public PrintingTheMenuThread(Menu menu) {

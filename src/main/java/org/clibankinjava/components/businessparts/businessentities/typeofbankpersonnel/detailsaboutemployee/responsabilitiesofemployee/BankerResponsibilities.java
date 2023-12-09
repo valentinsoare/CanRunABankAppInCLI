@@ -12,6 +12,7 @@ import java.util.Map;
 @Setter
 @Embeddable
 public class BankerResponsibilities extends EmployeeGenericResponsibilities {
+
     @LazyGroup("BANKER_RESPONSIBILITIES_FIRST_WAVE")
     @Column(name = "signing_new_clients")
     @Basic(fetch = FetchType.LAZY)

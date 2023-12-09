@@ -20,6 +20,7 @@ import java.util.Map;
 @Entity(name = "Check")
 @Table(name = "check", schema = "check")
 public class Check implements Comparable<Check> {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)

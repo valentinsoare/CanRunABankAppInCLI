@@ -1,6 +1,7 @@
 package org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofaccounts.savingsaccount;
 
 public enum CharacteristicsOfSavingsAccount {
+
     FIXED_INTEREST_RATE("fixedInterestRate", true),
     NOT_FIXED_INTEREST_RATE("fixedInterestRate", false),
 

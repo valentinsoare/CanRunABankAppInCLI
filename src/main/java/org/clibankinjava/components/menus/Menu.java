@@ -17,6 +17,7 @@ import java.util.stream.Collectors;
 
 @Getter
 public final class Menu implements Component {
+
     private IHeader headerForMenu;
     private int numberOfEntriesInTheMenu;
     private List<String> optionsForTheMenuAfterProcessing;

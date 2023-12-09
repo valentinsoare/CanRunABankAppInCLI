@@ -6,12 +6,14 @@ import lombok.Setter;
 import org.clibankinjava.customdatastructureandoperationsonthem.operations.OperationsOnMap;
 import org.hibernate.annotations.LazyGroup;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 @Getter
 @Setter
 @Embeddable
 public class AssetManagerResponsibilities extends EmployeeGenericResponsibilities {
+
     @LazyGroup("SECOND_WAVE_RESPONSIBILITIES")
     @Column(name = "running_and_analysing_inventories_of_all_assets")
     @Basic(fetch = FetchType.LAZY)

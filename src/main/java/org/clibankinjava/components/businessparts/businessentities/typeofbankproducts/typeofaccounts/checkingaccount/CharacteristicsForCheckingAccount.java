@@ -3,6 +3,7 @@ package org.clibankinjava.components.businessparts.businessentities.typeofbankpr
 import java.math.BigDecimal;
 
 public enum CharacteristicsForCheckingAccount {
+
     PROVIDE_INTEREST("ProvideInterest", true),
     DO_NOT_PROVIDE_INTEREST("ProvideInterest", false),
 

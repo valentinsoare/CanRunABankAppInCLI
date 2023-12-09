@@ -3,6 +3,7 @@ package org.clibankinjava.components.menus;
 import org.clibankinjava.components.headers.IHeader;
 
 public final class ImplementMenuBuilder {
+
     private final Menu mainMenu;
 
     public ImplementMenuBuilder() {

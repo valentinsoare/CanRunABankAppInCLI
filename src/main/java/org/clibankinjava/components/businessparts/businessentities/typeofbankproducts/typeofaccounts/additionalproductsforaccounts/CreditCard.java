@@ -14,6 +14,7 @@ import org.jetbrains.annotations.NotNull;
 @Entity(name = "CreditCard")
 @DiscriminatorValue("credit_card")
 public class CreditCard extends Card {
+
     @OneToOne(mappedBy = "economicCharacteristics.creditCard")
     private Account account;
 

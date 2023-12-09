@@ -19,6 +19,7 @@ import java.util.Map;
 @DiscriminatorValue("1")
 @Entity(name = "CertificateOfDepositAccount")
 public class CertificateOfDepositAccount extends Account {
+
     @LazyGroup("FIRST_WAVE_CERTIFICATE_OF_DEPOSIT")
     @Column(name = "fixed_interest_rate")
     @Basic(fetch = FetchType.LAZY)

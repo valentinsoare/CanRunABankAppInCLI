@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public abstract class LoginInformation {
+
     private static final BufferedReader takeInput;
     private static final CheckUserAndPassword checkInputForUserAndPassword;
 

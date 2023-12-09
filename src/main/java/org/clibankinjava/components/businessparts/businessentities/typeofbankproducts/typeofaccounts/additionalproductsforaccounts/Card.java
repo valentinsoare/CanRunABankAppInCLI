@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.customdatastructureandoperationsonthem.operations.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
+import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
@@ -14,6 +15,7 @@ import java.util.Map;
 
 @Getter
 @Setter
+@BatchSize(size = 8)
 @Entity(name = "Card")
 @Table(name = "card", schema = "card")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
@@ -23,6 +25,7 @@ import java.util.Map;
 )
 @DiscriminatorValue("null")
 public abstract class Card implements Comparable<Card> {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
@@ -122,7 +125,6 @@ public abstract class Card implements Comparable<Card> {
 //        ));
 
         Map<String, ?> output = OperationsOnMap.putObjectAttributes(this);
-
         return CustomPrinting.of(output, "");
     }
 }

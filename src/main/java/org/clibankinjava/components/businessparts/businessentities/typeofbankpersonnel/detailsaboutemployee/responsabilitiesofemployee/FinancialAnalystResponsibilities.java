@@ -15,6 +15,7 @@ import java.util.Map;
 @Getter
 @Embeddable
 public class FinancialAnalystResponsibilities extends EmployeeGenericResponsibilities {
+
     @LazyGroup("FIRST_WAVE_FINANCIAL_ANALYST_RESPONSIBILITIES")
     @Column(name = "gathering_data_and_information")
     @Basic(fetch = FetchType.LAZY)

@@ -19,6 +19,7 @@ import java.util.Map;
 @BatchSize(size = 8)
 @Entity(name = "CheckingAccount")
 public class CheckingAccount extends Account {
+
     @LazyGroup("FIRST_WAVE_CHECKING_ACCOUNT")
     @Column(name = "provide_interest")
     @Basic(fetch = FetchType.LAZY)

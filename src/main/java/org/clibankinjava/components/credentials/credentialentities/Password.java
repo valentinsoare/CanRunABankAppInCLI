@@ -3,6 +3,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.credentials.LoginCredentials;
+import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
@@ -12,6 +13,7 @@ import java.time.LocalTime;
 @Getter
 @Setter
 @Entity(name = "Password")
+@BatchSize(size=8)
 @Table(name = "password", schema = "password")
 public class Password implements LoginCredentials, Comparable<Password> {
     @Id

@@ -9,6 +9,7 @@ import org.clibankinjava.components.businessparts.businessentities.typeofbankpro
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofcredits.longtermcredit.LongTermCredit;
 import org.clibankinjava.customdatastructureandoperationsonthem.operations.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
+import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
@@ -18,6 +19,7 @@ import java.util.Set;
 
 @Getter
 @Setter
+@BatchSize(size=8)
 @Entity(name = "Client")
 @Table(name = "client", schema = "client")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)

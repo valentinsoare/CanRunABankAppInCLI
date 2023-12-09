@@ -15,6 +15,7 @@ import java.util.Map;
 @Setter
 @Embeddable
 public class InvestmentRepresentativeResponsibilities extends EmployeeGenericResponsibilities {
+
     @LazyGroup("FIRST_WAVE_INVESTMENT_REPRESENTATIVE_RESPONSIBILITIES")
     @Column(name = "promote_investment_products_and_services")
     @Basic(fetch = FetchType.LAZY)

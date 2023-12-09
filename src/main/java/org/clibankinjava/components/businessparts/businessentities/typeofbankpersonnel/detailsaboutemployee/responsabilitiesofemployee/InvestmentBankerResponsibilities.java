@@ -15,6 +15,7 @@ import java.util.Map;
 @Setter
 @Embeddable
 public class InvestmentBankerResponsibilities extends EmployeeGenericResponsibilities {
+
     @LazyGroup("FIRST_WAVE_INVESTMENT_BANKER_RESPONSIBILITIES")
     @Basic(fetch = FetchType.LAZY)
     @Column(name = "conduct_strategic_research_and_due_diligence_investigations")

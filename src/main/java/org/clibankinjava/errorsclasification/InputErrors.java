@@ -8,6 +8,7 @@ import java.util.List;
 
 @Getter
 public enum InputErrors implements CustomError {
+
     NULL_OR_EMPTY_TEXT("null_or_empty_text", 3,
             String.format("INPUT_ERROR, SEV: %s - Input value is null or empty. Please provide a proper value!", Severities.THREE)),
 

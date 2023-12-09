@@ -8,6 +8,7 @@ import java.util.*;
 
 @Getter
 public final class CheckUserAndPassword {
+
     private final Deque<User> usersRegistered;
     private final Map<User, Password> hashedPasswords;
 

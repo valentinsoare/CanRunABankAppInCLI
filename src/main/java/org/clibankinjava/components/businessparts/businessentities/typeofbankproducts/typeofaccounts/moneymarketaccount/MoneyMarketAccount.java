@@ -19,6 +19,7 @@ import java.util.Map;
 @DiscriminatorValue("3")
 @Entity(name = "MoneyMarketAccount")
 public class MoneyMarketAccount extends Account {
+
     @LazyGroup("FIRST_WAVE_MONEY_MARKET")
     @Column(name = "provide_interest")
     @Basic(fetch = FetchType.LAZY)

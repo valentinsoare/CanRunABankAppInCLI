@@ -3,7 +3,9 @@ package org.clibankinjava.components.headers;
 import java.util.concurrent.Semaphore;
 
 public final class UseHeaderForMainMenu implements Runnable {
+
     private final Semaphore loadingApp;
+
     private final Header mainHeader;
 
     public UseHeaderForMainMenu(Semaphore loadingApp, Header mainHeader) {

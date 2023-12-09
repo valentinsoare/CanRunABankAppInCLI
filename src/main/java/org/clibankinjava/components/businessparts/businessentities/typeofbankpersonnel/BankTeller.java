@@ -19,6 +19,7 @@ import java.util.TreeSet;
 @Table(name = "bank_teller", schema = "bank_teller")
 @PrimaryKeyJoinColumn(name = "bank_teller_id", columnDefinition = "int default -1")
 public class BankTeller extends Employee {
+
     @OrderBy
     @LazyGroup("USERS_CREATION")
     @OneToMany(mappedBy = "createdBy", fetch = FetchType.LAZY)

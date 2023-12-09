@@ -15,6 +15,7 @@ import java.util.Map;
 @Setter
 @Embeddable
 public class MortgageConsultantResponsibilities extends EmployeeGenericResponsibilities {
+
     @LazyGroup("FIRST_WAVE_MORTGAGE_CONSULTANT_RESPONSIBILITIES")
     @Column(name = "researching_current_mortgage_rates_and_products")
     @Basic(fetch = FetchType.LAZY)

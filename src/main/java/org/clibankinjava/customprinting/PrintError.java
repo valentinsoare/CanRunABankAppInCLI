@@ -5,6 +5,7 @@ import org.clibankinjava.components.loading.Loading;
 import org.clibankinjava.errorsclasification.CustomError;
 
 public class PrintError {
+
     private PrintError() {}
 
     public static String toConsole(CustomError error, int emptySpaceOnTheLeft,

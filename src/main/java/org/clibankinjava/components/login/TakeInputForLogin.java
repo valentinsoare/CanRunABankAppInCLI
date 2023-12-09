@@ -14,6 +14,7 @@ import java.io.Console;
 
 @Getter
 public final class TakeInputForLogin {
+
     private final IHeader loginHeader;
 
     private User username;

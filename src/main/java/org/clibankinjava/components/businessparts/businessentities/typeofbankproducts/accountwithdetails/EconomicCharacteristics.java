@@ -21,6 +21,7 @@ import java.util.Set;
 @Setter
 @Embeddable
 public class EconomicCharacteristics implements Comparable<EconomicCharacteristics> {
+
     @LazyGroup("MAIN")
     @Column(name = "iban")
     @Basic(fetch = FetchType.LAZY)

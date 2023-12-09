@@ -20,6 +20,7 @@ import java.util.TreeSet;
 @Table(name = "financial_advisor", schema = "financial_advisor")
 @PrimaryKeyJoinColumn(name = "financial_advisor_id", columnDefinition = "int default -1")
 public class FinancialAdvisor extends Employee {
+
     @OrderBy
     @LazyGroup("USERS_CREATION")
     @OneToMany(mappedBy = "createdBy", fetch = FetchType.LAZY)
@@ -32,7 +33,7 @@ public class FinancialAdvisor extends Employee {
 
     @OrderBy
     @LazyGroup("CLIENTS")
-    @OneToMany(mappedBy = "financialAdvisor", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "relationshipWithEmployees.financialAdvisor", fetch = FetchType.LAZY)
     private Set<Client> listOfClients;
 
     @Embedded

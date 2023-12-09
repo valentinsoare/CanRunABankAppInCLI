@@ -1,16 +1,11 @@
 package org.clibankinjava;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityTransaction;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofaccounts.additionalproductsforaccounts.Check;
 import org.clibankinjava.customprinting.CustomPrinting;
-import org.clibankinjava.databaseutils.ToBankingWithSuccessDB;
-import org.clibankinjava.databaseutils.EntityManagerScope;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.Month;
-import java.util.TreeSet;
 import java.util.concurrent.*;
 
 public class App {

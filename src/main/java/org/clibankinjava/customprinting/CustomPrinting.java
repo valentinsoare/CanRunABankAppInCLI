@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class CustomPrinting {
+
     private CustomPrinting() {}
 
     public static String format(String customFormat, String... args) {

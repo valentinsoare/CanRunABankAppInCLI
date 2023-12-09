@@ -7,6 +7,7 @@ import org.clibankinjava.components.businessparts.businessentities.typeofbankper
 import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
 import org.clibankinjava.customdatastructureandoperationsonthem.operations.OperationsOnMap;
 import org.clibankinjava.customprinting.CustomPrinting;
+import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
 
@@ -16,6 +17,7 @@ import java.util.Map;
 
 @Getter
 @Setter
+@BatchSize(size=8)
 @Entity(name = "Credit")
 @Table(name = "credit", schema = "credit")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
@@ -25,6 +27,7 @@ import java.util.Map;
 )
 @DiscriminatorValue("null")
 public abstract class Credit implements Comparable<Credit> {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)

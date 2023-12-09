@@ -8,6 +8,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;
 
 public class CreatingAndLoadingThePrerequisitesThread implements Callable<Map<String, Component>> {
+
     private final CountDownLatch latch;
 
     public CreatingAndLoadingThePrerequisitesThread(CountDownLatch latch) {

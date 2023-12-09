@@ -4,10 +4,14 @@ import lombok.Getter;
 
 @Getter
 public enum CharacteristicsForCertificateOfDeposit {
+
     FIXED_INTEREST_RATE("fixedInterestRate", true),
+
     VARIABLE_INTEREST_RATE("fixedInterestRate", false),
 
+
     ACCOUNT_IS_PROTECTED("isAccountProtected", true),
+
     ACCOUNT_IS_NOT_PROTECTED("isAccountProtected", false);
 
     private final String textRepresentation;

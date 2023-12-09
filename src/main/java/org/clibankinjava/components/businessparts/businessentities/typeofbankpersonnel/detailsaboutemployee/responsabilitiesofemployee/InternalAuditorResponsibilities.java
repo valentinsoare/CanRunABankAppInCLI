@@ -15,6 +15,7 @@ import java.util.Map;
 @Setter
 @Embeddable
 public class InternalAuditorResponsibilities extends EmployeeGenericResponsibilities {
+
     @LazyGroup("FIRST_WAVE_INTERNAL_AUDITOR_RESPONSIBILITIES")
     @Basic(fetch = FetchType.LAZY)
     @Column(name = "assessing_company_financial_risk")

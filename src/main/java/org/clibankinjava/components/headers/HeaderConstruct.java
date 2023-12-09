@@ -1,6 +1,7 @@
 package org.clibankinjava.components.headers;
 
 public final class HeaderConstruct implements HeaderBuilder {
+
     private final Header header;
 
     public HeaderConstruct() {

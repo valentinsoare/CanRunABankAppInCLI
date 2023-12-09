@@ -8,6 +8,7 @@ import java.util.List;
 
 @Getter
 public enum ExecutionErrors implements CustomError {
+
     LOAD_CONSOLE_ISSUE("load_console_issue", 1,
             String.format("EXEC_ERROR, SEV: %s - Cannot load the console!", Severities.ONE));
 

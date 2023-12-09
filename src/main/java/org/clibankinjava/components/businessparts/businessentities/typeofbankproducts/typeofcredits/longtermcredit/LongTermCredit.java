@@ -16,10 +16,11 @@ import java.util.Map;
 
 @Getter
 @Setter
-@BatchSize(size = 16)
+@BatchSize(size = 8)
 @DiscriminatorValue("1")
 @Entity(name = "LongTermCredit")
 public class LongTermCredit extends Credit {
+
     @LazyGroup("FIRST_WAVE_DETAILS")
     @Column(name = "minimumNumber_of_months_for_credit_term_is_necessary")
     @Basic(fetch = FetchType.LAZY)

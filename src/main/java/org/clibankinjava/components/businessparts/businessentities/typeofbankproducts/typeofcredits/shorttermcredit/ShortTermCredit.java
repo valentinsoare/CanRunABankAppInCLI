@@ -17,9 +17,10 @@ import java.util.Map;
 @Getter
 @Setter
 @DiscriminatorValue("4")
-@BatchSize(size = 16)
+@BatchSize(size = 8)
 @Entity(name = "ShortTermCredit")
 public class ShortTermCredit extends Credit {
+
     @LazyGroup("FIRST_WAVE_SHORT_TERM_CREDIT")
     @Basic(fetch = FetchType.LAZY)
     @Column(name = "credit_value_is_insured")

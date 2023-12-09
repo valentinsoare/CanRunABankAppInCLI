@@ -17,6 +17,7 @@ import java.util.Map;
 @Setter
 @Embeddable
 public class AddressForCommercialClient implements Comparable<AddressForCommercialClient> {
+
     @LazyGroup("FIRST_PHASE_ADDRESS_COMMERCIAL")
     @Basic(fetch = FetchType.LAZY)
     @Column(name = "street")

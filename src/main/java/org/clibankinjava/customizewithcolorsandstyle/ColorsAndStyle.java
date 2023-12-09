@@ -4,6 +4,7 @@ import lombok.Getter;
 
 @Getter
 public class ColorsAndStyle implements IColor {
+
     private String customizedOutput;
 
     private String createStyle(String chosenColor, boolean[] optionsForStyle) {
@@ -35,20 +36,17 @@ public class ColorsAndStyle implements IColor {
         };
 
         toReturn.append(toBeAdded);
-
         return toReturn.toString();
     }
 
     public ColorsAndStyle(String color, boolean bold, boolean underline, boolean dim,
                           boolean blink, boolean reverse, boolean hidden) {
-
         boolean[] howToCustomize = {bold, underline, dim, blink, reverse, hidden};
         this.customizedOutput = createStyle(color, howToCustomize);
     }
 
-
-    private ColorsAndStyle(ColorsAndStyle colorsAndStyle) {
-        //TODO implement copy constructor
+    public ColorsAndStyle(ColorsAndStyle colorsAndStyle) {
+        this.customizedOutput = new String(colorsAndStyle.getCustomizedOutput());
     }
 
     public IColor getNewInstance(ColorsAndStyle colorsAndStyle) {

@@ -15,6 +15,7 @@ import java.util.Map;
 @Setter
 @Embeddable
 public class RelationshipManagerResponsibilities extends EmployeeGenericResponsibilities {
+
     @LazyGroup("FIRST_WAVE_RELATIONSHIP_MANAGER_RESPONSIBILITIES")
     @Column(name = "understand_customer_needs")
     @Basic(fetch = FetchType.LAZY)

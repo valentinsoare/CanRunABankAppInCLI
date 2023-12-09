@@ -1,5 +1,7 @@
 package org.clibankinjava.customdatastructureandoperationsonthem.operations;
 
+import org.clibankinjava.customdatastructureandoperationsonthem.datastructures.SortOrder;
+
 import java.lang.reflect.Field;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
@@ -10,7 +12,6 @@ import java.util.stream.Collectors;
 public class OperationsOnMap {
 
     private OperationsOnMap() {}
-
 
     @SuppressWarnings("unchecked")
     public static <K, T> Map<K, T> putObjectAttributes(T object) {
@@ -44,6 +45,4 @@ public class OperationsOnMap {
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
                         (x, y) -> y, LinkedHashMap::new));
     }
-
-
 }

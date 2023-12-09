@@ -16,10 +16,11 @@ import java.util.Map;
 
 @Getter
 @Setter
-@BatchSize(size = 16)
+@BatchSize(size = 8)
 @DiscriminatorValue("2")
 @Entity(name = "MidTermCredit")
 public class MidTermCredit extends Credit {
+
     @LazyGroup("DETAILS_FIRST_PHASE")
     @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name = "co_signer")

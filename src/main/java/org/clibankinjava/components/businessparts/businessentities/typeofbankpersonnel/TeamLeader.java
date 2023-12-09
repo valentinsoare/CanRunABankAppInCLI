@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.employeedefinition.Employee;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.detailsaboutemployee.TypeOfTeam;
+import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 
 import java.util.LinkedHashSet;
@@ -12,9 +13,11 @@ import java.util.Set;
 
 @Getter
 @Setter
+@BatchSize(size=8)
 @Entity(name = "TeamLeader")
 @Table(name = "team_leader", schema = "team_leader")
 public class TeamLeader {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)

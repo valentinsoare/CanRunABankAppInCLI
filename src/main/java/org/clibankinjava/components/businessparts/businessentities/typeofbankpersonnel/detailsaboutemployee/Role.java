@@ -1,6 +1,7 @@
 package org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.detailsaboutemployee;
 
 public enum Role {
+
     BANKER("Banker",
             """
             A banker works at a bank or financial institution.
@@ -11,6 +12,7 @@ public enum Role {
             Banker candidates need to have a bachelor's degree in either business, finance, accounting or economics to qualify for a position. 
             They also need verbal and written communication skills, problem-solving skills, risk analysis knowledge and should be technological savvy.
             """),
+
     BANK_TELLER("Bank Teller",
             """
                     A bank teller works in a bank and is responsible for helping members cash checks, withdraw money, 
@@ -19,6 +21,7 @@ public enum Role {
                     They should also have good problem-solving skills and be able to communicate verbally. 
                     Typically, bank teller candidates need at least a high school diploma or GED to qualify for a position.
                     """),
+
     ASSET_MANAGER("Asset Manager",
             """
                     An asset manager works for individual clients as a sole-proprietor or as a part of a bank or financial institution. 
@@ -28,6 +31,7 @@ public enum Role {
                     This job entails a lot of time and research to make informed decisions about potential investment opportunities on behalf of the client. 
                     Asset managers usually have a bachelor's degree in economics, finance, accounting or business, but a master's degree is more appealing to some employers.
                     """),
+
     CREDIT_ANALYST("Credit Analyst",
             """
             A credit analyst can work for an investment bank, an investment firm, credit card companies and any other institution where lending money is involved. 
@@ -35,6 +39,7 @@ public enum Role {
             The main difference between a credit analyst and other professions like a loan processor is that they can only provide a recommendation as to whether or not an applicant should be approved. 
             Credit analysts usually have a Bachelor's Degree in Finance or Economics and extensive knowledge of statistics, financial statements and ratio analysis.
             """),
+
     FINANCIAL_ADVISOR("Financial Advisor",
             """
             A financial advisor works as part of a financial institution to help clients determine their financial goals and the best means to achieve them. 
@@ -42,6 +47,7 @@ public enum Role {
             Financial advisor candidates need to have at least a bachelor's degree in an area like economics, statistics, finance or business. 
             They should also have a few years of experience in a finance-related role, like an investment specialist/banker or credit analyst.
             """),
+
     FINANCIAL_ANALYST("Financial Analyst",
             """
                     A financial analyst is responsible for monitoring market trends across industries and using their expertise to guide businesses and clients on when, where and how to invest. 
@@ -49,6 +55,7 @@ public enum Role {
                     To become a financial analyst, you should have at least a bachelor's degree in economics, finance or accounting. 
                     For senior positions, most employers prefer that you have a master's degree in a specialty area like statistics.
                     """),
+
     INTERNAL_AUDITOR("Internal Auditor",
             """
             Internal auditors for banks have a responsibility to complete routine assessments of the bank's internal procedures, loan and spending habits, employment expenses and other risk management factors. 
@@ -56,12 +63,14 @@ public enum Role {
             Internal auditor candidates should have at least a bachelor's degree in management, accounting, business administration or finance. 
             A master's degree may be preferred for more senior roles.
             """),
+
     INVESTMENT_BANKER("Investment Banker",
             """
             An investment banker is a specialized role, but it has many different areas of focus. 
             Investment bankers can provide financial advice to clients relating to investment opportunities, but they can also help instrument the process by overseeing the liquidation of assets to reduce debt and other factors. 
             Investment bankers should have a bachelor's degree at the entry-level, with more senior roles requiring a master's degree.
             """),
+
     INVESTMENT_BANKING_ANALYST("Investment Banking Analyst",
             """
             An investment banking analyst works as a liason between business owners and potential investors to help businesses confirm their financial health. 
@@ -69,6 +78,7 @@ public enum Role {
             To become an investment banking analyst, you need to obtain a bachelor's degree in finance, economics business or accounting. 
             You may also consider a master's degree to enhance your credibility.
             """),
+
     INVESTMENT_REPRESENTATIVE("Investment Representative",
             """
             An investment representative is a professional who works at an investment firm, bank or another financial institution. 
@@ -77,6 +87,7 @@ public enum Role {
             To become an investment representative, you need to earn a bachelor's degree in accounting, business administration, economics or finance. 
             You may also need to obtain a license with the Financial Industry Regulatory Authority (FINRA).
             """),
+
     LOAN_OFFICER("Loan Officer",
             """
                     A loan officer works for a financial institution, bank or lending company. 
@@ -87,12 +98,14 @@ public enum Role {
                     Loan officers should have a Bachelor's Degree in Finance, Business, Accounting or a related area. 
                     They should also have previous work experience in the loan or insurance field and obtain licensure.
                     """),
+
     LOAN_PROCESSOR("Loan Processor",
             """
             A loan processor works for a financial institution, using their knowledge of risk analysis and financial statements to review loan applications and approve or deny applicants for the loans they apply for. 
             Their main duty is to protect the financial institution and its monetary assets by only approving candidates who have a good financial history. 
             To become a loan processor, candidates typically need a bachelor's degree in accounting, finance or business administration and previous work experience in the loan and insurance specialty.
             """),
+
     MORTGAGE_CONSULTANT("Mortgage Consultant",
             """
                     Mortgage consultants usually work in freelance positions or as sole-business proprietors. 
@@ -102,6 +115,7 @@ public enum Role {
                     Mortgage consultants who want to help clients with personal finances only need a high school diploma and extensive knowledge in their field. 
                     For those wanting to pursue commercial real estate or corporate clientele, it is preferred that they have a bachelor's degree in finance, real estate or a related area.
                     """),
+
     RELATIONSHIP_MANAGER("Relationship Manager",
             """
             A relationship manager works for a bank or financial institution and acts as the point of communication between members and the institution itself. 
@@ -109,6 +123,7 @@ public enum Role {
             They are also responsible for fostering relationships with new customers by helping them gain bank membership and create a checking or savings accountant. 
             Relationship managers should have a bachelor's degree in communications, finance or business administration and should be excellent communicators.
             """),
+
     UNDERWRITER("Underwriter",
             """
             An underwriter is responsible for reviewing a loan application and assessing whether or not the applicant can afford to pay off the loan. 
@@ -118,6 +133,7 @@ public enum Role {
             """);
 
     private String jobRole;
+
     private String jobDescription;
 
     public String getJobRole() {
@@ -126,14 +142,6 @@ public enum Role {
 
     public String getJobDescription() {
         return jobDescription;
-    }
-
-    public void setJobRole(String jobRole) {
-        this.jobRole = jobRole;
-    }
-
-    public void setJobDescription(String jobDescription) {
-        this.jobDescription = jobDescription;
     }
 
     Role(String jobRole, String jobDescription) {

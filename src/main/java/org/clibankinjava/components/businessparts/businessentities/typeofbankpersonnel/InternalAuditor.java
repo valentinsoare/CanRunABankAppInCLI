@@ -19,6 +19,7 @@ import java.util.TreeSet;
 @Table(name = "internal_auditor", schema = "internal_auditor")
 @PrimaryKeyJoinColumn(name = "internal_auditor_id", columnDefinition = "int default -1")
 public class InternalAuditor extends Employee {
+
     @OrderBy
     @LazyGroup("CREATION")
     @OneToMany(mappedBy = "createdBy", fetch = FetchType.LAZY)

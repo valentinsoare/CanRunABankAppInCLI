@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 @Setter
 @Embeddable
 public class TimeInformation implements Comparable<TimeInformation> {
+
     @LazyGroup("OPEN_CLOSE")
     @Column(name = "when_account_was_open")
     @Basic(fetch = FetchType.LAZY)

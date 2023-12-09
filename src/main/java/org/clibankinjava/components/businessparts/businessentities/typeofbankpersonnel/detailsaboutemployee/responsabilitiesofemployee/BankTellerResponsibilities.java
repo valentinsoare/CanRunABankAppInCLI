@@ -15,6 +15,7 @@ import java.util.Map;
 @Getter
 @Embeddable
 public class BankTellerResponsibilities extends EmployeeGenericResponsibilities {
+
     @LazyGroup("FOURTH_WAVE_RESPONSIBILITIES")
     @Column(name = "cash_checks")
     @Basic(fetch = FetchType.LAZY)

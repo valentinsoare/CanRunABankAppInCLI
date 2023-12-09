@@ -1,6 +1,7 @@
 package org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofaccounts.moneymarketaccount;
 
 public enum CharacteristicsForMoneyMarketAccount {
+
     PROVIDE_INTEREST("provideInterest", true),
     DO_NOT_PROVIDE_INTEREST("provideInterest", false),
 

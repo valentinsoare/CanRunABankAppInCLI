@@ -8,14 +8,21 @@ import java.util.EnumMap;
 import java.util.Map;
 import java.util.Optional;
 
+//Singleton  - > Gang of Four
 public class ToBankingWithSuccessDB implements Database {
+
     private EntityManager entityManger;
+
     private ToBankingWithSuccessDB() {}
+
     static class Inner {
         private Inner() {}
+
         private static final EntityManagerFactory entityManagerFactory = generateEntityManagerFactory();
+
         private static final Map<EntityManagerScope, EntityManager> entityManagerInstances
                 = new EnumMap<>(EntityManagerScope.class);
+
         private static final ToBankingWithSuccessDB connToDb = new ToBankingWithSuccessDB();
 
         private static EntityManagerFactory generateEntityManagerFactory() {

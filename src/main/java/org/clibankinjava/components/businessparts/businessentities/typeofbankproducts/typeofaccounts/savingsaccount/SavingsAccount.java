@@ -19,6 +19,7 @@ import java.util.Map;
 @DiscriminatorValue("5")
 @Entity(name = "SavingsAccount")
 public class SavingsAccount extends Account {
+
     @LazyGroup("FIRST_WAVE_SAVINGS_ACCOUNT")
     @Column(name = "fixed_interest_rate")
     @Basic(fetch = FetchType.LAZY)

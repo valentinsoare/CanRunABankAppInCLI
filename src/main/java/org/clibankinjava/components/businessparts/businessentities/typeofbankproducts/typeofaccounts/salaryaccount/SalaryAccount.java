@@ -20,6 +20,7 @@ import java.util.Map;
 @DiscriminatorValue("4")
 @Entity(name = "SalaryAccount")
 public class SalaryAccount extends Account {
+
     @LazyGroup("FIRST_WAVE_SALARY_ACCOUNT")
     @Column(name = "provide_interest")
     @Basic(fetch = FetchType.LAZY)

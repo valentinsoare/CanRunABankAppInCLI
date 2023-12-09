@@ -8,7 +8,9 @@ import lombok.Setter;
 @Setter
 @Embeddable
 public class DueDateToPayingMonthly {
+
     private DayOfTheWeek dayOfTheWeek;
+
     private int week;
 
     public DueDateToPayingMonthly() {}

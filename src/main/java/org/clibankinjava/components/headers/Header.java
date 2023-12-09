@@ -6,6 +6,7 @@ import org.clibankinjava.validation.SanityChecks;
 
 @Getter
 public final class Header implements IHeader {
+
     private String headerMessage;
     private String subHeaderMessage;
     private int emptySpacesFromLeftEdgeScreen;

@@ -16,6 +16,7 @@ import java.util.Map;
 @Getter
 @Embeddable
 public class UnderwriterResponsibilities extends EmployeeGenericResponsibilities {
+
     @LazyGroup("FIRST_WAVE_UNDERWRITER")
     @Column(name = "review_approved_loans_to_ensure_all_legal_regulations_are_met")
     @Basic(fetch = FetchType.LAZY)

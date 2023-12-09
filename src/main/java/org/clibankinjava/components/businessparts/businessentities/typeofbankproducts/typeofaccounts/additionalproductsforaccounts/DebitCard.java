@@ -13,6 +13,7 @@ import org.jetbrains.annotations.NotNull;
 @Entity(name = "DebitCard")
 @DiscriminatorValue("debit_card")
 public class DebitCard extends Card {
+
     @OneToOne(mappedBy = "economicCharacteristics.debitCard")
     private Account account;
 

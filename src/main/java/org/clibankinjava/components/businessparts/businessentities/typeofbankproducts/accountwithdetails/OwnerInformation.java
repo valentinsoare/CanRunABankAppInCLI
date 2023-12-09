@@ -12,6 +12,7 @@ import org.jetbrains.annotations.NotNull;
 @Setter
 @Embeddable
 public class OwnerInformation implements Comparable<OwnerInformation> {
+
     @LazyGroup("CLIENT")
     @ManyToOne(fetch = FetchType.LAZY,  cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name = "owner_id", columnDefinition = "long default -1")

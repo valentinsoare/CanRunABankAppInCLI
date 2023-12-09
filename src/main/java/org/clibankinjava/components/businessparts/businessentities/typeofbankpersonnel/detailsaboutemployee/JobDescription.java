@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.employeedefinition.Employee;
+import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.annotations.LazyGroup;
 import org.hibernate.type.SqlTypes;
@@ -14,9 +15,11 @@ import java.util.Set;
 
 @Getter
 @Setter
+@BatchSize(size=8)
 @Entity(name = "JobDescription")
 @Table(name = "job_description", schema = "job_description")
 public class JobDescription implements Comparable<JobDescription> {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
@@ -68,7 +71,6 @@ public class JobDescription implements Comparable<JobDescription> {
 
         return result;
     }
-
 
     @Override
     public int compareTo(@NotNull JobDescription o) {

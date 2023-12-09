@@ -1,10 +1,15 @@
 package org.clibankinjava.errorsclasification;
 
 public enum Severities implements Severity {
+
     ONE(1, "Complete Outage"),
+
     TWO(2, "Critical"),
+
     THREE(3, "High"),
+
     FOUR(4, "Medium"),
+
     FIVE(5, "Low");
 
     private final int sevAsInteger;

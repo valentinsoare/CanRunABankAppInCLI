@@ -5,7 +5,9 @@ import org.clibankinjava.components.loading.LoadingEffect;
 import java.util.concurrent.CountDownLatch;
 
 public final class ProgressBarThread implements Runnable {
+
     private final CountDownLatch latch;
+
     private final LoadingEffect progressBar;
 
     private final int barSize;

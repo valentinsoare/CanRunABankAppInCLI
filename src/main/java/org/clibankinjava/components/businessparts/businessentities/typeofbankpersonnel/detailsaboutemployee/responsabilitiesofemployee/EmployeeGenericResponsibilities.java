@@ -12,6 +12,7 @@ import java.util.Map;
 @Setter
 @Embeddable
 public abstract class EmployeeGenericResponsibilities {
+
     @LazyGroup("FIRST_WAVE_RESPONSIBILITIES")
     @Column(name = "able_to_create_user")
     @Basic(fetch = FetchType.LAZY)

@@ -8,6 +8,7 @@ import java.util.List;
 
 @Getter
 public enum StructuralErrors implements CustomError {
+
     NUMBER_OF_OPTIONS_OUT_OF_SYNC_MENU_CREATION("number_of_menu_options_out_of_sync", 1,
             String.format("STRUCT_ERROR, SEV: %s - Number of options provided out of sync to when the menu was created!", Severities.ONE)),
 

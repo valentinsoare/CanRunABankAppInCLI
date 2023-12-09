@@ -6,6 +6,7 @@ import org.clibankinjava.errorsclasification.StructuralErrors;
 import java.util.List;
 
 public class PrintMenu {
+
     private PrintMenu() {}
 
     public static void of(Menu menu) throws InterruptedException {

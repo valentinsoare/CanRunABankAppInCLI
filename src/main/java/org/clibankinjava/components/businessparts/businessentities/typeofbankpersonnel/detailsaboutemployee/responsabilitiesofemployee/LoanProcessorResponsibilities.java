@@ -15,6 +15,7 @@ import java.util.Map;
 @Setter
 @Embeddable
 public class LoanProcessorResponsibilities extends EmployeeGenericResponsibilities {
+
     @LazyGroup("FIRST_WAVE_LOAN_PROCESSOR_RESPONSIBILITIES")
     @Column(name = "risk_analysis")
     @Basic(fetch = FetchType.LAZY)

@@ -4,6 +4,7 @@ import lombok.Getter;
 
 @Getter
 public enum DatabaseUtilInfo {
+
     UNIT_PERSISTENCE_NAME("bankingWithDB");
 
     private final String textRepresentative;
