@@ -1,0 +1,26 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(˜­×Õúÿÿÿÿ8¬¿àêÄ1
+]	java:S125"<This block of commented-out lines of code should be removed.(ËêÄøÿÿÿÿ8¬¿àêÄ1
+X	java:S125("<This block of commented-out lines of code should be removed.(±ğ¹ß8¬¿àêÄ1
+]	java:S125,"<This block of commented-out lines of code should be removed.(…Ù©úÿÿÿÿ8¬¿àêÄ1
+X	java:S1250"<This block of commented-out lines of code should be removed.(éš¿©8¬¿àêÄ1
+]	java:S1254"<This block of commented-out lines of code should be removed.(˜ÕÖúÿÿÿÿ8¬¿àêÄ1
+]	java:S125;"<This block of commented-out lines of code should be removed.(Úåœøÿÿÿÿ8¬¿àêÄ1
+]	java:S125M"<This block of commented-out lines of code should be removed.(ğñ˜½ÿÿÿÿÿ8¬¿àêÄ1
+¼
+java:S1128"Remove this unused import 'org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofaccounts.additionalproductsforaccounts.Check'.(ØÓŸ‡8ßÂáêÄ1
+š
+java:S1128"}Remove this unused import 'org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client'.( ÍÎ†8ÏÊâêÄ1
+±
+java:S1128"Remove this unused import 'org.clibankinjava.customdatastructureandoperationsonthem.datastructures.customlinkedlist.EnhancedDoubleLinkedList'.(±ïÇ•üÿÿÿÿ8ÏÊâêÄ1
+i
+java:S1128"LRemove this unused import 'org.clibankinjava.customprinting.CustomPrinting'.(Ïıç¢8ßÂáêÄ1
+N
+java:S1128"1Remove this unused import 'java.math.BigDecimal'.(êêŠ8ßÂáêÄ1
+R
+java:S1128	"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8ßÂáêÄ1
+N
+java:S1128
+",Remove this unused import 'java.time.Month'.(¤‚Éøÿÿÿÿ8ßÂáêÄ1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8àÂáêÄ1
