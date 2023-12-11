@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Small update on .gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-    </list>
+    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Small update on .gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,7 +245,7 @@
       <workItem from="1702104257434" duration="8197000" />
       <workItem from="1702246210711" duration="10817000" />
       <workItem from="1702262089708" duration="28000" />
-      <workItem from="1702262123200" duration="6661000" />
+      <workItem from="1702262123200" duration="7290000" />
     </task>
     <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
       <option name="closed" value="true" />
@@ -466,7 +463,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702268805866</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Small update on .gitignore">
+      <option name="closed" value="true" />
+      <created>1702268861355</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1702268861355</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
