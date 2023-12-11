@@ -3,10 +3,7 @@ package org.clibankinjava.customdatastructureandoperationsonthem.operations;
 import org.clibankinjava.customdatastructureandoperationsonthem.datastructures.SortOrder;
 
 import java.lang.reflect.Field;
-import java.util.Comparator;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class OperationsOnMap {
@@ -30,8 +27,7 @@ public class OperationsOnMap {
         return attributes;
     }
 
-    public static <K, T> Map<K, T> mapSort(Map<K, T> inputMap, Comparator<T> valueComparator,
-                                           boolean key, SortOrder order) {
+    public static <K, T> NavigableMap<K, T> mapSort(Map<K, T> inputMap, Comparator<T> valueComparator, boolean key, SortOrder order) {
         if (key) {
             return (order == SortOrder.ASC) ?
                     new TreeMap<>(inputMap) : new TreeMap<>(inputMap).descendingMap();
@@ -43,6 +39,6 @@ public class OperationsOnMap {
         return inputMap.entrySet().stream()
                 .sorted(Map.Entry.comparingByValue(customComparator))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
-                        (x, y) -> y, LinkedHashMap::new));
+                        (x, y) -> y, TreeMap::new));
     }
 }

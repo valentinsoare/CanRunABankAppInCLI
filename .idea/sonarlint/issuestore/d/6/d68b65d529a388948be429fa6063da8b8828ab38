@@ -1,12 +1,26 @@
 
-™
-java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(àÜÕúÿÿÿÿÿ8¯¶¢·Ã1
-£
-java:S1130"€Remove the declaration of thrown exception 'java.util.concurrent.ExecutionException', as it cannot be thrown from method's body.(àÜÕúÿÿÿÿÿ8¯¶¢·Ã1
-]	java:S125"<This block of commented-out lines of code should be removed.(˜­×Õúÿÿÿÿ8°¶¢·Ã1
-]	java:S125"<This block of commented-out lines of code should be removed.(ËêÄøÿÿÿÿ8°¶¢·Ã1
-X	java:S125%"<This block of commented-out lines of code should be removed.(±ð¹ß8°¶¢·Ã1
-]	java:S125)"<This block of commented-out lines of code should be removed.(…Ù©úÿÿÿÿ8°¶¢·Ã1
-X	java:S125-"<This block of commented-out lines of code should be removed.(éš¿©8°¶¢·Ã1
-]	java:S1251"<This block of commented-out lines of code should be removed.(˜ÕÖŽúÿÿÿÿ8°¶¢·Ã1
-]	java:S1258"<This block of commented-out lines of code should be removed.(Úåœøÿÿÿÿ8°¶¢·Ã1
+]	java:S125"<This block of commented-out lines of code should be removed.(˜­×Õúÿÿÿÿ8öñÌµÅ1
+]	java:S125"<This block of commented-out lines of code should be removed.(ËêÄøÿÿÿÿ8øñÌµÅ1
+X	java:S125("<This block of commented-out lines of code should be removed.(±ð¹ß8øñÌµÅ1
+]	java:S125,"<This block of commented-out lines of code should be removed.(…Ù©úÿÿÿÿ8øñÌµÅ1
+X	java:S1250"<This block of commented-out lines of code should be removed.(éš¿©8øñÌµÅ1
+]	java:S1254"<This block of commented-out lines of code should be removed.(˜ÕÖŽúÿÿÿÿ8øñÌµÅ1
+]	java:S125;"<This block of commented-out lines of code should be removed.(Úåœøÿÿÿÿ8øñÌµÅ1
+]	java:S125M"<This block of commented-out lines of code should be removed.(ðñ˜½ÿÿÿÿÿ8øñÌµÅ1
+¼
+java:S1128"žRemove this unused import 'org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofaccounts.additionalproductsforaccounts.Check'.(ØÓŸ‡8ßÂáêÄ1
+š
+java:S1128"}Remove this unused import 'org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client'.( ÍÎ†8ÏÊâêÄ1
+±
+java:S1128"ŽRemove this unused import 'org.clibankinjava.customdatastructureandoperationsonthem.datastructures.customlinkedlist.EnhancedDoubleLinkedList'.(±ïÇ•üÿÿÿÿ8ùñÌµÅ1
+i
+java:S1128"LRemove this unused import 'org.clibankinjava.customprinting.CustomPrinting'.(Ïýç¢8ùñÌµÅ1
+N
+java:S1128"1Remove this unused import 'java.math.BigDecimal'.(êêŠ8ùñÌµÅ1
+R
+java:S1128	"0Remove this unused import 'java.time.LocalDate'.(›‘¬èýÿÿÿÿ8ùñÌµÅ1
+N
+java:S1128
+",Remove this unused import 'java.time.Month'.(¤‚ŽÉøÿÿÿÿ8ùñÌµÅ1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ùñÌµÅ1

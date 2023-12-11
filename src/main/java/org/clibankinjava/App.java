@@ -1,11 +1,14 @@
 package org.clibankinjava;
 
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofaccounts.additionalproductsforaccounts.Check;
+import org.clibankinjava.components.businessparts.businessentities.typeofclients.clientindetails.Client;
+import org.clibankinjava.customdatastructureandoperationsonthem.datastructures.customlinkedlist.EnhancedDoubleLinkedList;
 import org.clibankinjava.customprinting.CustomPrinting;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.List;
 import java.util.concurrent.*;
 
 public class App {
@@ -71,19 +74,22 @@ public class App {
 
         //----------------------------------------------------------------------------
 
-        Check check = new Check();
+//        Check check = new Check();
+//
+//        check.setId(44L);
+//        check.setName("Valentin Soare");
+//        check.setAddress("Str. Lucretiu Patrascanu, Nr. 9, Bl. Y2, Ap. 21");
+//        check.setDate(LocalDate.of(2008, Month.AUGUST, 11));
+//        check.setAmountToPay(new BigDecimal("1000000"));
+//        check.setPayToTheOrderOf("Tudorina Soare");
+//        check.setObjectForPayment("Debts");
+//        check.setAccountNumber("18711119520010");
+//        check.setCheckNumber("1919879923");
+//        check.setAccount(null);
+//
+//        CustomPrinting.drawABlankCheck(check);
 
-        check.setId(44L);
-        check.setName("Valentin Soare");
-        check.setAddress("Str. Lucretiu Patrascanu, Nr. 9, Bl. Y2, Ap. 21");
-        check.setDate(LocalDate.of(2008, Month.AUGUST, 11));
-        check.setAmountToPay(new BigDecimal("1000000"));
-        check.setPayToTheOrderOf("Tudorina Soare");
-        check.setObjectForPayment("Debts");
-        check.setAccountNumber("18711119520010");
-        check.setCheckNumber("1919879923");
-        check.setAccount(null);
+        //---------------------------------------------------------------
 
-        CustomPrinting.drawABlankCheck(check);
     }
 }
