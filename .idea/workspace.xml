@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Implemented EnhancedDoubleLinkedList with sorting (two different methods of sorting) and a genericComparator">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d68b65d529a388948be429fa6063da8b8828ab38" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d68b65d529a388948be429fa6063da8b8828ab38" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Small mod on README file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/operations/OperationsOnMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/operations/OperationsOnMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,36 +82,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "workingWithDB",
-    "last_opened_file_path": "/home/vsoare/Documents/projectsLongTerm/BankAppInCLI",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.422292",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;workingWithDB&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/vsoare/Documents/projectsLongTerm/BankAppInCLI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.422292&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofcredits.longtermcredit" />
@@ -251,7 +246,8 @@
       <workItem from="1701822587579" duration="599000" />
       <workItem from="1702101514175" duration="954000" />
       <workItem from="1702104257434" duration="8197000" />
-      <workItem from="1702246210711" duration="10139000" />
+      <workItem from="1702246210711" duration="10817000" />
+      <workItem from="1702262089708" duration="28000" />
     </task>
     <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
       <option name="closed" value="true" />
@@ -357,7 +353,31 @@
       <option name="project" value="LOCAL" />
       <updated>1702104469694</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Writing the README.md file!">
+      <option name="closed" value="true" />
+      <created>1702261644795</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702261644795</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Writing the README.md file!">
+      <option name="closed" value="true" />
+      <created>1702261834188</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702261834188</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Small mod on README file">
+      <option name="closed" value="true" />
+      <created>1702261908702</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702261908702</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +419,9 @@
     <MESSAGE value="Small Update" />
     <MESSAGE value="Implemented a new method for operations on map to put all the attributes of an object into a map using reflection.&#10;&#10;Wrote a method for sorting a map by key/value and in a chosen order, ASC or DESC." />
     <MESSAGE value="Implemented EnhancedDoubleLinkedList with sorting (two different methods of sorting) and a genericComparator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented EnhancedDoubleLinkedList with sorting (two different methods of sorting) and a genericComparator" />
+    <MESSAGE value="Writing the README.md file!" />
+    <MESSAGE value="Small mod on README file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small mod on README file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
