@@ -4,7 +4,6 @@ A banking application from a banks employee perspective and all its trimmings wi
 
 [![final-Small.png](https://i.postimg.cc/DfLpz7ky/final-Small.png)](https://moviesondemand.io)
 
-[![HitCount](https://hits.dwyl.com/valentinsoare//CanRunABankAppInCLI.svg?style=flat-square)](http://hits.dwyl.com/valentinsoare//CanRunABankAppInCLI)
 
 ## What concepts/technologies have been used until now for this project:
 1. [X]  Object-Oriented Programming Principles;
@@ -29,6 +28,10 @@ A banking application from a banks employee perspective and all its trimmings wi
 > Project under development.... 
 
 <br />
+
+_Statistics_
+
+[![HitCount](https://hits.dwyl.com/valentinsoare//CanRunABankAppInCLI.svg?style=flat-square)](http://hits.dwyl.com/valentinsoare//CanRunABankAppInCLI)
 
 _Social buttons_
 
