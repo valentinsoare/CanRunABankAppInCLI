@@ -47,4 +47,5 @@ _Repo metadata_
 
 ## License
 
-Released under [MIT](/LICENSE) by [@valentinsoare](https://github.com/valentinsoare) :mailbox: [Contact me](soarevalentinn@gmail.com)
+Released under [MIT](/LICENSE) by [@valentinsoare](https://github.com/valentinsoare) 
+:mailbox: [Contact me](soarevalentinn@gmail.com "Contact me at soarevalentinn@gmail.com")

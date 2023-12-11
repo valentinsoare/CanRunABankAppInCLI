@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Deleting">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="mailbox" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,7 +245,7 @@
       <workItem from="1702104257434" duration="8197000" />
       <workItem from="1702246210711" duration="10817000" />
       <workItem from="1702262089708" duration="28000" />
-      <workItem from="1702262123200" duration="9726000" />
+      <workItem from="1702262123200" duration="10058000" />
     </task>
     <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
       <option name="closed" value="true" />
@@ -490,7 +487,31 @@
       <option name="project" value="LOCAL" />
       <updated>1702269942115</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="second v">
+      <option name="closed" value="true" />
+      <created>1702272080748</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1702272080748</updated>
+    </task>
+    <task id="LOCAL-00032" summary="third version of contact me">
+      <option name="closed" value="true" />
+      <created>1702272117736</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1702272117736</updated>
+    </task>
+    <task id="LOCAL-00033" summary="mailbox">
+      <option name="closed" value="true" />
+      <created>1702272204226</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1702272204226</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,9 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A new Loading effect implemented." />
-    <MESSAGE value="New classes for DB operations." />
-    <MESSAGE value="Dependencies for preparing to work with Hibernate and JPA frameworks." />
     <MESSAGE value="Creating the mapping for banking users/employees from DB to code. Next will be designing the products and the mapping DB &lt;-&gt; code." />
     <MESSAGE value="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote." />
     <MESSAGE value="Under development...preparing how to create a map from all attributes of an object using Java Reflection and Generics." />
@@ -545,7 +563,10 @@
     <MESSAGE value="Small update on .gitignore" />
     <MESSAGE value="Added info" />
     <MESSAGE value="Deleting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleting" />
+    <MESSAGE value="second v" />
+    <MESSAGE value="third version of contact me" />
+    <MESSAGE value="mailbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="mailbox" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
