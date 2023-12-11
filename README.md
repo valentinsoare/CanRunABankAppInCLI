@@ -47,4 +47,4 @@ _Repo metadata_
 
 ## License
 
-Released under [MIT](/LICENSE) by [@valentinsoare](https://github.com/valentinsoare).
+Released under [MIT](/LICENSE) by [@valentinsoare](https://github.com/valentinsoare) [:incoming_envelope: Contact me](soarevalentinn@gmail.com)

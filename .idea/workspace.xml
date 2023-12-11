@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Added info">
+    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Deleting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -248,7 +248,7 @@
       <workItem from="1702104257434" duration="8197000" />
       <workItem from="1702246210711" duration="10817000" />
       <workItem from="1702262089708" duration="28000" />
-      <workItem from="1702262123200" duration="7721000" />
+      <workItem from="1702262123200" duration="9726000" />
     </task>
     <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
       <option name="closed" value="true" />
@@ -482,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702269866487</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Deleting">
+      <option name="closed" value="true" />
+      <created>1702269942115</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1702269942115</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +520,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Working with love on loginsignup and loading sections. Starting to use lombok library." />
     <MESSAGE value="A new Loading effect implemented." />
     <MESSAGE value="New classes for DB operations." />
     <MESSAGE value="Dependencies for preparing to work with Hibernate and JPA frameworks." />
@@ -537,7 +544,8 @@
     <MESSAGE value="Update on README.md page" />
     <MESSAGE value="Small update on .gitignore" />
     <MESSAGE value="Added info" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added info" />
+    <MESSAGE value="Deleting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleting" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
