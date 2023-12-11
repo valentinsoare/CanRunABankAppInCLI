@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Restore....">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="another one">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -250,7 +247,7 @@
       <workItem from="1702104257434" duration="8197000" />
       <workItem from="1702246210711" duration="10817000" />
       <workItem from="1702262089708" duration="28000" />
-      <workItem from="1702262123200" duration="2033000" />
+      <workItem from="1702262123200" duration="2835000" />
     </task>
     <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
       <option name="closed" value="true" />
@@ -396,7 +393,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702262378296</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="another one">
+      <option name="closed" value="true" />
+      <created>1702264455504</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702264455504</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +447,8 @@
     <MESSAGE value="Small mod on README file" />
     <MESSAGE value="Magical" />
     <MESSAGE value="Restore...." />
-    <option name="LAST_COMMIT_MESSAGE" value="Restore...." />
+    <MESSAGE value="another one" />
+    <option name="LAST_COMMIT_MESSAGE" value="another one" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

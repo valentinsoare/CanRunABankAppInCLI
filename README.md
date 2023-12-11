@@ -23,13 +23,25 @@ A banking application from a banks employee perspective and all its trimmings wi
 14. [ ] Redis;
 15. [ ] to continue....
 
+<br />
 
 > [!NOTE]
-> Project under development....
-> 
+> Project under development.... 
 
-![Static Badge](https://img.shields.io/badge/license-not%20specified-brightgreen)
+<br />
 
-<!-- BADGIE TIME -->
-we need some simple stuff
-<!-- END BADGIE TIME -->
+_Social buttons_
+
+[![valentinsoare - CanRunABankAppInCLI](https://img.shields.io/static/v1?label=valentinsoare&message=CanRunABankAppInCLI&color=green&logo=github)](https://github.com/valentinsoare/CanRunABankAppInCLI "Go to GitHub repo")
+[![stars - CanRunABankAppInCLI](https://img.shields.io/github/stars/valentinsoare/CanRunABankAppInCLI?style=social)](https://github.com/valentinsoare/CanRunABankAppInCLI)
+[![forks - CanRunABankAppInCLI](https://img.shields.io/github/forks/valentinsoare/CanRunABankAppInCLI?style=social)](https://github.com/valentinsoare/CanRunABankAppInCLI)
+
+_Repo metadata_
+
+[![GitHub tag](https://img.shields.io/github/tag/valentinsoare/CanRunABankAppInCLI?include_prereleases=&sort=semver&color=green)](https://github.com/valentinsoare/CanRunABankAppInCLI/releases/)
+[![License](https://img.shields.io/badge/License-MIT-green)](#license)
+[![issues - CanRunABankAppInCLI](https://img.shields.io/github/issues/valentinsoare/CanRunABankAppInCLI)](https://github.com/valentinsoare/CanRunABankAppInCLI/issues)
+
+## License
+
+Released under [MIT](/LICENSE) by [@valentinsoare](https://github.com/valentinsoare).
