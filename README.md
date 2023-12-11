@@ -30,8 +30,8 @@ A banking application from a banks employee perspective and all its trimmings wi
 <br />
 
 _Statistics_
- 
-[![HitCount](https://hits.dwyl.com/valentinsoare//CanRunABankAppInCLI.svg?style=flat-square)](http://hits.dwyl.com/valentinsoare//CanRunABankAppInCLI)
+
+[![HitCount](https://hits.dwyl.com/valentinsoare//CanRunABankAppInCLI.svg?style=flat-square&show=unique)](http://hits.dwyl.com/valentinsoare//CanRunABankAppInCLI)
 
 _Social buttons_
 
