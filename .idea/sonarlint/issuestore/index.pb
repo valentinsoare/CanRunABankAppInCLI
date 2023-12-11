@@ -2613,3 +2613,6 @@ Q.idea/sonarlint/securityhotspotstore/1/e/1e6c76da55aed0581cb11093971d9ceb691544
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 €
 P.idea/shelf/Uncommitted_changes_before_Update_at_12_11_23__4_27_AM__Changes_.xml,3/8/382a4aa2040ad58746ad9243c856f69ed8b0630c
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
