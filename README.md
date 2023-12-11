@@ -4,7 +4,6 @@ A banking application from a banks employee perspective and all its trimmings wi
 
 [![final-Small.png](https://i.postimg.cc/DfLpz7ky/final-Small.png)](https://moviesondemand.io)
 
-
 ## What concepts/technologies have been used until now for this project:
 1. [X]  Object-Oriented Programming Principles;
 2. [X]  SOLID Design Principles;
