@@ -4,6 +4,8 @@ A banking application from a banks employee perspective and all its trimmings wi
 
 [![final-Small.png](https://i.postimg.cc/DfLpz7ky/final-Small.png)](https://moviesondemand.io)
 
+[![HitCount](https://hits.dwyl.com/valentinsoare//CanRunABankAppInCLI.svg?style=flat-square)](http://hits.dwyl.com/valentinsoare//CanRunABankAppInCLI)
+
 ## What concepts/technologies have been used until now for this project:
 1. [X]  Object-Oriented Programming Principles;
 2. [X]  SOLID Design Principles;
@@ -24,3 +26,10 @@ A banking application from a banks employee perspective and all its trimmings wi
 
 > [!NOTE]
 > Project under development....
+> 
+
+![Static Badge](https://img.shields.io/badge/license-not%20specified-brightgreen)
+
+<!-- BADGIE TIME -->
+we need some simple stuff
+<!-- END BADGIE TIME -->
