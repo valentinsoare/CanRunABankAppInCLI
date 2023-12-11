@@ -1,6 +1,6 @@
 # :computer:  BankAppInCLI
 
-:point_right: A banking application from a banks employee perspective and all its trimmings with :100: **Java 17**
+A banking application from a banks employee perspective and all its trimmings with :100: **Java 17**
 
 [![final-Small.png](https://i.postimg.cc/DfLpz7ky/final-Small.png)](https://moviesondemand.io)
 
