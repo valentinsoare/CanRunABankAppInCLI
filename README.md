@@ -20,7 +20,8 @@ A banking application from a banks employee perspective and all its trimmings wi
 12. [ ] Microservices;
 13. [ ] Kafka;
 14. [ ] Redis;
-15. [X] to continue....
+15. [ ] to continue....
+
 
 
 > [!NOTE] 
