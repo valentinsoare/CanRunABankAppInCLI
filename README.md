@@ -24,5 +24,6 @@ A banking application from a banks employee perspective and all its trimmings wi
 
 
 
+
 > [!NOTE] 
 > Project under development....
