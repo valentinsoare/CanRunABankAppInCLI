@@ -17,16 +17,15 @@ A banking application from a banks employee perspective and all its trimmings wi
 10. [ ] Spring Boot;
 11. [ ] Custom APIs;
 12. [ ] Microservices;
-13. [ ] Kafka;
-14. [ ] Redis;
-15. [ ] to continue....
+13. [ ] Redis;
+14. [ ] to continue....
 
-<br />
+<br>
 
-> [!NOTE]
+>  [!NOTE]
 > Project under development.... 
 
-<br />
+<br>
 
 _Statistics_
 
