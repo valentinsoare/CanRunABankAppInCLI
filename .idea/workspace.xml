@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Small update on .gitignore" />
+    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Added info">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -245,7 +248,7 @@
       <workItem from="1702104257434" duration="8197000" />
       <workItem from="1702246210711" duration="10817000" />
       <workItem from="1702262089708" duration="28000" />
-      <workItem from="1702262123200" duration="7290000" />
+      <workItem from="1702262123200" duration="7721000" />
     </task>
     <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
       <option name="closed" value="true" />
@@ -471,7 +474,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702268861355</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Added info">
+      <option name="closed" value="true" />
+      <created>1702269866487</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1702269866487</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +512,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="FirstPushInitialProjectWithMenuHeader...the rest will follow" />
     <MESSAGE value="Working with love on loginsignup and loading sections. Starting to use lombok library." />
     <MESSAGE value="A new Loading effect implemented." />
     <MESSAGE value="New classes for DB operations." />
@@ -526,7 +536,8 @@
     <MESSAGE value="cleaning up" />
     <MESSAGE value="Update on README.md page" />
     <MESSAGE value="Small update on .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small update on .gitignore" />
+    <MESSAGE value="Added info" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added info" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

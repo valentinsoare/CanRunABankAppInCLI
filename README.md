@@ -5,9 +5,6 @@ and all its trimmings with :100: **Java 17**.
 
 [![final-Small.png](https://i.postimg.cc/DfLpz7ky/final-Small.png)](https://moviesondemand.io)
 
-```
-System.out.println(" Hello World")
-```
 
 ## What concepts/technologies have been used until now for this project:
 1. [X]  Object-Oriented Programming Principles;
