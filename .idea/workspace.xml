@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Message when hover with mouse">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e8c8ca4d4c68e2eb4dc49f8091da9bde257eb1a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e8c8ca4d4c68e2eb4dc49f8091da9bde257eb1a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/99b9360fb2997c0bf4b4dda1373c3e0e216400dd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/99b9360fb2997c0bf4b4dda1373c3e0e216400dd" afterDir="false" />
+    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Small correction">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/DBentity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankpersonnel/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofbankproducts/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typeofclients/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessentities/typofbankparts/BankPart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/businessparts/businessqueries/BusinessQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/datastructures/customlinkedlist/EnhancedDoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/datastructures/customlinkedlist/EnhancedDoubleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/operations/OperationsOnList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/operations/OperationsOnList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/operations/OperationsOnMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/operations/OperationsOnMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/LoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/Credential.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/credentialentities/Password.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/credentialentities/Password.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/credentialentities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/components/credentials/credentialentities/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +27,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -87,36 +92,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;workingWithDB&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/vsoare/Documents/projectsLongTerm/MathQuizWithComputerAssistedInstructions&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.422292&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "workingWithDB",
+    "last_opened_file_path": "/home/vsoare/Documents/projectsLongTerm/AGameOfChanceWithStatistics",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.422292",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.typeofcredits.longtermcredit" />
@@ -311,6 +316,8 @@
       <workItem from="1702246210711" duration="10817000" />
       <workItem from="1702262089708" duration="28000" />
       <workItem from="1702262123200" duration="27864000" />
+      <workItem from="1702425044553" duration="6001000" />
+      <workItem from="1702440451739" duration="1047000" />
     </task>
     <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
       <option name="closed" value="true" />
@@ -584,7 +591,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702272332727</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Small correction">
+      <option name="closed" value="true" />
+      <created>1702426688295</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1702426688295</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +629,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote." />
     <MESSAGE value="Under development...preparing how to create a map from all attributes of an object using Java Reflection and Generics." />
     <MESSAGE value="Method to add all attributes from an object into a map using reflection and then print the map. We need this method in order to print DB records/business entities." />
     <MESSAGE value="Small Update" />
@@ -639,7 +653,8 @@
     <MESSAGE value="third version of contact me" />
     <MESSAGE value="mailbox" />
     <MESSAGE value="Message when hover with mouse" />
-    <option name="LAST_COMMIT_MESSAGE" value="Message when hover with mouse" />
+    <MESSAGE value="Small correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small correction" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

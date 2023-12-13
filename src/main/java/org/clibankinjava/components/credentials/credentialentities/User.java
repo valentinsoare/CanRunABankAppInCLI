@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankpersonnel.employeedefinition.Employee;
 import org.clibankinjava.components.businessparts.businessentities.typeofbankproducts.accountwithdetails.Account;
-import org.clibankinjava.components.credentials.LoginCredentials;
+import org.clibankinjava.components.credentials.Credential;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.LazyGroup;
 import org.jetbrains.annotations.NotNull;
@@ -20,7 +20,7 @@ import java.util.TreeSet;
 @BatchSize(size = 8)
 @Entity(name = "User")
 @Table(name = "user", schema = "user")
-public class User implements LoginCredentials, Comparable<User> {
+public class User implements Credential, Comparable<User> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
