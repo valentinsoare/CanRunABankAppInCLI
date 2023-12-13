@@ -25,7 +25,7 @@ and all its trimmings with :100: **Java 17**.
 <br>
 
 >  [!NOTE]
-> Project under development.... 
+> Project under development....
 
 <br>
 

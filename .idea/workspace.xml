@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="mailbox" />
+    <list default="true" id="3795130a-eccd-4edc-9dbd-414483d6be81" name="Changes" comment="Message when hover with mouse">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e8c8ca4d4c68e2eb4dc49f8091da9bde257eb1a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e8c8ca4d4c68e2eb4dc49f8091da9bde257eb1a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/99b9360fb2997c0bf4b4dda1373c3e0e216400dd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/99b9360fb2997c0bf4b4dda1373c3e0e216400dd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/datastructures/customlinkedlist/EnhancedDoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/datastructures/customlinkedlist/EnhancedDoubleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/operations/OperationsOnList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/operations/OperationsOnList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/operations/OperationsOnMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/clibankinjava/customdatastructureandoperationsonthem/operations/OperationsOnMap.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,13 +99,13 @@
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;workingWithDB&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/vsoare/Documents/projectsLongTerm/BankAppInCLI&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/vsoare/Documents/projectsLongTerm/MathQuizWithComputerAssistedInstructions&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.422292&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
@@ -138,6 +146,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.clibankinjava.App" />
+      <module name="BankAppInCLI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.clibankinjava.components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="org.clibankinjava.customdatastructures.anothertypeofarraylist.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.clibankinjava.customdatastructures.anothertypeofarraylist.App" />
       <module name="BankAppInCLI" />
@@ -150,6 +171,50 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="org.clibankinjava.customdatastructures.anothertypeofarraylist.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.clibankinjava.customdatastructures.anothertypeofarraylist.App" />
+      <module name="BankAppInCLI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.clibankinjava.operationsondatastructures.anothertypeofarraylist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankAppInCLI [package]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+                <option value="assembly:single" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="BankAppInCLI [package]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -245,7 +310,7 @@
       <workItem from="1702104257434" duration="8197000" />
       <workItem from="1702246210711" duration="10817000" />
       <workItem from="1702262089708" duration="28000" />
-      <workItem from="1702262123200" duration="10058000" />
+      <workItem from="1702262123200" duration="27864000" />
     </task>
     <task id="LOCAL-00001" summary="FirstPushInitialProjectWithMenuHeader...the rest will follow">
       <option name="closed" value="true" />
@@ -511,7 +576,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702272204226</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Message when hover with mouse">
+      <option name="closed" value="true" />
+      <created>1702272332727</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1702272332727</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +614,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creating the mapping for banking users/employees from DB to code. Next will be designing the products and the mapping DB &lt;-&gt; code." />
     <MESSAGE value="Creating and write the skeleton for account and credit entities. Also entities for deposit and client were made but not fully wrote." />
     <MESSAGE value="Under development...preparing how to create a map from all attributes of an object using Java Reflection and Generics." />
     <MESSAGE value="Method to add all attributes from an object into a map using reflection and then print the map. We need this method in order to print DB records/business entities." />
@@ -566,7 +638,8 @@
     <MESSAGE value="second v" />
     <MESSAGE value="third version of contact me" />
     <MESSAGE value="mailbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="mailbox" />
+    <MESSAGE value="Message when hover with mouse" />
+    <option name="LAST_COMMIT_MESSAGE" value="Message when hover with mouse" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

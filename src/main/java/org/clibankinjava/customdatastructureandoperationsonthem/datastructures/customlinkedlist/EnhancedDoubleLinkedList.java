@@ -35,7 +35,7 @@ public class EnhancedDoubleLinkedList<E extends Comparable<E>> extends AbstractL
     }
 
     public EnhancedDoubleLinkedList<E> getANewInstanceOf(EnhancedDoubleLinkedList<E> enhancedDoubleLinkedList) {
-        return getANewInstanceOf(enhancedDoubleLinkedList);
+        return new EnhancedDoubleLinkedList<>(enhancedDoubleLinkedList);
     }
 
 
