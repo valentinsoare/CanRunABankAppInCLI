@@ -16,11 +16,10 @@ and all its trimmings with :100: **Java 17**.
 7. [X]  MySQL;
 8. [X]  JPA/Hibernate;
 9. [ ]  Logging;
-10. [ ] Spring Boot;
-11. [ ] Custom APIs;
-12. [ ] Microservices;
-13. [ ] Redis;
-14. [ ] to continue....
+10. [ ] Custom APIs;
+11. [ ] Microservices;
+12. [ ] Redis;
+13. [ ] to continue....
 
 <br>
 
